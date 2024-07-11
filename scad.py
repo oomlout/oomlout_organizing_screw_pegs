@@ -44,9 +44,8 @@ def make_scad(**kwargs):
         
         part = copy.deepcopy(part_default)
         p3 = copy.deepcopy(kwargs)
-        p3["thickness"] = 10
-        p3["radius"] = 15/2
-        #p3["thickness"] = 6
+        p3["thickness"] = 85
+        p3["radius"] = 15/2        
         part["kwargs"] = p3
         part["name"] = "base"        
         parts.append(part)
