@@ -11,10 +11,10 @@ def make_scad(**kwargs):
 
     # save_type variables
     if True:
-        #filter = ""
-        filter = "test"
+        filter = ""
+        #filter = "test"
 
-        #kwargs["save_type"] = "none"
+        kwargs["save_type"] = "none"
         kwargs["save_type"] = "all"
         
         kwargs["overwrite"] = True
@@ -26,8 +26,8 @@ def make_scad(**kwargs):
     # default variables
     if True:
         kwargs["size"] = "oobb"
-        kwargs["width"] = 12
-        kwargs["height"] = 12
+        kwargs["width"] = 1
+        kwargs["height"] = 1
         kwargs["thickness"] = 6
 
     # project_variables
@@ -38,15 +38,17 @@ def make_scad(**kwargs):
     if True:
 
         part_default = {} 
-        part_default["project_name"] = "test" ####### neeeds setting
+        part_default["project_name"] = "oomlout_organizing_screw_pegs" ####### neeeds setting
         part_default["full_shift"] = [0, 0, 0]
         part_default["full_rotations"] = [0, 0, 0]
         
         part = copy.deepcopy(part_default)
         p3 = copy.deepcopy(kwargs)
+        p3["thickness"] = 10
+        p3["radius"] = 15/2
         #p3["thickness"] = 6
         part["kwargs"] = p3
-        part["name"] = "base"
+        part["name"] = "base"        
         parts.append(part)
 
         
@@ -64,29 +66,32 @@ def make_scad(**kwargs):
 def get_base(thing, **kwargs):
 
     depth = kwargs.get("thickness", 4)
+    radius = kwargs.get("radius", 10)
     prepare_print = kwargs.get("prepare_print", False)
 
     pos = kwargs.get("pos", [0, 0, 0])
     #pos = copy.deepcopy(pos)
     #pos[2] += -20
 
-    #add plate
+    #add cylinder
     p3 = copy.deepcopy(kwargs)
     p3["type"] = "p"
-    p3["shape"] = f"oobb_plate"    
+    p3["shape"] = f"oobb_cylinder"    
     p3["depth"] = depth
+    p3["radius"] = radius
     #p3["m"] = "#"
     pos1 = copy.deepcopy(pos)         
     p3["pos"] = pos1
+    p3["zz"] = "top"
     oobb_base.append_full(thing,**p3)
+    
     #add holes
     p3 = copy.deepcopy(kwargs)
     p3["type"] = "p"
-    p3["shape"] = f"oobb_holes"
-    p3["both_holes"] = True  
+    p3["shape"] = f"oobb_screw_countersunk"    
     p3["depth"] = depth
-    p3["holes"] = "perimeter"
-    #p3["m"] = "#"
+    p3["radius_name"] = "m4_screw_wood"
+    p3["m"] = "#"
     pos1 = copy.deepcopy(pos)         
     p3["pos"] = pos1
     oobb_base.append_full(thing,**p3)

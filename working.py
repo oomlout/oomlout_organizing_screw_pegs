@@ -30,7 +30,7 @@ def make_scad(**kwargs):
     kwargs["save_type"] = "none"
     #kwargs["save_type"] = "all"
     kwargs["size"] = "oobb"
-    kwargs["type"] = "oomlout_bolt_tool_funnel"
+    kwargs["type"] = "oomlout_organizing_screw_pegs"
     kwargs["width"] = 3
     kwargs["height"] = 5
     kwargs["thickness"] = 6
@@ -95,21 +95,6 @@ def make_scad(**kwargs):
             opsc.opsc_make_object(f'scad_output/{thing["id"]}/{mode}.scad', thing["components"], mode=mode, save_type=save_type, overwrite=overwrite, layers=layers, tilediff=tilediff, start=start)
             
  
-
-
-#take component positions from working_parts.csv and place them in working.kicad_pcb
-def place_parts(**kwargs):
-    board_file = "kicad/current_version/working/working.kicad_pcb"
-    parts_file = "working_parts.csv"
-    #load csv file
-    import csv
-    with open(parts_file, 'r') as f:
-        reader = csv.DictReader(f)
-        parts = [row for row in reader]
-
-
-    
-    oom_kicad.kicad_set_components(board_file=board_file, parts=parts, corel_pos=True, **kwargs)
 
 
 
