@@ -87,11 +87,11 @@ def get_base(thing, **kwargs):
     
     #add holes
     p3 = copy.deepcopy(kwargs)
-    p3["type"] = "p"
+    p3["type"] = "n"
     p3["shape"] = f"oobb_screw_countersunk"    
     p3["depth"] = depth
     p3["radius_name"] = "m4_screw_wood"
-    p3["m"] = "#"
+    #p3["m"] = "#"
     pos1 = copy.deepcopy(pos)         
     p3["pos"] = pos1
     oobb_base.append_full(thing,**p3)
