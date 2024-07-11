@@ -47,9 +47,20 @@ def make_scad(**kwargs):
         p3["thickness"] = 85
         p3["radius"] = 15/2        
         part["kwargs"] = p3
-        part["name"] = "base"        
+        part["name"] = "base_15"        
         parts.append(part)
 
+
+        part = copy.deepcopy(part_default)
+        p3 = copy.deepcopy(kwargs)
+        p3["thickness"] = 85
+        p3["radius"] = 25/2        
+        part["kwargs"] = p3
+        part["name"] = "base_25"        
+        parts.append(part)
+
+
+        
         
     #make the parts
     if True:
@@ -61,6 +72,12 @@ def make_scad(**kwargs):
                 print(f"done {part['name']}")
             else:
                 print(f"skipping {part['name']}")
+
+def get_base_15(thing, **kwargs):
+    get_base(thing, **kwargs)
+
+def get_base_25(thing, **kwargs):
+    get_base(thing, **kwargs)
 
 def get_base(thing, **kwargs):
 
