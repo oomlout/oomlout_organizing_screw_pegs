@@ -11,10 +11,10 @@ def make_scad(**kwargs):
 
     # save_type variables
     if True:
-        filter = ""
-        #filter = "test"
+        #filter = ""
+        filter = "flange"
 
-        kwargs["save_type"] = "none"
+        #kwargs["save_type"] = "none"
         kwargs["save_type"] = "all"
         
         kwargs["overwrite"] = True
@@ -59,6 +59,17 @@ def make_scad(**kwargs):
         part["name"] = "base_25"        
         parts.append(part)
 
+        
+        part = copy.deepcopy(part_default)
+        p3 = copy.deepcopy(kwargs)
+        p3["thickness"] = 25
+        p3["radius"] = 25/2        
+        p3["flange_extra"] = 6
+        p3["flange_depth"] = 3
+        part["kwargs"] = p3
+        part["name"] = "base_flange_25"        
+        parts.append(part)
+
 
         
         
@@ -79,11 +90,18 @@ def get_base_15(thing, **kwargs):
 def get_base_25(thing, **kwargs):
     get_base(thing, **kwargs)
 
+def get_base_flange_25(thing, **kwargs):
+    get_base(thing, **kwargs)
+
 def get_base(thing, **kwargs):
 
     depth = kwargs.get("thickness", 4)
     radius = kwargs.get("radius", 10)
     prepare_print = kwargs.get("prepare_print", False)
+
+    #
+    flange_extra = kwargs.get("flange_extra", 0)
+    flange_depth = kwargs.get("flange_depth", 0)
 
     pos = kwargs.get("pos", [0, 0, 0])
     #pos = copy.deepcopy(pos)
@@ -101,6 +119,20 @@ def get_base(thing, **kwargs):
     p3["zz"] = "top"
     oobb_base.append_full(thing,**p3)
     
+    #add flange if flange extra is set
+    if flange_extra > 0:            
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "p"
+        p3["shape"] = f"oobb_cylinder"    
+        p3["depth"] = flange_depth
+        p3["radius"] = radius + flange_extra
+        #p3["m"] = "#"
+        pos1 = copy.deepcopy(pos)         
+        p3["pos"] = pos1
+        p3["zz"] = "top"
+        oobb_base.append_full(thing,**p3)
+
+
     #add holes
     p3 = copy.deepcopy(kwargs)
     p3["type"] = "n"
