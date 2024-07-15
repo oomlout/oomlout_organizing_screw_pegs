@@ -11,8 +11,8 @@ def make_scad(**kwargs):
 
     # save_type variables
     if True:
-        #filter = ""
-        filter = "flange"
+        filter = ""
+        #filter = "flange"
 
         #kwargs["save_type"] = "none"
         kwargs["save_type"] = "all"
@@ -44,30 +44,28 @@ def make_scad(**kwargs):
         
         part = copy.deepcopy(part_default)
         p3 = copy.deepcopy(kwargs)
-        p3["thickness"] = 85
-        p3["radius"] = 15/2        
+        thickness = 85
+        diam = 15
+        p3["thickness"] = thickness               
+        p3["radius"] = diam/2        
         part["kwargs"] = p3
-        part["name"] = "base_15"        
-        parts.append(part)
-
-
-        part = copy.deepcopy(part_default)
-        p3 = copy.deepcopy(kwargs)
-        p3["thickness"] = 85
-        p3["radius"] = 25/2        
-        part["kwargs"] = p3
-        part["name"] = "base_25"        
+        part["name"] = f"base_{diam}"        
         parts.append(part)
 
         
+
         part = copy.deepcopy(part_default)
         p3 = copy.deepcopy(kwargs)
-        p3["thickness"] = 25
-        p3["radius"] = 25/2        
-        p3["flange_extra"] = 6
-        p3["flange_depth"] = 3
+        thickness = 15
+        diam = 20
+        flange_extra = 6
+        flange_depth = 3
+        p3["thickness"] = thickness               
+        p3["radius"] = diam/2        
+        p3["flange_extra"] = flange_extra
+        p3["flange_depth"] = flange_depth
         part["kwargs"] = p3
-        part["name"] = "base_flange_25"        
+        part["name"] = f"base_flange_{diam}_flange_extra_{flange_extra}_flange_depth_{flange_depth}"        
         parts.append(part)
 
 
@@ -83,15 +81,6 @@ def make_scad(**kwargs):
                 print(f"done {part['name']}")
             else:
                 print(f"skipping {part['name']}")
-
-def get_base_15(thing, **kwargs):
-    get_base(thing, **kwargs)
-
-def get_base_25(thing, **kwargs):
-    get_base(thing, **kwargs)
-
-def get_base_flange_25(thing, **kwargs):
-    get_base(thing, **kwargs)
 
 def get_base(thing, **kwargs):
 
@@ -125,7 +114,7 @@ def get_base(thing, **kwargs):
         p3["type"] = "p"
         p3["shape"] = f"oobb_cylinder"    
         p3["depth"] = flange_depth
-        p3["radius"] = radius + flange_extra
+        p3["radius"] = radius + flange_extra/2
         #p3["m"] = "#"
         pos1 = copy.deepcopy(pos)         
         p3["pos"] = pos1
@@ -188,8 +177,11 @@ def make_scad_generic(part):
     kwargs.pop("size","")
 
     #get the part from the function get_{name}"
-    func = globals()[f"get_{name}"]
-    func(thing, **kwargs)
+    
+    #func = globals()[f"get_{name}"]
+    #func(thing, **kwargs)
+
+    get_base(thing, **kwargs)
 
     for mode in modes:
         depth = thing.get(
