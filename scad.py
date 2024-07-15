@@ -56,7 +56,7 @@ def make_scad(**kwargs):
 
         part = copy.deepcopy(part_default)
         p3 = copy.deepcopy(kwargs)
-        thickness = 15
+        thickness = 12
         diam = 20
         flange_extra = 6
         flange_depth = 3
