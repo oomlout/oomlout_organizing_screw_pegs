@@ -72,7 +72,7 @@ def make_scad(**kwargs):
         
         part = copy.deepcopy(part_default)
         p3 = copy.deepcopy(kwargs)
-        thickness = 12
+        thickness = 15
         diam = 20
         flange_extra = 6
         flange_depth = 3
@@ -83,7 +83,7 @@ def make_scad(**kwargs):
         p3["flange_extra"] = flange_extra
         p3["flange_depth"] = flange_depth        
         part["kwargs"] = p3
-        part["name"] = f"base_flange_{diam}_flange_extra_{flange_extra}_flange_depth_{flange_depth}_flat_length_{flat_length}"        
+        part["name"] = f"base_flange_{diam}_flange_extra_{flange_extra}_flange_depth_{flange_depth}_flat_length_{flat_length}_depth_{thickness}"        
         parts.append(part)
         
         
