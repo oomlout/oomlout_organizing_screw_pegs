@@ -11,10 +11,10 @@ def make_scad(**kwargs):
 
     # save_type variables
     if True:
-        filter = ""
+        filter = "multi"
         #filter = "flange"
 
-        #kwargs["save_type"] = "none"
+        kwargs["save_type"] = "none"
         kwargs["save_type"] = "all"
         
         kwargs["overwrite"] = True
@@ -38,7 +38,7 @@ def make_scad(**kwargs):
     if True:
 
         part_default = {} 
-        part_default["project_name"] = "oomlout_organizing_screw_pegs" ####### neeeds setting
+        part_default["project_name"] = "oomlout_organizing_screw_peg" ####### neeeds setting
         part_default["full_shift"] = [0, 0, 0]
         part_default["full_rotations"] = [0, 0, 0]
         
@@ -53,38 +53,81 @@ def make_scad(**kwargs):
         #parts.append(part)
 
         
+        # standard sphere ones
+        if True:
+            thicknesses = [12]
+            diams = [20]
+            flange_extras = [6]
+            flange_depths = [3]
 
-        part = copy.deepcopy(part_default)
-        p3 = copy.deepcopy(kwargs)
-        thickness = 12
-        diam = 20
-        flange_extra = 6
-        flange_depth = 3
-        p3["thickness"] = thickness               
-        p3["radius"] = diam/2        
-        p3["flange_extra"] = flange_extra
-        p3["flange_depth"] = flange_depth
-        
-        part["kwargs"] = p3
-        part["name"] = f"base_flange_{diam}_flange_extra_{flange_extra}_flange_depth_{flange_depth}"        
-        #parts.append(part)
+            for thickness in thicknesses:
+                for diam in diams:
+                    for flange_extra in flange_extras:
+                        for flange_depth in flange_depths:
+                            part = copy.deepcopy(part_default)
+                            p3 = copy.deepcopy(kwargs)
+                            
+                            p3["thickness"] = thickness               
+                            p3["radius"] = diam/2        
+                            p3["flange_extra"] = flange_extra
+                            p3["flange_depth"] = flange_depth
+                            
+                            part["kwargs"] = p3
+                            part["name"] = f"base_flange_{diam}_flange_extra_{flange_extra}_flange_depth_{flange_depth}"        
+                            parts.append(part)
+
+        # multi hole ones
+        if True:
+            thicknesses = [30]
+            diams = [20]
+            flange_extras = [15]
+            flange_depths = [6]
+
+            for thickness in thicknesses:
+                for diam in diams:
+                    for flange_extra in flange_extras:
+                        for flange_depth in flange_depths:
+                            part = copy.deepcopy(part_default)
+                            p3 = copy.deepcopy(kwargs)
+                            
+                            p3["thickness"] = thickness               
+                            p3["radius"] = diam/2        
+                            p3["flange_extra"] = flange_extra
+                            p3["flange_depth"] = flange_depth
+                            multi_hole = 3
+                            p3["multi_hole"] = multi_hole                        
+                            part["kwargs"] = p3
+                            part["name"] = f"base_flange_{diam}_flange_extra_{flange_extra}_flange_depth_{flange_depth}_multi_hole_{multi_hole}"        
+                            parts.append(part)
+
 
         
-        part = copy.deepcopy(part_default)
-        p3 = copy.deepcopy(kwargs)
-        thickness = 15
-        diam = 20
-        flange_extra = 6
-        flange_depth = 3
-        p3["thickness"] = thickness               
-        p3["radius"] = diam/2        
-        flat_length = 10
-        p3["flat_length"] = flat_length
-        p3["flange_extra"] = flange_extra
-        p3["flange_depth"] = flange_depth        
-        part["kwargs"] = p3
-        part["name"] = f"base_flange_{diam}_flange_extra_{flange_extra}_flange_depth_{flange_depth}_flat_length_{flat_length}_depth_{thickness}"        
-        parts.append(part)
+        # flat ones
+        if True:
+            thicknesses = [15]
+            diams = [20]
+            flange_extras = [6]
+            flange_depths = [3]
+            flat_lengths = [10]
+
+            for thickness in thicknesses:
+                for diam in diams:
+                    for flange_extra in flange_extras:
+                        for flange_depth in flange_depths:                        
+                            for flat_length in flat_lengths:                                
+                                part = copy.deepcopy(part_default)
+                                p3 = copy.deepcopy(kwargs)
+                                p3["thickness"] = thickness               
+                                p3["radius"] = diam/2        
+                                
+                                p3["flat_length"] = flat_length
+                                p3["flange_extra"] = flange_extra
+                                p3["flange_depth"] = flange_depth        
+                                part["kwargs"] = p3
+                                part["name"] = f"base_flange_{diam}_flange_extra_{flange_extra}_flange_depth_{flange_depth}_flat_length_{flat_length}_depth_{thickness}"        
+                                parts.append(part)
+            
+
         
         
     #make the parts
@@ -108,6 +151,7 @@ def get_base(thing, **kwargs):
     flange_extra = kwargs.get("flange_extra", 0)
     flange_depth = kwargs.get("flange_depth", 0)
     flat_length = kwargs.get("flat_length", 0)
+    multi_hole = kwargs.get("multi_hole", 1)
 
     pos = kwargs.get("pos", [0, 0, 0])
     #pos = copy.deepcopy(pos)
@@ -172,15 +216,52 @@ def get_base(thing, **kwargs):
 
 
     #add holes
-    p3 = copy.deepcopy(kwargs)
-    p3["type"] = "n"
-    p3["shape"] = f"oobb_screw_countersunk"    
-    p3["depth"] = depth
-    p3["radius_name"] = "m4_screw_wood"
-    p3["m"] = "#"
-    pos1 = copy.deepcopy(pos)         
-    p3["pos"] = pos1
-    oobb_base.append_full(thing,**p3)
+    if True:
+        if multi_hole == 1:
+            p3 = copy.deepcopy(kwargs)
+            p3["type"] = "n"
+            p3["shape"] = f"oobb_screw_countersunk"    
+            p3["depth"] = depth
+            p3["radius_name"] = "m4_screw_wood"
+            p3["m"] = "#"
+            pos1 = copy.deepcopy(pos)         
+            p3["pos"] = pos1
+            oobb_base.append_full(thing,**p3)
+        if multi_hole == 3:
+            
+            p3 = copy.deepcopy(kwargs)
+            p3["type"] = "n"
+            p3["shape"] = f"oobb_screw_countersunk"    
+            p3["depth"] = depth
+            p3["radius_name"] = "m4_screw_wood"
+            p3["m"] = "#"
+            pos1 = copy.deepcopy(pos)         
+            
+            import math          
+            shift = 6
+            pos11 = copy.deepcopy(pos1)
+            angle = 0
+            pos11[0] += math.cos(math.radians(angle))*shift
+            pos11[1] += math.sin(math.radians(angle))*shift
+            pos12 = copy.deepcopy(pos1)
+            angle = 120
+            pos12[0] += math.cos(math.radians(angle))*shift
+            pos12[1] += math.sin(math.radians(angle))*shift
+            pos13 = copy.deepcopy(pos1)
+            angle = 240
+            pos13[0] += math.cos(math.radians(angle))*shift
+            pos13[1] += math.sin(math.radians(angle))*shift
+            
+
+            poss = []
+            poss.append(pos11)
+            poss.append(pos12)
+            poss.append(pos13)
+
+
+            p3["pos"] = poss
+            oobb_base.append_full(thing,**p3)
+
 
     if prepare_print:
         #put into a rotation object
