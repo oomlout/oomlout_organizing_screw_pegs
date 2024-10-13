@@ -54,6 +54,7 @@ def make_scad(**kwargs):
 
         
         # standard sphere ones
+        #if False:
         if True:
             thicknesses = [12,35]
             diams = [20,14]
@@ -77,6 +78,7 @@ def make_scad(**kwargs):
                             parts.append(part)
 
         # multi hole ones
+        #if False:
         if True:
 
             pegs = []
@@ -87,11 +89,11 @@ def make_scad(**kwargs):
             peg["flange_extra"] = 15
             peg["flange_depth"] = 6
             peg["screw_diameter"] = "m3_screw_wood"
-            pegs.append(peg)
+            #pegs.append(peg)
 
             peg = copy.deepcopy(peg)
             peg["thickness"] = 15
-            pegs.append(peg)
+            #pegs.append(peg)
 
             peg = copy.deepcopy(peg)
             peg["thickness"] = 80
@@ -118,12 +120,13 @@ def make_scad(**kwargs):
                 p3["multi_hole"] = multi_hole                        
                 
                 part["kwargs"] = p3
-                part["name"] = f"base_flange_{diam}_flange_extra_{flange_extra}_flange_depth_{flange_depth}__screw_dameter_{screw_diameter}_multi_hole_{multi_hole}"        
+                part["name"] = f"base_flange_{diam}_flange_extra_{flange_extra}_flange_depth_{flange_depth}_screw_dameter_{screw_diameter}_multi_hole_{multi_hole}"        
                 parts.append(part)
 
 
         
         # flat ones
+        #if False:
         if True:
             thicknesses = [15]
             diams = [20]
