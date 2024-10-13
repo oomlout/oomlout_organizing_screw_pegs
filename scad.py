@@ -11,16 +11,16 @@ def make_scad(**kwargs):
 
     # save_type variables
     if True:
-        filter = "multi"
+        filter = ""
         #filter = "flange"
 
         kwargs["save_type"] = "none"
-        kwargs["save_type"] = "all"
+        #kwargs["save_type"] = "all"
         
         kwargs["overwrite"] = True
         
-        kwargs["modes"] = ["3dpr", "laser", "true"]
-        #kwargs["modes"] = ["3dpr"]
+        #kwargs["modes"] = ["3dpr", "laser", "true"]
+        kwargs["modes"] = ["3dpr"]
         #kwargs["modes"] = ["laser"]
 
     # default variables
@@ -55,9 +55,9 @@ def make_scad(**kwargs):
         
         # standard sphere ones
         if True:
-            thicknesses = [12]
-            diams = [20]
-            flange_extras = [6]
+            thicknesses = [12,35]
+            diams = [20,14]
+            flange_extras = [6,20,0]
             flange_depths = [3]
 
             for thickness in thicknesses:
