@@ -11,11 +11,11 @@ def make_scad(**kwargs):
 
     # save_type variables
     if True:
-        filter = ""
+        filter = "label_holder"
         #filter = "flange"
 
         kwargs["save_type"] = "none"
-        #kwargs["save_type"] = "all"
+        kwargs["save_type"] = "all"
         
         kwargs["overwrite"] = True
         
@@ -123,6 +123,28 @@ def make_scad(**kwargs):
                 part["name"] = f"base_flange_{diam}_flange_extra_{flange_extra}_flange_depth_{flange_depth}_screw_dameter_{screw_diameter}_multi_hole_{multi_hole}"        
                 parts.append(part)
 
+            
+            diams = [20]
+            screw_diams = ["m3_screw_wood", "m4_screw_wood", "m5_screw_wood"]
+
+            for diam in diams:
+                for screw_diam in screw_diams:
+                    thickness = 6
+                    diam = diam
+                    screw_diameter = screw_diam
+                    part = copy.deepcopy(part_default)
+                    p3 = copy.deepcopy(kwargs)                    
+                    p3["thickness"] = thickness               
+                    p3["radius"] = diam/2        
+                    p3["screw_diameter"] = screw_diameter
+                    multi_hole = 3
+                    p3["multi_hole"] = multi_hole                        
+                    
+                    part["kwargs"] = p3
+                    part["name"] = f"label_holder_flange_{diam}__screw_dameter_{screw_diameter}_multi_hole_{multi_hole}"        
+                    parts.append(part)
+
+
 
         
         # flat ones
@@ -166,9 +188,159 @@ def make_scad(**kwargs):
                 print(f"skipping {part['name']}")
 
 def get_base(thing, **kwargs):
+    name = kwargs.get("type", "default")
+    if "label_holder" in name:
+        get_label_holder(thing, **kwargs)
+    else:
+        depth = kwargs.get("thickness", 4)
+        radius = kwargs.get("radius", 10)
+        prepare_print = kwargs.get("prepare_print", False)
+        screw_diameter = kwargs.get("screw_diameter", "m4_screw_wood")
+        #
+        flange_extra = kwargs.get("flange_extra", 0)
+        flange_depth = kwargs.get("flange_depth", 0)
+        flat_length = kwargs.get("flat_length", 0)
+        multi_hole = kwargs.get("multi_hole", 1)
+
+
+
+        pos = kwargs.get("pos", [0, 0, 0])
+        #pos = copy.deepcopy(pos)
+        #pos[2] += -20
+
+        #add cylinder
+        if flat_length == 0:
+            p3 = copy.deepcopy(kwargs)
+            p3["type"] = "p"
+            p3["shape"] = f"oobb_cylinder"    
+            p3["depth"] = depth
+            p3["radius"] = radius
+            #p3["m"] = "#"
+            pos1 = copy.deepcopy(pos)         
+            p3["pos"] = pos1
+            p3["zz"] = "top"
+            oobb_base.append_full(thing,**p3)
+            #add flange if flange extra is set
+            if flange_extra > 0:            
+                p3 = copy.deepcopy(kwargs)
+                p3["type"] = "p"
+                p3["shape"] = f"oobb_cylinder"    
+                p3["depth"] = flange_depth
+                p3["radius"] = radius + flange_extra/2
+                #p3["m"] = "#"
+                pos1 = copy.deepcopy(pos)         
+                p3["pos"] = pos1
+                p3["zz"] = "top"
+                oobb_base.append_full(thing,**p3)
+        else:
+            p3 = copy.deepcopy(kwargs)
+            p3["type"] = "p"
+            p3["shape"] = f"rounded_rectangle"    
+            wid = radius*2 + flat_length
+            hei = radius*2
+            dep = depth
+            size = [wid, hei, dep]
+            p3["size"] = size
+            p3["radius"] = radius        
+            #p3["m"] = "#"
+            pos1 = copy.deepcopy(pos)         
+            pos1[2] += -dep
+            p3["pos"] = pos1
+            p3["zz"] = "top"
+            oobb_base.append_full(thing,**p3)
+            #add flange if flange extra is set
+            if flange_extra > 0:            
+                p3 = copy.deepcopy(kwargs)
+                p3["type"] = "p"
+                p3["shape"] = f"rounded_rectangle"    
+                wid = radius*2 + flat_length + flange_extra
+                hei = radius*2 + flange_extra
+                dep = flange_depth
+                size = [wid, hei, dep]
+                p3["size"] = size
+                #p3["radius"] = radius + flange_extra/2            
+                #p3["m"] = "#"
+                pos1 = copy.deepcopy(pos)         
+                pos1[2] += -dep
+                p3["pos"] = pos1            
+                oobb_base.append_full(thing,**p3)
+
+
+        #add holes
+        if True:
+            if multi_hole == 1:
+                p3 = copy.deepcopy(kwargs)
+                p3["type"] = "n"
+                p3["shape"] = f"oobb_screw_countersunk"    
+                p3["depth"] = depth
+                p3["radius_name"] = screw_diameter
+                p3["m"] = "#"
+                pos1 = copy.deepcopy(pos)         
+                p3["pos"] = pos1
+                oobb_base.append_full(thing,**p3)
+            if multi_hole == 3:
+                
+                p3 = copy.deepcopy(kwargs)
+                p3["type"] = "n"
+                p3["shape"] = f"oobb_screw_countersunk"    
+                p3["depth"] = depth
+                p3["radius_name"] = screw_diameter
+                p3["m"] = "#"
+                pos1 = copy.deepcopy(pos)         
+                
+                import math          
+                shift = 6
+                pos11 = copy.deepcopy(pos1)
+                angle = 0
+                pos11[0] += math.cos(math.radians(angle))*shift
+                pos11[1] += math.sin(math.radians(angle))*shift
+                pos12 = copy.deepcopy(pos1)
+                angle = 120
+                pos12[0] += math.cos(math.radians(angle))*shift
+                pos12[1] += math.sin(math.radians(angle))*shift
+                pos13 = copy.deepcopy(pos1)
+                angle = 240
+                pos13[0] += math.cos(math.radians(angle))*shift
+                pos13[1] += math.sin(math.radians(angle))*shift
+                
+
+                poss = []
+                poss.append(pos11)
+                poss.append(pos12)
+                poss.append(pos13)
+
+
+                p3["pos"] = poss
+                oobb_base.append_full(thing,**p3)
+
+
+        if prepare_print:
+            #put into a rotation object
+            components_second = copy.deepcopy(thing["components"])
+            return_value_2 = {}
+            return_value_2["type"]  = "rotation"
+            return_value_2["typetype"]  = "p"
+            pos1 = copy.deepcopy(pos)
+            pos1[0] += 50
+            return_value_2["pos"] = pos1
+            return_value_2["rot"] = [180,0,0]
+            return_value_2["objects"] = components_second
+            
+            thing["components"].append(return_value_2)
+
+        
+            #add slice # top
+            p3 = copy.deepcopy(kwargs)
+            p3["type"] = "n"
+            p3["shape"] = f"oobb_slice"
+            #p3["m"] = "#"
+            oobb_base.append_full(thing,**p3)
+
+def get_label_holder(thing, **kwargs):
 
     depth = kwargs.get("thickness", 4)
     radius = kwargs.get("radius", 10)
+    kwargs.pop("radius","")
     prepare_print = kwargs.get("prepare_print", False)
     screw_diameter = kwargs.get("screw_diameter", "m4_screw_wood")
     #
@@ -181,70 +353,82 @@ def get_base(thing, **kwargs):
     #pos = copy.deepcopy(pos)
     #pos[2] += -20
 
-    #add cylinder
-    if flat_length == 0:
+    #add cylinder    
+    if True:
         p3 = copy.deepcopy(kwargs)
         p3["type"] = "p"
         p3["shape"] = f"oobb_cylinder"    
-        p3["depth"] = depth
+        p3["depth"] = 3
         p3["radius"] = radius
         #p3["m"] = "#"
         pos1 = copy.deepcopy(pos)         
+        pos1[2] += -(depth - 3)
         p3["pos"] = pos1
         p3["zz"] = "top"
         oobb_base.append_full(thing,**p3)
-        #add flange if flange extra is set
-        if flange_extra > 0:            
-            p3 = copy.deepcopy(kwargs)
-            p3["type"] = "p"
-            p3["shape"] = f"oobb_cylinder"    
-            p3["depth"] = flange_depth
-            p3["radius"] = radius + flange_extra/2
-            #p3["m"] = "#"
-            pos1 = copy.deepcopy(pos)         
-            p3["pos"] = pos1
-            p3["zz"] = "top"
-            oobb_base.append_full(thing,**p3)
-    else:
+    
+    
+    #add plate
+    if True:
         p3 = copy.deepcopy(kwargs)
         p3["type"] = "p"
-        p3["shape"] = f"rounded_rectangle"    
-        wid = radius*2 + flat_length
-        hei = radius*2
-        dep = depth
-        size = [wid, hei, dep]
-        p3["size"] = size
-        p3["radius"] = radius        
+        p3["shape"] = f"oobb_plate"    
+        p3["width"] = 3
+        hei = 2
+        p3["height"] = hei
+        p3["depth"] = depth
+        p3["include"] = "hole"
         #p3["m"] = "#"
         pos1 = copy.deepcopy(pos)         
-        pos1[2] += -dep
+        pos1[1] += radius + hei/2*15
         p3["pos"] = pos1
         p3["zz"] = "top"
         oobb_base.append_full(thing,**p3)
-        #add flange if flange extra is set
-        if flange_extra > 0:            
-            p3 = copy.deepcopy(kwargs)
-            p3["type"] = "p"
-            p3["shape"] = f"rounded_rectangle"    
-            wid = radius*2 + flat_length + flange_extra
-            hei = radius*2 + flange_extra
-            dep = flange_depth
-            size = [wid, hei, dep]
-            p3["size"] = size
-            #p3["radius"] = radius + flange_extra/2            
-            #p3["m"] = "#"
-            pos1 = copy.deepcopy(pos)         
-            pos1[2] += -dep
-            p3["pos"] = pos1            
-            oobb_base.append_full(thing,**p3)
 
+    #add joiner
+    if True:
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "p"
+        p3["shape"] = f"oobb_plate"    
+        p3["width"] = 2
+        hei = 3
+        p3["height"] = hei
+        p3["depth"] = 3
+        
+        #p3["m"] = "#"
+        pos1 = copy.deepcopy(pos)         
+        pos1[1] += 15/2
+        pos1[2] += -depth + 3
+        p3["pos"] = pos1
+        p3["zz"] = "top"
+        oobb_base.append_full(thing,**p3)
+
+    #add hole and nut cutout
+    if True:
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "n"
+        p3["shape"] = f"oobb_hole_new"    
+        p3["radius_name"] = "m6"
+        p3["m"] = "#"
+        pos1 = copy.deepcopy(pos)         
+        pos1[1] += radius + 15/2 + 15
+        p3["pos"] = pos1        
+        oobb_base.append_full(thing,**p3)
+
+        p4 = copy.deepcopy(p3)
+        p4["shape"] = f"oobb_nut"
+        pos1 = copy.deepcopy(p4["pos"])
+        pos1[2] += -depth
+        p3["zz"] = "bottom"
+        p4["pos"] = pos1
+        oobb_base.append_full(thing,**p4)
 
     #add holes
     if True:
         if multi_hole == 1:
             p3 = copy.deepcopy(kwargs)
             p3["type"] = "n"
-            p3["shape"] = f"oobb_screw_countersunk"    
+            p3["shape"] = f"oobb_hole"    
             p3["depth"] = depth
             p3["radius_name"] = screw_diameter
             p3["m"] = "#"
@@ -256,10 +440,12 @@ def get_base(thing, **kwargs):
             p3 = copy.deepcopy(kwargs)
             p3["type"] = "n"
             p3["shape"] = f"oobb_screw_countersunk"    
-            p3["depth"] = depth
+            p3["depth"] = depth + 50
             p3["radius_name"] = screw_diameter
-            p3["m"] = "#"
-            pos1 = copy.deepcopy(pos)         
+            p3["zz"] = "top"
+            #p3["m"] = "#"
+            pos1 = copy.deepcopy(pos)
+            pos1[2] += -depth + 50 
             
             import math          
             shift = 6
@@ -308,7 +494,7 @@ def get_base(thing, **kwargs):
         p3["shape"] = f"oobb_slice"
         #p3["m"] = "#"
         oobb_base.append_full(thing,**p3)
-    
+
 ###### utilities
 
 
