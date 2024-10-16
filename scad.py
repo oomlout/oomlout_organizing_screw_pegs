@@ -15,7 +15,7 @@ def make_scad(**kwargs):
         #filter = "flange"
 
         kwargs["save_type"] = "none"
-        kwargs["save_type"] = "all"
+        #kwargs["save_type"] = "all"
         
         kwargs["overwrite"] = True
         
@@ -359,7 +359,7 @@ def get_label_holder(thing, **kwargs):
         p3["type"] = "p"
         p3["shape"] = f"oobb_cylinder"    
         p3["depth"] = 3
-        p3["radius"] = radius
+        p3["radius"] = radius + 10
         #p3["m"] = "#"
         pos1 = copy.deepcopy(pos)         
         pos1[2] += -(depth - 3)
@@ -373,7 +373,7 @@ def get_label_holder(thing, **kwargs):
         p3 = copy.deepcopy(kwargs)
         p3["type"] = "p"
         p3["shape"] = f"oobb_plate"    
-        p3["width"] = 3
+        p3["width"] = 1
         hei = 2
         p3["height"] = hei
         p3["depth"] = depth
@@ -385,12 +385,18 @@ def get_label_holder(thing, **kwargs):
         p3["zz"] = "top"
         oobb_base.append_full(thing,**p3)
 
+        #add extra plate to 1.5 it with no holes
+        p4 = copy.deepcopy(p3)
+        p4["width"] = 1.5
+        p4["include"] = ""
+        oobb_base.append_full(thing,**p4)
+
     #add joiner
     if True:
         p3 = copy.deepcopy(kwargs)
         p3["type"] = "p"
         p3["shape"] = f"oobb_plate"    
-        p3["width"] = 2
+        p3["width"] = 1.5
         hei = 3
         p3["height"] = hei
         p3["depth"] = 3
@@ -417,9 +423,10 @@ def get_label_holder(thing, **kwargs):
 
         p4 = copy.deepcopy(p3)
         p4["shape"] = f"oobb_nut"
+        p4["overhang"] = True
         pos1 = copy.deepcopy(p4["pos"])
         pos1[2] += -depth
-        p3["zz"] = "bottom"
+        p4["zz"] = "bottom"
         p4["pos"] = pos1
         oobb_base.append_full(thing,**p4)
 
