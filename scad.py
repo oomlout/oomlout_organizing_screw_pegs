@@ -15,7 +15,7 @@ def make_scad(**kwargs):
         #filter = "flange"
 
         kwargs["save_type"] = "none"
-        #kwargs["save_type"] = "all"
+        kwargs["save_type"] = "all"
         
         kwargs["overwrite"] = True
         
@@ -359,13 +359,23 @@ def get_label_holder(thing, **kwargs):
         p3["type"] = "p"
         p3["shape"] = f"oobb_cylinder"    
         p3["depth"] = 3
-        p3["radius"] = radius + 10
+        p3["radius"] = radius + 5
         #p3["m"] = "#"
         pos1 = copy.deepcopy(pos)         
         pos1[2] += -(depth - 3)
         p3["pos"] = pos1
         p3["zz"] = "top"
         oobb_base.append_full(thing,**p3)
+
+        p4 = copy.deepcopy(p3)
+        p4["type"] = "n"
+        p4["radius"] = radius
+        p4["depth"] = 100
+        pos1 = copy.deepcopy(pos)
+        pos1[2] += -depth + 100 + 3
+        p4["pos"] = pos1
+        #p4["m"] = "#"
+        oobb_base.append_full(thing,**p4)
     
     
     #add plate
@@ -374,16 +384,33 @@ def get_label_holder(thing, **kwargs):
         p3["type"] = "p"
         p3["shape"] = f"oobb_plate"    
         p3["width"] = 1
-        hei = 2
+        hei = 3
         p3["height"] = hei
         p3["depth"] = depth
-        p3["include"] = "hole"
+        #p3["include"] = "hole"
         #p3["m"] = "#"
         pos1 = copy.deepcopy(pos)         
-        pos1[1] += radius + hei/2*15
+        pos1[1] += radius + (hei-2)/2*15
         p3["pos"] = pos1
         p3["zz"] = "top"
         oobb_base.append_full(thing,**p3)
+
+        p4 = copy.deepcopy(p3)
+        p4["type"] = "n"
+        p4["shape"] = f"oobb_holes"
+        p4["holes"] = "single"
+        p4["location"] = []
+        p4["location"].append([1,3])
+        p4["location"].append([1,2])
+        oobb_base.append_full(thing,**p4)
+
+        p5 = copy.deepcopy(p4)
+        p5["radius_name"] = "m3"
+        p5["location"] = []
+        p5["location"].append([1,2.5])
+        #p5["m"] = "#"
+        oobb_base.append_full(thing,**p5)
+
 
         #add extra plate to 1.5 it with no holes
         p4 = copy.deepcopy(p3)
@@ -407,7 +434,7 @@ def get_label_holder(thing, **kwargs):
         pos1[2] += -depth + 3
         p3["pos"] = pos1
         p3["zz"] = "top"
-        oobb_base.append_full(thing,**p3)
+        #oobb_base.append_full(thing,**p3)
 
     #add hole and nut cutout
     if True:
@@ -415,7 +442,7 @@ def get_label_holder(thing, **kwargs):
         p3["type"] = "n"
         p3["shape"] = f"oobb_hole_new"    
         p3["radius_name"] = "m6"
-        p3["m"] = "#"
+        #p3["m"] = "#"
         pos1 = copy.deepcopy(pos)         
         pos1[1] += radius + 15/2 + 15
         p3["pos"] = pos1        
