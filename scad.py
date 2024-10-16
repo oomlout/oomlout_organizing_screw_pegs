@@ -129,7 +129,7 @@ def make_scad(**kwargs):
 
             for diam in diams:
                 for screw_diam in screw_diams:
-                    thickness = 6
+                    thickness = 9
                     diam = diam
                     screw_diameter = screw_diam
                     part = copy.deepcopy(part_default)
