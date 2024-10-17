@@ -11,7 +11,7 @@ def make_scad(**kwargs):
 
     # save_type variables
     if True:
-        filter = "label_holder"
+        filter = ""
         #filter = "flange"
 
         kwargs["save_type"] = "none"
@@ -54,8 +54,8 @@ def make_scad(**kwargs):
 
         
         # standard sphere ones
-        #if False:        
-        if True:
+        if False:        
+        #if True:
             thicknesses = [12,35]
             diams = [20,14]
             flange_extras = [6,20,0]
