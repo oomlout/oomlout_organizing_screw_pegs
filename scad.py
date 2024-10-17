@@ -54,7 +54,7 @@ def make_scad(**kwargs):
 
         
         # standard sphere ones
-        #if False:
+        #if False:        
         if True:
             thicknesses = [12,35]
             diams = [20,14]
@@ -83,17 +83,18 @@ def make_scad(**kwargs):
 
             pegs = []
             
-            peg = {}
-            peg["thickness"] = 30
+            peg = {}            
             peg["diam"] = 20
             peg["flange_extra"] = 15
             peg["flange_depth"] = 6
             peg["screw_diameter"] = "m3_screw_wood"
-            #pegs.append(peg)
+            thicknesses = [15,30,40]
+            
+            for thickness in thicknesses:
+                peg = copy.deepcopy(peg)
+                peg["thickness"] = thickness
+                pegs.append(peg)
 
-            peg = copy.deepcopy(peg)
-            peg["thickness"] = 15
-            #pegs.append(peg)
 
             peg = copy.deepcopy(peg)
             peg["thickness"] = 80
