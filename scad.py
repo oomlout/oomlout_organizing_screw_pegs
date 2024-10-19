@@ -53,29 +53,59 @@ def make_scad(**kwargs):
         #parts.append(part)
 
         
-        # standard sphere ones
+        # standard circle ones
         #if False:        
         if True:
             thicknesses = [12,35]
             diams = [20,14]
             flange_extras = [6,20,0]
             flange_depths = [3]
+            screw_diams = ["m4_screw_wood"]
+
+            options = []
 
             for thickness in thicknesses:
                 for diam in diams:
                     for flange_extra in flange_extras:
                         for flange_depth in flange_depths:
-                            part = copy.deepcopy(part_default)
-                            p3 = copy.deepcopy(kwargs)
+                            for screw_diameter in screw_diams:
+                                option = {}
+                                option["thickness"] = thickness
+                                option["diam"] = diam
+                                option["flange_extra"] = flange_extra
+                                option["flange_depth"] = flange_depth
+                                option["screw_diameter"] = screw_diameter
+                                options.append(option)
+            
+            option = {}
+            option["thickness"] = 12
+            option["diam"] = 5
+            option["flange_extra"] = 5
+            #option["flange_depth"] = 6
+            option["screw_diameter"] = "m3_screw_wood"
+            options.append(option)
+
+            for option in options:
+                thickness = option["thickness"]
+                diam = option["diam"]
+                flange_extra = option["flange_extra"]
+                screw_diameter = option["screw_diameter"]
+                if "flange_depth" in option:
+                    flange_depth = option["flange_depth"]
+                
+                
+                part = copy.deepcopy(part_default)
+                p3 = copy.deepcopy(kwargs)
+                p3["thickness"] = thickness               
+                p3["radius"] = diam/2        
+                p3["flange_extra"] = flange_extra
+                p3["flange_depth"] = flange_depth
+                p3["screw_diameter"] = screw_diameter
+                part["kwargs"] = p3
+                part["name"] = f"base_flange_{diam}_flange_extra_{flange_extra}_flange_depth_{flange_depth}_screw_dameter_{screw_diameter}"        
+                parts.append(part)
+
                             
-                            p3["thickness"] = thickness               
-                            p3["radius"] = diam/2        
-                            p3["flange_extra"] = flange_extra
-                            p3["flange_depth"] = flange_depth
-                            
-                            part["kwargs"] = p3
-                            part["name"] = f"base_flange_{diam}_flange_extra_{flange_extra}_flange_depth_{flange_depth}"        
-                            parts.append(part)
 
         # multi hole ones
         #if False:
