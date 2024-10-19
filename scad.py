@@ -81,7 +81,7 @@ def make_scad(**kwargs):
             option["thickness"] = 12
             option["diam"] = 5
             option["flange_extra"] = 5
-            #option["flange_depth"] = 6
+            option["flange_depth"] = 5
             option["screw_diameter"] = "m3_screw_wood"
             options.append(option)
 
