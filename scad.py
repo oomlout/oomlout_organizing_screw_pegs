@@ -56,10 +56,10 @@ def make_scad(**kwargs):
         # standard circle ones
         #if False:        
         if True:
-            thicknesses = [12,35]
+            thicknesses = [12,15,18,21,24,35]
             diams = [20,14]
-            flange_extras = [6,20,0]
-            flange_depths = [3]
+            flange_extras = [6,12,18,20,0]
+            flange_depths = [3,6]
             screw_diams = ["m4_screw_wood"]
 
             options = []
