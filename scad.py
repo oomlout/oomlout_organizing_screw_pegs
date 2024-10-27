@@ -13,7 +13,7 @@ def make_scad(**kwargs):
     if True:
         filter = ""
         #filter = "flange"
-        filter = "socket"
+        #filter = "socket"
         
 
         kwargs["save_type"] = "none"
@@ -58,7 +58,7 @@ def make_scad(**kwargs):
         # standard circle ones
         #if False:        
         if True:
-            thicknesses = [12,15,18,21,24,35]
+            thicknesses = [12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57,60]
             diams = [20,14]
             flange_extras = [6,12,18,20,0]
             flange_depths = [3,6]
