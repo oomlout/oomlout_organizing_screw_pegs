@@ -1,0 +1,23 @@
+full_rotations:
+- 0
+- 0
+- 0
+full_shift:
+- 0
+- 0
+- 0
+kwargs:
+  extra: label_holder
+  height: 1
+  modes:
+  - 3dpr
+  multi_hole: 3
+  overwrite: true
+  radius: 10.0
+  save_type: all
+  screw_diameter: m4_screw_wood
+  thickness: 9
+  type: oomlout_organizing_screw_peg_label_holder_flange_20__screw_dameter_m4_screw_wood_multi_hole_3
+  width: 1
+name: label_holder_flange_20__screw_dameter_m4_screw_wood_multi_hole_3
+project_name: oomlout_organizing_screw_peg

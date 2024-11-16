@@ -1,6 +1,8 @@
 import copy
 import opsc
 import oobb
+import yaml
+import os
 import oobb_base
 
 def main(**kwargs):
@@ -14,10 +16,12 @@ def make_scad(**kwargs):
         filter = ""
         #filter = "flange"
         #filter = "socket"
-        
+
+        navigation = False
+        navigation = True        
 
         kwargs["save_type"] = "none"
-        kwargs["save_type"] = "all"
+        #kwargs["save_type"] = "all"
         
         kwargs["overwrite"] = True
         
@@ -48,6 +52,8 @@ def make_scad(**kwargs):
         p3 = copy.deepcopy(kwargs)
         thickness = 85
         diam = 15
+        p3["width"] = 1
+        p3["height"] = 1
         p3["thickness"] = thickness               
         p3["radius"] = diam/2        
         part["kwargs"] = p3
@@ -222,7 +228,7 @@ def make_scad(**kwargs):
                     p3["screw_diameter"] = screw_diameter
                     multi_hole = 3
                     p3["multi_hole"] = multi_hole                        
-                    
+                    p3["extra"] ="label_holder"
                     part["kwargs"] = p3
                     part["name"] = f"label_holder_flange_{diam}__screw_dameter_{screw_diameter}_multi_hole_{multi_hole}"        
                     parts.append(part)
@@ -269,6 +275,22 @@ def make_scad(**kwargs):
                 print(f"done {part['name']}")
             else:
                 print(f"skipping {part['name']}")
+
+    #generate navigation
+    if navigation:
+        sort = []
+        sort.append("extra")
+        sort.append("multi_hole")
+        sort.append("radius")
+        sort.append("flange_extra")
+        sort.append("flange_depth")
+        sort.append("thickness")
+        sort.append("screw_diameter")   
+        
+
+
+
+        generate_navigation(sort=sort)
 
 def get_base(thing, **kwargs):
     name = kwargs.get("type", "default")
@@ -752,6 +774,8 @@ def make_scad_generic(part):
 
     get_base(thing, **kwargs)
 
+    folder = f"scad_output/{thing['id']}"
+
     for mode in modes:
         depth = thing.get(
             "depth_mm", thing.get("thickness_mm", 3))
@@ -763,7 +787,53 @@ def make_scad_generic(part):
             start = 1.5 - (layers / 2)*3
         if "bunting" in thing:
             start = 0.5
-        opsc.opsc_make_object(f'scad_output/{thing["id"]}/{mode}.scad', thing["components"], mode=mode, save_type=save_type, overwrite=overwrite, layers=layers, tilediff=tilediff, start=start)    
+        
+        opsc.opsc_make_object(f'{folder}/{mode}.scad', thing["components"], mode=mode, save_type=save_type, overwrite=overwrite, layers=layers, tilediff=tilediff, start=start)    
+    
+    yaml_file = f"{folder}/working.yaml"
+    with open(yaml_file, 'w') as file:
+        yaml.dump(part, file)
+
+def generate_navigation(folder="scad_output", sort=["width", "height", "thickness"]):
+    #crawl though all directories in scad_output and load all the working.yaml files
+    parts = {}
+    for root, dirs, files in os.walk(folder):
+        if 'working.yaml' in files:
+            yaml_file = os.path.join(root, 'working.yaml')
+            with open(yaml_file, 'r') as file:
+                part = yaml.safe_load(file)
+                # Process the loaded YAML content as needed
+                part["folder"] = root
+                part_name = root.replace(f"{folder}","")
+                
+                #remove all slashes
+                part_name = part_name.replace("/","").replace("\\","")
+                parts[part_name] = part
+
+                print(f"Loaded {yaml_file}: {part}")
+
+    pass
+    for part_id in parts:
+        part = parts[part_id]
+        kwarg_copy = copy.deepcopy(part["kwargs"])
+        folder_navigation = "navigation"
+        folder_source = part["folder"]
+        folder_extra = ""
+        for s in sort:
+            ex = kwarg_copy.get(s, "default")
+            folder_extra += f"{s}_{ex}/"
+        folder_destination = f"{folder_navigation}/{folder_extra}"
+        if not os.path.exists(folder_destination):
+            os.makedirs(folder_destination)
+        if os.name == 'nt':
+            #copy a full directory
+            command = f'xcopy "{folder_source}" "{folder_destination}" /E /I /Y'
+            print(command)
+            os.system(command)
+        else:
+            os.system(f"cp {folder_source} {folder_destination}")
+
+    
 
 
 if __name__ == '__main__':
