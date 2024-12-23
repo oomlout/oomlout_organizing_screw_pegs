@@ -1,0 +1,24 @@
+full_rotations:
+- 0
+- 0
+- 0
+full_shift:
+- 0
+- 0
+- 0
+kwargs:
+  extra: socket
+  flange_depth: 6
+  flange_extra: 0
+  height: 3
+  modes:
+  - 3dpr
+  overwrite: true
+  radius: 7.0
+  save_type: all
+  screw_diameter: m4_screw_wood
+  thickness: 6
+  type: oomlout_organizing_screw_peg_socket_flange_14_flange_extra_0
+  width: 3
+name: socket_flange_14_flange_extra_0
+project_name: oomlout_organizing_screw_peg

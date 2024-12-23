@@ -158,6 +158,7 @@ def make_scad(**kwargs):
                 p3["flange_extra"] = flange_extra
                 p3["flange_depth"] = flange_depth
                 p3["screw_diameter"] = screw_diameter
+                p3["extra"] = "socket"
                 p3["width"] = option["width"]
                 p3["height"] = option["height"]
                 part["kwargs"] = p3
@@ -279,6 +280,7 @@ def make_scad(**kwargs):
     #generate navigation
     if navigation:
         sort = []
+        #sort.append("name")
         sort.append("extra")
         sort.append("multi_hole")
         sort.append("radius")
@@ -816,11 +818,14 @@ def generate_navigation(folder="scad_output", sort=["width", "height", "thicknes
     for part_id in parts:
         part = parts[part_id]
         kwarg_copy = copy.deepcopy(part["kwargs"])
-        folder_navigation = "navigation"
+        folder_navigation = "navigation_oobb"
         folder_source = part["folder"]
         folder_extra = ""
         for s in sort:
-            ex = kwarg_copy.get(s, "default")
+            if s == "name":
+                ex = part.get("name", "default")
+            else:
+                ex = kwarg_copy.get(s, "default")
             folder_extra += f"{s}_{ex}/"
         folder_destination = f"{folder_navigation}/{folder_extra}"
         if not os.path.exists(folder_destination):
