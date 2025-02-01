@@ -1,0 +1,23 @@
+full_rotations:
+- 0
+- 0
+- 0
+full_shift:
+- 0
+- 0
+- 0
+kwargs:
+  flange_depth: 3
+  flange_extra: 18
+  height: 1
+  modes:
+  - 3dpr
+  overwrite: false
+  radius: 10.0
+  save_type: all
+  screw_diameter: m4_screw_wood
+  thickness: 9
+  type: oomlout_organizing_screw_peg_base_flange_20_flange_extra_18_flange_depth_3_screw_dameter_m4_screw_wood
+  width: 1
+name: base_flange_20_flange_extra_18_flange_depth_3_screw_dameter_m4_screw_wood
+project_name: oomlout_organizing_screw_peg

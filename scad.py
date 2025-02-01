@@ -24,6 +24,7 @@ def make_scad(**kwargs):
         #kwargs["save_type"] = "all"
         
         kwargs["overwrite"] = True
+        #kwargs["overwrite"] = False
         
         #kwargs["modes"] = ["3dpr", "laser", "true"]
         kwargs["modes"] = ["3dpr"]
@@ -64,7 +65,7 @@ def make_scad(**kwargs):
         # standard circle ones
         #if False:        
         if True:
-            thicknesses = [12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57,60]
+            thicknesses = [3,6,9,12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57,60]
             diams = [20,14]
             flange_extras = [6,12,18,20,0]
             flange_depths = [3,6]
