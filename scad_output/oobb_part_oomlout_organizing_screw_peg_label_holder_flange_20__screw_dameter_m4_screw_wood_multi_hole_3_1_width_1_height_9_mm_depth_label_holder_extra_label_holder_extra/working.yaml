@@ -12,7 +12,7 @@ kwargs:
   modes:
   - 3dpr
   multi_hole: 3
-  overwrite: false
+  overwrite: true
   radius: 10.0
   save_type: all
   screw_diameter: m4_screw_wood
