@@ -1,0 +1,24 @@
+full_rotations:
+- 0
+- 0
+- 0
+full_shift:
+- 0
+- 0
+- 0
+kwargs:
+  flange_depth: 6
+  flange_extra: 15
+  height: 1
+  modes:
+  - 3dpr
+  multi_hole: 3
+  overwrite: true
+  radius: 10.0
+  save_type: none
+  screw_diameter: m6_screw_wood
+  thickness: 130
+  type: oomlout_organizing_screw_peg_base_flange_20_flange_extra_15_flange_depth_6_screw_dameter_m6_screw_wood_multi_hole_3
+  width: 1
+name: base_flange_20_flange_extra_15_flange_depth_6_screw_dameter_m6_screw_wood_multi_hole_3
+project_name: oomlout_organizing_screw_peg

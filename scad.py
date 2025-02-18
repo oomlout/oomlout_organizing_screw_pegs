@@ -86,6 +86,30 @@ def make_scad(**kwargs):
                                 option["screw_diameter"] = screw_diameter
                                 options.append(option)
             
+        #m6 wood screw ones
+        if True:
+            thicknesses = [120,130,140]
+            diams = [20,14]
+            flange_extras = [6,12]
+            flange_depths = [6]
+            screw_diams = ["m6_screw_wood"]
+
+            options = []
+            for thickness in thicknesses:
+                for diam in diams:
+                    for flange_extra in flange_extras:
+                        for flange_depth in flange_depths:
+                            for screw_diameter in screw_diams:
+                                option = {}
+                                option["thickness"] = thickness
+                                option["diam"] = diam
+                                option["flange_extra"] = flange_extra
+                                option["flange_depth"] = flange_depth
+                                option["screw_diameter"] = screw_diameter
+                                options.append(option)
+            
+
+
 
             option = {}
             option["thickness"] = 12
@@ -191,6 +215,11 @@ def make_scad(**kwargs):
             peg["screw_diameter"] = "m5_screw_wood"
             pegs.append(peg)
 
+            peg = copy.deepcopy(peg)
+            peg["thickness"] = 130
+            peg["screw_diameter"] = "m6_screw_wood"                     
+            peg["diam"] = 25
+            pegs.append(peg)
 
 
             for peg in pegs:
@@ -399,7 +428,11 @@ def get_base(thing, **kwargs):
                 pos1 = copy.deepcopy(pos)         
                 
                 import math          
-                shift = 6
+                if radius == 12.5:
+                    shift = 8
+                else:
+                    shift = 6
+                
                 pos11 = copy.deepcopy(pos1)
                 angle = 0
                 pos11[0] += math.cos(math.radians(angle))*shift
