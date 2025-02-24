@@ -21,10 +21,10 @@ def make_scad(**kwargs):
         navigation = True        
 
         kwargs["save_type"] = "none"
-        #kwargs["save_type"] = "all"
+        kwargs["save_type"] = "all"
         
         kwargs["overwrite"] = True
-        #kwargs["overwrite"] = False
+        kwargs["overwrite"] = False
         
         #kwargs["modes"] = ["3dpr", "laser", "true"]
         kwargs["modes"] = ["3dpr"]
@@ -90,7 +90,7 @@ def make_scad(**kwargs):
         if True:
             thicknesses = [120,130,140]
             diams = [20,14]
-            flange_extras = [6,12]
+            flange_extras = [0,6,12]
             flange_depths = [6]
             screw_diams = ["m6_screw_wood"]
 
