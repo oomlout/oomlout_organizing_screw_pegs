@@ -9,6 +9,12 @@ def main(**kwargs):
         import working
         working.main(**kwargs)
     
+#run build oomp
+    if True:
+        import action_build_oomp
+        kwargs2 = copy.deepcopy(kwargs)
+        action_build_oomp.main(**kwargs2)
+
     #run scad
     if True:
         import scad
@@ -17,11 +23,7 @@ def main(**kwargs):
         scad.main(**kwargs2)
     
 
-    #run build oomp
-    if True:
-        import action_build_oomp
-        kwargs2 = copy.deepcopy(kwargs)
-        action_build_oomp.main(**kwargs2)
+    
 
     #run oolc process
     if True:        
