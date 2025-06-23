@@ -28,12 +28,13 @@ kwargs:
   oomp_manufacturer: ''
   oomp_mode: project
   oomp_part_number: ''
-  oomp_run: false
+  oomp_run: true
   oomp_size: oomlout
   oomp_type: github
   overwrite: true
   radius: 10.0
   thickness: 15
+  typ: all
   type: oomlout_organizing_screw_pegs_base_flange_20_flange_extra_6_flange_depth_3_flat_length_10_depth_15
   width: 1
 manufacturer: ''

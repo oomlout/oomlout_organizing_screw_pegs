@@ -27,13 +27,14 @@ kwargs:
   oomp_manufacturer: ''
   oomp_mode: project
   oomp_part_number: ''
-  oomp_run: false
+  oomp_run: true
   oomp_size: oomlout
   oomp_type: github
   overwrite: true
   radius: 10.0
   screw_diameter: m6_screw_wood
   thickness: 130
+  typ: all
   type: oomlout_organizing_screw_pegs_base_flange_20_flange_extra_0_flange_depth_6_screw_dameter_m6_screw_wood
   width: 1
 manufacturer: ''

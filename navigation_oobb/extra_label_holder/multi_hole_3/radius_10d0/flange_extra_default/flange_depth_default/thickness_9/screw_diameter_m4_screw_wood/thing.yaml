@@ -30,7 +30,7 @@ kwargs:
   oomp_run: true
   oomp_size: oomlout
   oomp_type: github
-  overwrite: true
+  overwrite: false
   radius: 10.0
   screw_diameter: m4_screw_wood
   thickness: 9
@@ -40,7 +40,7 @@ kwargs:
 manufacturer: ''
 name: label_holder_flange_20__screw_dameter_m4_screw_wood_multi_hole_3
 part_number: ''
-project_name: C:\gh\oomlout_organizing_screw_pegs
+project_name: C:\od\OneDrive\docs\oomlout_organizing_screw_pegs
 size: oomlout
 thing:
   classification: oobb
@@ -58,7 +58,7 @@ thing:
       r: 15.0
       radius: 15.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
     - depth: 3
       extra: label_holder
@@ -67,8 +67,9 @@ thing:
       inclusion: 3dpr
       pos: *id001
       r: 15.0
+      radius: 15.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
     - depth: 3
       extra: label_holder
@@ -79,7 +80,7 @@ thing:
       r: 15.0
       radius: 15.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
   - - depth: 100
       extra: label_holder
@@ -93,7 +94,7 @@ thing:
       r: 10.0
       radius: 10.0
       shape: cylinder
-      type: negative
+      type: n
       width: 1
     - depth: 100
       extra: label_holder
@@ -102,8 +103,9 @@ thing:
       inclusion: 3dpr
       pos: *id002
       r: 10.0
+      radius: 10.0
       shape: cylinder
-      type: negative
+      type: n
       width: 1
     - depth: 100
       extra: label_holder
@@ -114,7 +116,7 @@ thing:
       r: 10.0
       radius: 10.0
       shape: cylinder
-      type: negative
+      type: n
       width: 1
   - - depth: 9
       extra: label_holder
@@ -128,7 +130,7 @@ thing:
       - 14
       - 44
       - 9
-      type: positive
+      type: p
       width: 1
   - - - depth: 9
         h: 9
@@ -223,7 +225,7 @@ thing:
       - 21.5
       - 44
       - 9
-      type: positive
+      type: p
       width: 1.5
   - - objects:
       - extra: label_holder
@@ -559,6 +561,7 @@ thing:
           inclusion: 3dpr
           pos: *id006
           r: 2.6
+          radius: 2.6
           shape: cylinder
           type: positive
           width: 1
@@ -608,6 +611,7 @@ thing:
           inclusion: 3dpr
           pos: *id007
           r: 2.875
+          radius: 2.875
           shape: cylinder
           type: positive
           width: 1
@@ -657,6 +661,7 @@ thing:
           inclusion: 3dpr
           pos: *id008
           r: 2.6
+          radius: 2.6
           shape: cylinder
           type: positive
           width: 1
@@ -717,6 +722,7 @@ thing:
           inclusion: 3dpr
           pos: *id009
           r: 2.6
+          radius: 2.6
           shape: cylinder
           type: positive
           width: 1
@@ -766,6 +772,7 @@ thing:
           inclusion: 3dpr
           pos: *id010
           r: 2.875
+          radius: 2.875
           shape: cylinder
           type: positive
           width: 1
@@ -815,6 +822,7 @@ thing:
           inclusion: 3dpr
           pos: *id011
           r: 2.6
+          radius: 2.6
           shape: cylinder
           type: positive
           width: 1
@@ -875,6 +883,7 @@ thing:
           inclusion: 3dpr
           pos: *id012
           r: 2.6
+          radius: 2.6
           shape: cylinder
           type: positive
           width: 1
@@ -924,6 +933,7 @@ thing:
           inclusion: 3dpr
           pos: *id013
           r: 2.875
+          radius: 2.875
           shape: cylinder
           type: positive
           width: 1
@@ -973,6 +983,7 @@ thing:
           inclusion: 3dpr
           pos: *id014
           r: 2.6
+          radius: 2.6
           shape: cylinder
           type: positive
           width: 1
@@ -1009,7 +1020,7 @@ thing:
       r: 10.0
       radius: 10.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
     - depth: 9
       extra: label_holder
@@ -1018,8 +1029,9 @@ thing:
       inclusion: 3dpr
       pos: *id015
       r: 10.0
+      radius: 10.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
     - depth: 9
       extra: label_holder
@@ -1030,7 +1042,7 @@ thing:
       r: 10.0
       radius: 10.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
   - - objects:
       - - depth: 9
@@ -1072,6 +1084,7 @@ thing:
           m: '#'
           pos: *id016
           r: 2.6
+          radius: 2.6
           shape: cylinder
           type: positive
           width: 1
@@ -1097,9 +1110,9 @@ thing:
           - 0
           - 0
           - -3.9
-          r: 10.0
           r1: 2.875
           r2: 5.4
+          radius: 10.0
           shape: cylinder
           type: positive
           width: 1
@@ -1126,6 +1139,7 @@ thing:
           m: '#'
           pos: *id017
           r: 2.875
+          radius: 2.875
           shape: cylinder
           type: positive
           width: 1
@@ -1180,6 +1194,7 @@ thing:
           m: '#'
           pos: *id018
           r: 2.6
+          radius: 2.6
           shape: cylinder
           type: positive
           width: 1
@@ -1245,6 +1260,7 @@ thing:
           m: '#'
           pos: *id019
           r: 2.6
+          radius: 2.6
           shape: cylinder
           type: positive
           width: 1
@@ -1270,9 +1286,9 @@ thing:
           - 0
           - 0
           - -3.9
-          r: 10.0
           r1: 2.875
           r2: 5.4
+          radius: 10.0
           shape: cylinder
           type: positive
           width: 1
@@ -1299,6 +1315,7 @@ thing:
           m: '#'
           pos: *id020
           r: 2.875
+          radius: 2.875
           shape: cylinder
           type: positive
           width: 1
@@ -1353,6 +1370,7 @@ thing:
           m: '#'
           pos: *id021
           r: 2.6
+          radius: 2.6
           shape: cylinder
           type: positive
           width: 1
@@ -1418,6 +1436,7 @@ thing:
           m: '#'
           pos: *id022
           r: 2.6
+          radius: 2.6
           shape: cylinder
           type: positive
           width: 1
@@ -1443,9 +1462,9 @@ thing:
           - 0
           - 0
           - -3.9
-          r: 10.0
           r1: 2.875
           r2: 5.4
+          radius: 10.0
           shape: cylinder
           type: positive
           width: 1
@@ -1472,6 +1491,7 @@ thing:
           m: '#'
           pos: *id023
           r: 2.875
+          radius: 2.875
           shape: cylinder
           type: positive
           width: 1
@@ -1526,6 +1546,7 @@ thing:
           m: '#'
           pos: *id024
           r: 2.6
+          radius: 2.6
           shape: cylinder
           type: positive
           width: 1
@@ -1570,7 +1591,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - 0
     - 0
@@ -1602,7 +1623,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - 0
     - 0
@@ -1634,7 +1655,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - 0
     - 17.5
@@ -1671,7 +1692,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - 0
     - 17.5
@@ -1706,7 +1727,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - 0
     - 17.5
@@ -1739,7 +1760,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - 0
     - 17.5
@@ -1769,7 +1790,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - 0
     - 32.5
@@ -1800,7 +1821,7 @@ thing:
     oomp_size: oomlout
     oomp_type: github
     overhang: true
-    overwrite: true
+    overwrite: false
     pos:
     - 0
     - 32.5
@@ -1832,7 +1853,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - 6.0
     - 0.0
@@ -1864,7 +1885,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - -2.9999999999999987
     - 5.196152422706632
@@ -1896,7 +1917,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - -3.0000000000000027
     - -5.196152422706631
@@ -1928,7 +1949,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - 0
     - 0
@@ -1961,7 +1982,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - 6.0
     - 0.0
@@ -1994,7 +2015,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - -2.9999999999999987
     - 5.196152422706632
@@ -2027,7 +2048,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - -3.0000000000000027
     - -5.196152422706631
@@ -2042,21 +2063,21 @@ thing:
     type: n
     width: 1
   components_string:
-  - oobb_cylinder_shape_p_type_3_depth_0_0_-6_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra_15.0_radius_top_zz
-  - oobb_cylinder_shape_n_type_100_depth_0_0_94_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra_10.0_radius_top_zz
-  - oobb_plate_shape_p_type_9_depth_0_17.5_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_3_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra_top_zz
-  - oobb_holes_shape_n_type_9_depth_0_17.5_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_3_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra_top_zz_single_holes_1_3_1_2_location
-  - oobb_holes_shape_n_type_m3_radius_name_9_depth_0_17.5_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_3_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra_top_zz_single_holes_1_2.5_location
-  - oobb_plate_shape_p_type_9_depth_0_17.5_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1.5_width_3_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra_top_zz
-  - oobb_hole_new_shape_n_type_m6_radius_name_0_32.5_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra
-  - oobb_nut_shape_n_type_m6_radius_name_0_32.5_-9_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra_true_overhang_bottom_zz
-  - oobb_screw_countersunk_shape_n_type_m4_screw_wood_radius_name_59_depth_6.0_0.0_41_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra_top_zz
-  - oobb_screw_countersunk_shape_n_type_m4_screw_wood_radius_name_59_depth_-2.9999999999999987_5.196152422706632_41_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra_top_zz
-  - oobb_screw_countersunk_shape_n_type_m4_screw_wood_radius_name_59_depth_-3.0000000000000027_-5.196152422706631_41_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra_top_zz
-  - oobb_cylinder_shape_p_type_9_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra_top_zz
-  - oobb_screw_countersunk_shape_n_type_m4_screw_wood_radius_name_9_depth_6.0_0.0_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra
-  - oobb_screw_countersunk_shape_n_type_m4_screw_wood_radius_name_9_depth_-2.9999999999999987_5.196152422706632_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra
-  - oobb_screw_countersunk_shape_n_type_m4_screw_wood_radius_name_9_depth_-3.0000000000000027_-5.196152422706631_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra
+  - oobb_cylinder_shape_p_type_3_depth_0_0_-6_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra_15.0_radius_top_zz
+  - oobb_cylinder_shape_n_type_100_depth_0_0_94_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra_10.0_radius_top_zz
+  - oobb_plate_shape_p_type_9_depth_0_17.5_0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_3_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra_top_zz
+  - oobb_holes_shape_n_type_9_depth_0_17.5_0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_3_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra_top_zz_single_holes_1_3_1_2_location
+  - oobb_holes_shape_n_type_m3_radius_name_9_depth_0_17.5_0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_3_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra_top_zz_single_holes_1_2.5_location
+  - oobb_plate_shape_p_type_9_depth_0_17.5_0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1.5_width_3_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra_top_zz
+  - oobb_hole_new_shape_n_type_m6_radius_name_0_32.5_0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra
+  - oobb_nut_shape_n_type_m6_radius_name_0_32.5_-9_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra_true_overhang_bottom_zz
+  - oobb_screw_countersunk_shape_n_type_m4_screw_wood_radius_name_59_depth_6.0_0.0_41_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra_top_zz
+  - oobb_screw_countersunk_shape_n_type_m4_screw_wood_radius_name_59_depth_-2.9999999999999987_5.196152422706632_41_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra_top_zz
+  - oobb_screw_countersunk_shape_n_type_m4_screw_wood_radius_name_59_depth_-3.0000000000000027_-5.196152422706631_41_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra_top_zz
+  - oobb_cylinder_shape_p_type_9_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra_top_zz
+  - oobb_screw_countersunk_shape_n_type_m4_screw_wood_radius_name_9_depth_6.0_0.0_0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra
+  - oobb_screw_countersunk_shape_n_type_m4_screw_wood_radius_name_9_depth_-2.9999999999999987_5.196152422706632_0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra
+  - oobb_screw_countersunk_shape_n_type_m4_screw_wood_radius_name_9_depth_-3.0000000000000027_-5.196152422706631_0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_m4_screw_wood_screw_diameter_3_multi_hole_label_holder_extra
   description: oomlout organizing screw pegs label holder flange 20  screw dameter
     m4 screw wood multi hole 3 1x1x9
   description_extra: label_holder_extra

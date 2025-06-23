@@ -30,7 +30,7 @@ kwargs:
   oomp_run: true
   oomp_size: oomlout
   oomp_type: github
-  overwrite: true
+  overwrite: false
   radius: 10.0
   screw_diameter: m3_5_screw_wood
   thickness: 15
@@ -40,6 +40,6 @@ kwargs:
 manufacturer: ''
 name: base_flange_20_flange_extra_6_flange_depth_6_screw_dameter_m3_5_screw_wood
 part_number: ''
-project_name: C:\gh\oomlout_organizing_screw_pegs
+project_name: C:\od\OneDrive\docs\oomlout_organizing_screw_pegs
 size: oomlout
 type: github

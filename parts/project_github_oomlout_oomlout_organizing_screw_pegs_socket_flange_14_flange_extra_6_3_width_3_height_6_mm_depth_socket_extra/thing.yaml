@@ -31,7 +31,7 @@ kwargs:
   oomp_run: true
   oomp_size: oomlout
   oomp_type: github
-  overwrite: true
+  overwrite: false
   radius: 7.0
   screw_diameter: m6_screw_wood
   thickness: 6
@@ -41,7 +41,7 @@ kwargs:
 manufacturer: ''
 name: socket_flange_14_flange_extra_6
 part_number: ''
-project_name: C:\gh\oomlout_organizing_screw_pegs
+project_name: C:\od\OneDrive\docs\oomlout_organizing_screw_pegs
 size: oomlout
 thing:
   classification: oobb
@@ -59,7 +59,7 @@ thing:
       - 44
       - 44
       - 6
-      type: positive
+      type: p
       width: 3
   - - depth: 6
       extra: socket
@@ -73,509 +73,491 @@ thing:
       - 44
       - 44
       - 6
-      type: positive
+      type: p
       width: 3
-  - - - h: 200
+  - - - depth: 6
+        h: 6
         inclusion: laser
         m: ''
         pos: &id001
         - 15.0
         - -15.0
-        - -100.0
+        - 0
         r: 3.0
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 3dpr
         m: ''
         pos: *id001
         r: 3.25
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 'true'
         m: ''
         pos: *id001
         r: 3.0
         shape: cylinder
         type: negative
-    - - h: 200
+    - - depth: 6
+        h: 6
         inclusion: laser
         m: ''
         pos: &id002
         - 15.0
         - 0.0
-        - -100.0
+        - 0
         r: 3.0
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 3dpr
         m: ''
         pos: *id002
         r: 3.25
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 'true'
         m: ''
         pos: *id002
         r: 3.0
         shape: cylinder
         type: negative
-    - - h: 200
+    - - depth: 6
+        h: 6
         inclusion: laser
         m: ''
         pos: &id003
         - 15.0
         - 15.0
-        - -100.0
+        - 0
         r: 3.0
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 3dpr
         m: ''
         pos: *id003
         r: 3.25
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 'true'
         m: ''
         pos: *id003
         r: 3.0
         shape: cylinder
         type: negative
-    - - h: 200
+    - - depth: 6
+        h: 6
         inclusion: laser
         m: ''
         pos: &id004
         - 15.0
         - -15.0
-        - -100.0
-        r: 3.0
+        - 0
+        r: 1.5
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 3dpr
         m: ''
         pos: *id004
-        r: 3.25
+        r: 1.8
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 'true'
         m: ''
         pos: *id004
-        r: 3.0
+        r: 1.5
         shape: cylinder
         type: negative
-    - - h: 200
+    - - depth: 6
+        h: 6
         inclusion: laser
         m: ''
         pos: &id005
         - 15.0
-        - 0.0
-        - -100.0
-        r: 3.0
+        - -7.5
+        - 0
+        r: 1.5
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 3dpr
         m: ''
         pos: *id005
-        r: 3.25
+        r: 1.8
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 'true'
         m: ''
         pos: *id005
-        r: 3.0
+        r: 1.5
         shape: cylinder
         type: negative
-    - - h: 200
+    - - depth: 6
+        h: 6
         inclusion: laser
         m: ''
         pos: &id006
         - 15.0
-        - 15.0
-        - -100.0
-        r: 3.0
+        - 0.0
+        - 0
+        r: 1.5
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 3dpr
         m: ''
         pos: *id006
-        r: 3.25
+        r: 1.8
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 'true'
         m: ''
         pos: *id006
-        r: 3.0
+        r: 1.5
         shape: cylinder
         type: negative
-    - - h: 200
+    - - depth: 6
+        h: 6
         inclusion: laser
         m: ''
         pos: &id007
         - 15.0
-        - -15.0
-        - -100.0
+        - 7.5
+        - 0
         r: 1.5
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 3dpr
         m: ''
         pos: *id007
         r: 1.8
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 'true'
         m: ''
         pos: *id007
         r: 1.5
         shape: cylinder
         type: negative
-    - - h: 200
+    - - depth: 6
+        h: 6
         inclusion: laser
         m: ''
         pos: &id008
         - 15.0
-        - -7.5
-        - -100.0
+        - 15.0
+        - 0
         r: 1.5
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 3dpr
         m: ''
         pos: *id008
         r: 1.8
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 'true'
         m: ''
         pos: *id008
         r: 1.5
         shape: cylinder
         type: negative
-    - - h: 200
+    - - depth: 6
+        h: 6
         inclusion: laser
         m: ''
         pos: &id009
         - 15.0
-        - 0.0
-        - -100.0
+        - -15.0
+        - 0
         r: 1.5
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 3dpr
         m: ''
         pos: *id009
         r: 1.8
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 'true'
         m: ''
         pos: *id009
         r: 1.5
         shape: cylinder
         type: negative
-    - - h: 200
+    - - depth: 6
+        h: 6
         inclusion: laser
         m: ''
         pos: &id010
         - 15.0
-        - 7.5
-        - -100.0
+        - -7.5
+        - 0
         r: 1.5
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 3dpr
         m: ''
         pos: *id010
         r: 1.8
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 'true'
         m: ''
         pos: *id010
         r: 1.5
         shape: cylinder
         type: negative
-    - - h: 200
+    - - depth: 6
+        h: 6
         inclusion: laser
         m: ''
         pos: &id011
         - 15.0
-        - 15.0
-        - -100.0
+        - 0.0
+        - 0
         r: 1.5
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 3dpr
         m: ''
         pos: *id011
         r: 1.8
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 'true'
         m: ''
         pos: *id011
         r: 1.5
         shape: cylinder
         type: negative
-    - - h: 200
+    - - depth: 6
+        h: 6
         inclusion: laser
         m: ''
         pos: &id012
         - 15.0
-        - -15.0
-        - -100.0
+        - 7.5
+        - 0
         r: 1.5
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 3dpr
         m: ''
         pos: *id012
         r: 1.8
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 'true'
         m: ''
         pos: *id012
         r: 1.5
         shape: cylinder
         type: negative
-    - - h: 200
+    - - depth: 6
+        h: 6
         inclusion: laser
         m: ''
         pos: &id013
         - 15.0
-        - -7.5
-        - -100.0
+        - 15.0
+        - 0
         r: 1.5
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 3dpr
         m: ''
         pos: *id013
         r: 1.8
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 'true'
         m: ''
         pos: *id013
         r: 1.5
         shape: cylinder
         type: negative
-    - - h: 200
+    - - depth: 6
+        h: 6
         inclusion: laser
         m: ''
         pos: &id014
         - 15.0
-        - 0.0
-        - -100.0
+        - -15.0
+        - 0
         r: 1.5
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 3dpr
         m: ''
         pos: *id014
         r: 1.8
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 'true'
         m: ''
         pos: *id014
         r: 1.5
         shape: cylinder
         type: negative
-    - - h: 200
+    - - depth: 6
+        h: 6
         inclusion: laser
         m: ''
         pos: &id015
         - 15.0
-        - 7.5
-        - -100.0
+        - -7.5
+        - 0
         r: 1.5
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 3dpr
         m: ''
         pos: *id015
         r: 1.8
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 'true'
         m: ''
         pos: *id015
         r: 1.5
         shape: cylinder
         type: negative
-    - - h: 200
+    - - depth: 6
+        h: 6
         inclusion: laser
         m: ''
         pos: &id016
         - 15.0
-        - 15.0
-        - -100.0
+        - 0.0
+        - 0
         r: 1.5
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 3dpr
         m: ''
         pos: *id016
         r: 1.8
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 'true'
         m: ''
         pos: *id016
         r: 1.5
         shape: cylinder
         type: negative
-    - - h: 200
+    - - depth: 6
+        h: 6
         inclusion: laser
         m: ''
         pos: &id017
         - 15.0
-        - -15.0
-        - -100.0
+        - 7.5
+        - 0
         r: 1.5
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 3dpr
         m: ''
         pos: *id017
         r: 1.8
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 'true'
         m: ''
         pos: *id017
         r: 1.5
         shape: cylinder
         type: negative
-    - - h: 200
+    - - depth: 6
+        h: 6
         inclusion: laser
         m: ''
         pos: &id018
         - 15.0
-        - -7.5
-        - -100.0
+        - 15.0
+        - 0
         r: 1.5
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 3dpr
         m: ''
         pos: *id018
         r: 1.8
         shape: cylinder
         type: negative
-      - h: 200
+      - depth: 6
+        h: 6
         inclusion: 'true'
         m: ''
         pos: *id018
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos: &id019
-        - 15.0
-        - 0.0
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos: *id019
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos: *id019
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos: &id020
-        - 15.0
-        - 7.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos: *id020
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos: *id020
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos: &id021
-        - 15.0
-        - 15.0
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos: *id021
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos: *id021
         r: 1.5
         shape: cylinder
         type: negative
@@ -585,48 +567,49 @@ thing:
       - -11.5
       - 0
       - 0
-      r: 7.5
+      radius: 7.5
       shape: rounded_rectangle
       size:
       - 22.5
       - 15.0
       - 6
-      type: negative
+      type: n
       width: 3
   - - depth: 6
       extra: socket
       h: 6
       height: 3
       inclusion: laser
-      pos: &id022
+      pos: &id019
       - -4.0
       - 0
       - 0.0
       r: 10.5
       radius: 10.5
       shape: cylinder
-      type: negative
+      type: n
       width: 3
     - depth: 6
       extra: socket
       h: 6
       height: 3
       inclusion: 3dpr
-      pos: *id022
+      pos: *id019
       r: 10.5
+      radius: 10.5
       shape: cylinder
-      type: negative
+      type: n
       width: 3
     - depth: 6
       extra: socket
       h: 6
       height: 3
       inclusion: 'true'
-      pos: *id022
+      pos: *id019
       r: 10.5
       radius: 10.5
       shape: cylinder
-      type: negative
+      type: n
       width: 3
   components_objects:
   - depth: 6
@@ -648,7 +631,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - 0
     - 0
@@ -679,7 +662,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - -7.0
     - 0
@@ -712,7 +695,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - 0
     - 0
@@ -742,7 +725,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - -11.5
     - 0
@@ -778,7 +761,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - -4.0
     - 0
@@ -792,11 +775,11 @@ thing:
     type: n
     width: 3
   components_string:
-  - oobb_plate_shape_p_type_6_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_6_flange_extra_6_flange_depth_m6_screw_wood_screw_diameter_socket_extra
-  - oobb_plate_shape_p_type_6_depth_-7.0_0_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_6_flange_extra_6_flange_depth_m6_screw_wood_screw_diameter_socket_extra
-  - oobb_holes_shape_p_type_6_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_6_flange_extra_6_flange_depth_m6_screw_wood_screw_diameter_socket_extra_true_both_holes_bottom_holes
-  - rounded_rectangle_shape_n_type_-11.5_0_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_7.5_radius_6_flange_extra_6_flange_depth_m6_screw_wood_screw_diameter_socket_extra_22.5_15.0_6_size
-  - oobb_cylinder_shape_n_type_6_depth_-4.0_0_3.0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.5_radius_6_flange_extra_6_flange_depth_m6_screw_wood_screw_diameter_socket_extra
+  - oobb_plate_shape_p_type_6_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_6_flange_extra_6_flange_depth_m6_screw_wood_screw_diameter_socket_extra
+  - oobb_plate_shape_p_type_6_depth_-7.0_0_0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_6_flange_extra_6_flange_depth_m6_screw_wood_screw_diameter_socket_extra
+  - oobb_holes_shape_p_type_6_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_6_flange_extra_6_flange_depth_m6_screw_wood_screw_diameter_socket_extra_true_both_holes_bottom_holes
+  - rounded_rectangle_shape_n_type_-11.5_0_0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_7.5_radius_6_flange_extra_6_flange_depth_m6_screw_wood_screw_diameter_socket_extra_22.5_15.0_6_size
+  - oobb_cylinder_shape_n_type_6_depth_-4.0_0_3.0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.5_radius_6_flange_extra_6_flange_depth_m6_screw_wood_screw_diameter_socket_extra
   description: oomlout organizing screw pegs socket flange 14 flange extra 6 3x3x6
   description_extra: socket_extra
   description_main: 3_width_3_height_6_mm_depth
