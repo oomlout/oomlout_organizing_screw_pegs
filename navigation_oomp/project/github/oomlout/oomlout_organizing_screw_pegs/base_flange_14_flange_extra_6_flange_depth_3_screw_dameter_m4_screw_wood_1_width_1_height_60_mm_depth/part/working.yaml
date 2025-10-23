@@ -30,7 +30,7 @@ kwargs:
   oomp_run: true
   oomp_size: oomlout
   oomp_type: github
-  overwrite: false
+  overwrite: true
   radius: 7.0
   screw_diameter: m4_screw_wood
   thickness: 60

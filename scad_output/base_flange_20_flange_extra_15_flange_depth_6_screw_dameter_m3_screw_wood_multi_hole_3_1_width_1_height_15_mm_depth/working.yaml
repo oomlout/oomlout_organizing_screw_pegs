@@ -20,7 +20,7 @@ kwargs:
   modes:
   - 3dpr
   multi_hole: 3
-  navigation: true
+  navigation: false
   oomp_classification: project
   oomp_color: oomlout_organizing_screw_pegs
   oomp_description_extra: ''
@@ -28,19 +28,18 @@ kwargs:
   oomp_manufacturer: ''
   oomp_mode: project
   oomp_part_number: ''
-  oomp_run: true
+  oomp_run: false
   oomp_size: oomlout
   oomp_type: github
   overwrite: true
   radius: 10.0
   screw_diameter: m3_screw_wood
   thickness: 15
-  typ: all
   type: oomlout_organizing_screw_pegs_base_flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3
   width: 1
 manufacturer: ''
 name: base_flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3
 part_number: ''
-project_name: C:\gh\oomlout_organizing_screw_pegs
+project_name: C:\od\OneDrive\docs\oomlout_organizing_screw_pegs
 size: oomlout
 type: github

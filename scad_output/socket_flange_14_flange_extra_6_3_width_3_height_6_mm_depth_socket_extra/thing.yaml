@@ -15,7 +15,7 @@ id_oobb: oobb_part_oomlout_organizing_screw_pegs_socket_flange_14_flange_extra_6
 kwargs:
   extra: socket
   filter: ''
-  flange_depth: 6
+  flange_depth: 3
   flange_extra: 6
   height: 3
   modes:
@@ -31,9 +31,9 @@ kwargs:
   oomp_run: true
   oomp_size: oomlout
   oomp_type: github
-  overwrite: false
+  overwrite: true
   radius: 7.0
-  screw_diameter: m6_screw_wood
+  screw_diameter: m4_screw_wood
   thickness: 6
   typ: all
   type: oomlout_organizing_screw_pegs_socket_flange_14_flange_extra_6
@@ -59,7 +59,7 @@ thing:
       - 44
       - 44
       - 6
-      type: p
+      type: positive
       width: 3
   - - depth: 6
       extra: socket
@@ -73,7 +73,7 @@ thing:
       - 44
       - 44
       - 6
-      type: p
+      type: positive
       width: 3
   - - - depth: 6
         h: 6
@@ -567,13 +567,13 @@ thing:
       - -11.5
       - 0
       - 0
-      radius: 7.5
+      r: 7.5
       shape: rounded_rectangle
       size:
       - 22.5
       - 15.0
       - 6
-      type: n
+      type: negative
       width: 3
   - - depth: 6
       extra: socket
@@ -587,7 +587,7 @@ thing:
       r: 10.5
       radius: 10.5
       shape: cylinder
-      type: n
+      type: negative
       width: 3
     - depth: 6
       extra: socket
@@ -596,9 +596,8 @@ thing:
       inclusion: 3dpr
       pos: *id019
       r: 10.5
-      radius: 10.5
       shape: cylinder
-      type: n
+      type: negative
       width: 3
     - depth: 6
       extra: socket
@@ -609,13 +608,13 @@ thing:
       r: 10.5
       radius: 10.5
       shape: cylinder
-      type: n
+      type: negative
       width: 3
   components_objects:
   - depth: 6
     extra: socket
     filter: ''
-    flange_depth: 6
+    flange_depth: 3
     flange_extra: 6
     height: 3
     modes:
@@ -631,13 +630,13 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: false
+    overwrite: true
     pos:
     - 0
     - 0
     - 0
     save_type: all
-    screw_diameter: m6_screw_wood
+    screw_diameter: m4_screw_wood
     shape: oobb_plate
     thickness: 6
     typ: all
@@ -646,7 +645,7 @@ thing:
   - depth: 6
     extra: socket
     filter: ''
-    flange_depth: 6
+    flange_depth: 3
     flange_extra: 6
     height: 3
     modes:
@@ -662,13 +661,13 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: false
+    overwrite: true
     pos:
     - -7.0
     - 0
     - 0
     save_type: all
-    screw_diameter: m6_screw_wood
+    screw_diameter: m4_screw_wood
     shape: oobb_plate
     thickness: 6
     typ: all
@@ -678,7 +677,7 @@ thing:
     depth: 6
     extra: socket
     filter: ''
-    flange_depth: 6
+    flange_depth: 3
     flange_extra: 6
     height: 3
     holes: bottom
@@ -695,13 +694,13 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: false
+    overwrite: true
     pos:
     - 0
     - 0
     - 0
     save_type: all
-    screw_diameter: m6_screw_wood
+    screw_diameter: m4_screw_wood
     shape: oobb_holes
     thickness: 6
     typ: all
@@ -709,7 +708,7 @@ thing:
     width: 3
   - extra: socket
     filter: ''
-    flange_depth: 6
+    flange_depth: 3
     flange_extra: 6
     height: 3
     modes:
@@ -725,14 +724,14 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: false
+    overwrite: true
     pos:
     - -11.5
     - 0
     - 0
     radius: 7.5
     save_type: all
-    screw_diameter: m6_screw_wood
+    screw_diameter: m4_screw_wood
     shape: rounded_rectangle
     size:
     - 22.5
@@ -745,7 +744,7 @@ thing:
   - depth: 6
     extra: socket
     filter: ''
-    flange_depth: 6
+    flange_depth: 3
     flange_extra: 6
     height: 3
     modes:
@@ -761,25 +760,25 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: false
+    overwrite: true
     pos:
     - -4.0
     - 0
     - 3.0
     radius: 10.5
     save_type: all
-    screw_diameter: m6_screw_wood
+    screw_diameter: m4_screw_wood
     shape: oobb_cylinder
     thickness: 6
     typ: all
     type: n
     width: 3
   components_string:
-  - oobb_plate_shape_p_type_6_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_6_flange_extra_6_flange_depth_m6_screw_wood_screw_diameter_socket_extra
-  - oobb_plate_shape_p_type_6_depth_-7.0_0_0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_6_flange_extra_6_flange_depth_m6_screw_wood_screw_diameter_socket_extra
-  - oobb_holes_shape_p_type_6_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_6_flange_extra_6_flange_depth_m6_screw_wood_screw_diameter_socket_extra_true_both_holes_bottom_holes
-  - rounded_rectangle_shape_n_type_-11.5_0_0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_7.5_radius_6_flange_extra_6_flange_depth_m6_screw_wood_screw_diameter_socket_extra_22.5_15.0_6_size
-  - oobb_cylinder_shape_n_type_6_depth_-4.0_0_3.0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.5_radius_6_flange_extra_6_flange_depth_m6_screw_wood_screw_diameter_socket_extra
+  - oobb_plate_shape_p_type_6_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_6_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_socket_extra
+  - oobb_plate_shape_p_type_6_depth_-7.0_0_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_6_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_socket_extra
+  - oobb_holes_shape_p_type_6_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_6_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_socket_extra_true_both_holes_bottom_holes
+  - rounded_rectangle_shape_n_type_-11.5_0_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_7.5_radius_6_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_socket_extra_22.5_15.0_6_size
+  - oobb_cylinder_shape_n_type_6_depth_-4.0_0_3.0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.5_radius_6_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_socket_extra
   description: oomlout organizing screw pegs socket flange 14 flange extra 6 3x3x6
   description_extra: socket_extra
   description_main: 3_width_3_height_6_mm_depth

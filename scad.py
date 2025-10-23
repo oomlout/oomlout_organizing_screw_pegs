@@ -23,13 +23,15 @@ def make_scad(**kwargs):
     oomp_mode = "project"
     #oomp_mode = "oobb"
 
+    test = False
+    #test = True
+
     if typ == "all":
-        #don't overwrite
-        filter = ""; save_type = "all"; navigation = True; overwrite = False; modes = ["3dpr"]; oomp_run = True
-        #filter = ""; save_type = "all"; navigation = True; overwrite = True; modes = ["3dpr"]; oomp_run = True
+        filter = ""; save_type = "all"; navigation = True; overwrite = True; modes = ["3dpr"]; oomp_run = True; test = False
+        #default
+        #filter = ""; save_type = "all"; navigation = True; overwrite = True; modes = ["3dpr"]; oomp_run = True; test = False
     elif typ == "fast":
-        #make navigation
-        filter = ""; save_type = "none"; navigation = True; overwrite = True; modes = ["3dpr"]; oomp_run = False
+        filter = ""; save_type = "none"; navigation = False; overwrite = True; modes = ["3dpr"]; oomp_run = False
         #default
         #filter = ""; save_type = "none"; navigation = False; overwrite = True; modes = ["3dpr"]; oomp_run = False
     elif typ == "manual":
@@ -116,16 +118,18 @@ def make_scad(**kwargs):
         part_default["full_shift"] = [0, 0, 0]
         part_default["full_rotations"] = [0, 0, 0]
         
+        options = []
+
         # standard circle ones
-        #if False:        
-        if True:
+        if True:        
+        #if True:
             thicknesses = [3,6,9,12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57,60,70,80,90,100]
             diams = [20,14]
             flange_extras = [6,12,18,20,0]
             flange_depths = [0,3,6]
             screw_diams = ["m4_screw_wood", "m3_screw_wood", "m3_5_screw_wood", "m5_screw_wood"]
 
-            options = []
+            
 
             for thickness in thicknesses:
                 for diam in diams:
@@ -141,25 +145,26 @@ def make_scad(**kwargs):
                                 options.append(option)
             #m6 wood screw ones
         if True:
-            thicknesses = [120,130,140]
-            diams = [20,14]
-            flange_extras = [0,6,12]
-            flange_depths = [0,3,6]
-            screw_diams = ["m6_screw_wood"]
+            if True:
+                thicknesses = [120,130,140]
+                diams = [20,14]
+                flange_extras = [0,6,12]
+                flange_depths = [0,3,6]
+                screw_diams = ["m6_screw_wood"]
 
-            #options = []
-            for thickness in thicknesses:
-                for diam in diams:
-                    for flange_extra in flange_extras:
-                        for flange_depth in flange_depths:
-                            for screw_diameter in screw_diams:
-                                option = {}
-                                option["thickness"] = thickness
-                                option["diam"] = diam
-                                option["flange_extra"] = flange_extra
-                                option["flange_depth"] = flange_depth
-                                option["screw_diameter"] = screw_diameter
-                                options.append(option)
+                options = []
+                for thickness in thicknesses:
+                    for diam in diams:
+                        for flange_extra in flange_extras:
+                            for flange_depth in flange_depths:
+                                for screw_diameter in screw_diams:
+                                    option = {}
+                                    option["thickness"] = thickness
+                                    option["diam"] = diam
+                                    option["flange_extra"] = flange_extra
+                                    option["flange_depth"] = flange_depth
+                                    option["screw_diameter"] = screw_diameter
+                                    options.append(option)
 
             option = {}
             option["thickness"] = 12
@@ -176,6 +181,29 @@ def make_scad(**kwargs):
             option["flange_depth"] = 6
             option["screw_diameter"] = "m4_screw_wood"
             options.append(option)
+
+            #screws in screwtite box
+            thicknesses = [15,20,30,40,50,60,70,90]
+            diams = [8,10,14]
+            flange_extras = [6]
+            flange_depths = [0,3]
+            screw_diams = ["m4_screw_wood"]
+
+            options = []
+
+            for thickness in thicknesses:
+                for diam in diams:
+                    for flange_extra in flange_extras:
+                        for flange_depth in flange_depths:
+                            for screw_diameter in screw_diams:
+                                option = {}
+                                option["thickness"] = thickness
+                                option["diam"] = diam
+                                option["flange_extra"] = flange_extra
+                                option["flange_depth"] = flange_depth
+                                option["screw_diameter"] = screw_diameter
+                                options.append(option)
+
 
             # pegs
             for option in options:
@@ -348,13 +376,10 @@ def make_scad(**kwargs):
     if navigation:
         sort = []
         #sort.append("extra")
-        sort.append("extra")
-        sort.append("multi_hole")
-        sort.append("radius")
-        sort.append("flange_extra")
-        sort.append("flange_depth")
+        sort.append("name")
+        sort.append("width")
+        sort.append("height")
         sort.append("thickness")
-        sort.append("screw_diameter")   
         
         scad_help.generate_navigation(sort = sort)
 
