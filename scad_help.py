@@ -170,6 +170,7 @@ def make_scad_generic(part):
 def generate_navigation(folder="parts", sort=["width", "height", "thickness"]):
     #crawl though all directories in scad_output and load all the working.yaml files
     parts = {}
+    print("Loading parts from {folder}...", end='', flush=True)
     for root, dirs, files in os.walk(folder):
         if 'working.yaml' in files:
             yaml_file = os.path.join(root, 'working.yaml')
@@ -185,7 +186,8 @@ def generate_navigation(folder="parts", sort=["width", "height", "thickness"]):
                     part_name = part_name.replace("/","").replace("\\","")
                     parts[part_name] = part
 
-                    print(f"Loaded {yaml_file}")
+                    #print(f"Loaded {yaml_file}")
+                    print(f".", end='', flush=True)
 
     pass
     
@@ -214,14 +216,16 @@ def generate_navigation(folder="parts", sort=["width", "height", "thickness"]):
 
                 #replace "." with d
                 folder_extra = folder_extra.replace(".","d")            
-                folder_destination = f"{folder_navigation}/{folder_extra}"
+                folder_destination = f"{folder_navigation}/{folder_extra}".lower()
                 if not os.path.exists(folder_destination):
                     os.makedirs(folder_destination)
                 if os.name == 'nt':
                     #copy a full directory auto overwrite
-                    command = f'xcopy "{folder_source}" "{folder_destination}" /E /I /Y'
-                    print(command)
-                    os.system(command)
+                    # command = f'xcopy "{folder_source}" "{folder_destination}" /E /I /Y'
+                    # print(command)
+                    # os.system(command)
+                    import shutil
+                    shutil.copytree(folder_source, folder_destination, dirs_exist_ok=True)
                 else:
                     os.system(f"cp {folder_source} {folder_destination}")
 
