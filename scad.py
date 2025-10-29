@@ -153,7 +153,7 @@ def make_scad(**kwargs):
                 flange_depths = [0,3,6]
                 screw_diams = ["m6_screw_wood"]
 
-                options = []
+                
                 for thickness in thicknesses:
                     for diam in diams:
                         for flange_extra in flange_extras:
@@ -190,7 +190,7 @@ def make_scad(**kwargs):
             flange_depths = [0,3]
             screw_diams = ["m4_screw_wood"]
 
-            options = []
+            
 
             for thickness in thicknesses:
                 for diam in diams:
@@ -231,7 +231,7 @@ def make_scad(**kwargs):
 
 
             #sockets 
-            options = []
+            
             diams = copy.deepcopy(diams)
             flange_extras = copy.deepcopy(flange_extras)
 
@@ -262,8 +262,8 @@ def make_scad(**kwargs):
                 p3["flange_depth"] = flange_depth
                 p3["screw_diameter"] = screw_diameter
                 p3["extra"] = f"flange_{diam}_flange_extra_{flange_extra}" 
-                p3["width"] = option["width"]
-                p3["height"] = option["height"]
+                p3["width"] = option.get("width", 1)
+                p3["height"] = option.get("height", 1)
                 part["kwargs"] = p3
                 part["name"] = f"socket"
                        

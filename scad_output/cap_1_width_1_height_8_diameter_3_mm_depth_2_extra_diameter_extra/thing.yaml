@@ -84,6 +84,7 @@ thing:
       h: 3
       height: 1
       inclusion: laser
+      m: '#'
       pos: &id002
       - 0
       - 0
@@ -98,6 +99,7 @@ thing:
       h: 3
       height: 1
       inclusion: 3dpr
+      m: '#'
       pos: *id002
       r: 4.1
       shape: cylinder
@@ -108,6 +110,7 @@ thing:
       h: 3
       height: 1
       inclusion: 'true'
+      m: '#'
       pos: *id002
       r: 4.1
       radius: 4.1
@@ -152,6 +155,7 @@ thing:
     extra_diameter: 2
     filter: ''
     height: 1
+    m: '#'
     modes:
     - 3dpr
     navigation: false

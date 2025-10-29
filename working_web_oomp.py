@@ -40,10 +40,17 @@ OOMP_TAXONOMY_FIELDS: List[str] = [
     "type",
     "size",
     "color",
-    "description_main",
-    "description_extra",
-    "manufacturer",
-    "part_number",
+    "name",
+    "thickness",
+    "radius",
+    "screw_diameter",
+    "flange_extra",
+    "flange_depth",
+    "extra_diameter",
+    #"description_main",
+    #"description_extra",
+    #"manufacturer",
+    #"part_number",
 ]
 TAXONOMY_EMPTY_LABEL = "unspecified"
 if HtmlFormatter is not None:
@@ -847,5 +854,5 @@ def serve_page(page_name: str):
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5001, debug=True)
+    app.run(host="0.0.0.0", port=5002, debug=True)
     
