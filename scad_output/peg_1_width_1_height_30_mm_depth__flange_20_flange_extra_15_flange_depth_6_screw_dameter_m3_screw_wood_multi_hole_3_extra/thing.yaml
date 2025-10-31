@@ -21,7 +21,7 @@ kwargs:
   modes:
   - 3dpr
   multi_hole: 3
-  navigation: false
+  navigation: true
   oomp_classification: project
   oomp_color: oomlout_organizing_screw_pegs
   oomp_description_extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_extra
@@ -29,13 +29,14 @@ kwargs:
   oomp_manufacturer: ''
   oomp_mode: project
   oomp_part_number: ''
-  oomp_run: false
+  oomp_run: true
   oomp_size: oomlout
   oomp_type: github
   overwrite: true
   radius: 10.0
   screw_diameter: m3_screw_wood
   thickness: 30
+  typ: all
   type: oomlout_organizing_screw_pegs_peg
   width: 1
 manufacturer: ''
@@ -646,7 +647,7 @@ thing:
     modes:
     - 3dpr
     multi_hole: 3
-    navigation: false
+    navigation: true
     oomp_classification: project
     oomp_color: oomlout_organizing_screw_pegs
     oomp_description_extra: ''
@@ -654,7 +655,7 @@ thing:
     oomp_manufacturer: ''
     oomp_mode: project
     oomp_part_number: ''
-    oomp_run: false
+    oomp_run: true
     oomp_size: oomlout
     oomp_type: github
     overwrite: true
@@ -663,10 +664,11 @@ thing:
     - 0
     - 0
     radius: 10.0
-    save_type: none
+    save_type: all
     screw_diameter: m3_screw_wood
     shape: oobb_cylinder
     thickness: 30
+    typ: all
     type: p
     width: 1
     zz: top
@@ -679,7 +681,7 @@ thing:
     modes:
     - 3dpr
     multi_hole: 3
-    navigation: false
+    navigation: true
     oomp_classification: project
     oomp_color: oomlout_organizing_screw_pegs
     oomp_description_extra: ''
@@ -687,7 +689,7 @@ thing:
     oomp_manufacturer: ''
     oomp_mode: project
     oomp_part_number: ''
-    oomp_run: false
+    oomp_run: true
     oomp_size: oomlout
     oomp_type: github
     overwrite: true
@@ -696,10 +698,11 @@ thing:
     - 0
     - 0
     radius: 17.5
-    save_type: none
+    save_type: all
     screw_diameter: m3_screw_wood
     shape: oobb_cylinder
     thickness: 30
+    typ: all
     type: p
     width: 1
     zz: top
@@ -713,7 +716,7 @@ thing:
     modes:
     - 3dpr
     multi_hole: 3
-    navigation: false
+    navigation: true
     oomp_classification: project
     oomp_color: oomlout_organizing_screw_pegs
     oomp_description_extra: ''
@@ -721,7 +724,7 @@ thing:
     oomp_manufacturer: ''
     oomp_mode: project
     oomp_part_number: ''
-    oomp_run: false
+    oomp_run: true
     oomp_size: oomlout
     oomp_type: github
     overwrite: true
@@ -731,10 +734,11 @@ thing:
     - 0
     radius: 10.0
     radius_name: m3_screw_wood
-    save_type: none
+    save_type: all
     screw_diameter: m3_screw_wood
     shape: oobb_screw_countersunk
     thickness: 30
+    typ: all
     type: n
     width: 1
   - depth: 30
@@ -747,7 +751,7 @@ thing:
     modes:
     - 3dpr
     multi_hole: 3
-    navigation: false
+    navigation: true
     oomp_classification: project
     oomp_color: oomlout_organizing_screw_pegs
     oomp_description_extra: ''
@@ -755,7 +759,7 @@ thing:
     oomp_manufacturer: ''
     oomp_mode: project
     oomp_part_number: ''
-    oomp_run: false
+    oomp_run: true
     oomp_size: oomlout
     oomp_type: github
     overwrite: true
@@ -765,10 +769,11 @@ thing:
     - 0
     radius: 10.0
     radius_name: m3_screw_wood
-    save_type: none
+    save_type: all
     screw_diameter: m3_screw_wood
     shape: oobb_screw_countersunk
     thickness: 30
+    typ: all
     type: n
     width: 1
   - depth: 30
@@ -781,7 +786,7 @@ thing:
     modes:
     - 3dpr
     multi_hole: 3
-    navigation: false
+    navigation: true
     oomp_classification: project
     oomp_color: oomlout_organizing_screw_pegs
     oomp_description_extra: ''
@@ -789,7 +794,7 @@ thing:
     oomp_manufacturer: ''
     oomp_mode: project
     oomp_part_number: ''
-    oomp_run: false
+    oomp_run: true
     oomp_size: oomlout
     oomp_type: github
     overwrite: true
@@ -799,18 +804,19 @@ thing:
     - 0
     radius: 10.0
     radius_name: m3_screw_wood
-    save_type: none
+    save_type: all
     screw_diameter: m3_screw_wood
     shape: oobb_screw_countersunk
     thickness: 30
+    typ: all
     type: n
     width: 1
   components_string:
-  - oobb_cylinder_shape_p_type_30_depth_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_1_width_1_height_30_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_15_flange_extra_6_flange_depth_m3_screw_wood_screw_diameter_3_multi_hole__flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_extra_top_zz
-  - oobb_cylinder_shape_p_type_6_depth_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_1_width_1_height_30_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_17.5_radius_15_flange_extra_6_flange_depth_m3_screw_wood_screw_diameter_3_multi_hole__flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_extra_top_zz
-  - oobb_screw_countersunk_shape_n_type_m3_screw_wood_radius_name_30_depth_6.0_0.0_0_pos_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_1_width_1_height_30_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_15_flange_extra_6_flange_depth_m3_screw_wood_screw_diameter_3_multi_hole__flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_extra
-  - oobb_screw_countersunk_shape_n_type_m3_screw_wood_radius_name_30_depth_-2.9999999999999987_5.196152422706632_0_pos_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_1_width_1_height_30_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_15_flange_extra_6_flange_depth_m3_screw_wood_screw_diameter_3_multi_hole__flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_extra
-  - oobb_screw_countersunk_shape_n_type_m3_screw_wood_radius_name_30_depth_-3.0000000000000027_-5.196152422706631_0_pos_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_1_width_1_height_30_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_15_flange_extra_6_flange_depth_m3_screw_wood_screw_diameter_3_multi_hole__flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_extra
+  - oobb_cylinder_shape_p_type_30_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_30_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_15_flange_extra_6_flange_depth_m3_screw_wood_screw_diameter_3_multi_hole__flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_extra_top_zz
+  - oobb_cylinder_shape_p_type_6_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_30_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_17.5_radius_15_flange_extra_6_flange_depth_m3_screw_wood_screw_diameter_3_multi_hole__flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_extra_top_zz
+  - oobb_screw_countersunk_shape_n_type_m3_screw_wood_radius_name_30_depth_6.0_0.0_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_30_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_15_flange_extra_6_flange_depth_m3_screw_wood_screw_diameter_3_multi_hole__flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_extra
+  - oobb_screw_countersunk_shape_n_type_m3_screw_wood_radius_name_30_depth_-2.9999999999999987_5.196152422706632_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_30_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_15_flange_extra_6_flange_depth_m3_screw_wood_screw_diameter_3_multi_hole__flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_extra
+  - oobb_screw_countersunk_shape_n_type_m3_screw_wood_radius_name_30_depth_-3.0000000000000027_-5.196152422706631_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_30_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_15_flange_extra_6_flange_depth_m3_screw_wood_screw_diameter_3_multi_hole__flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_extra
   description: oomlout organizing screw pegs peg 1x1x30
   description_extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_extra
   description_main: 1_width_1_height_30_mm_depth

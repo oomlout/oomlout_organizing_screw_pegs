@@ -378,9 +378,9 @@ def make_scad(**kwargs):
         #cap
         
         if True:
-            diameters = [8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]
+            diameters = [8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35]
             depths = [3, 6]
-            extra_diameters = [6,2]
+            extra_diameters = [12,6,2]
             for diameter in diameters:
                 for depth in depths:
                     for extra_diameter in extra_diameters:
@@ -409,6 +409,7 @@ def make_scad(**kwargs):
         #sort.append("height")
         sort.append("thickness")
         sort.append("radius")
+        sort.append("diameter")
         sort.append("screw_diameter")
         sort.append("flange_extra")
         sort.append("flange_depth")

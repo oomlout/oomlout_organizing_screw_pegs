@@ -20,7 +20,7 @@ kwargs:
   height: 1
   modes:
   - 3dpr
-  navigation: false
+  navigation: true
   oomp_classification: project
   oomp_color: oomlout_organizing_screw_pegs
   oomp_description_extra: flange_10_flange_extra_6_flange_depth_0_screw_dameter_m4_screw_wood_extra
@@ -28,13 +28,14 @@ kwargs:
   oomp_manufacturer: ''
   oomp_mode: project
   oomp_part_number: ''
-  oomp_run: false
+  oomp_run: true
   oomp_size: oomlout
   oomp_type: github
   overwrite: true
   radius: 5.0
   screw_diameter: m4_screw_wood
   thickness: 60
+  typ: all
   type: oomlout_organizing_screw_pegs_peg
   width: 1
 manufacturer: ''

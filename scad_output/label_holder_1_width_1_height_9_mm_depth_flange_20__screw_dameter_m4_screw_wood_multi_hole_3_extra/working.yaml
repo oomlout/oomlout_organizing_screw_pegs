@@ -19,7 +19,7 @@ kwargs:
   modes:
   - 3dpr
   multi_hole: 3
-  navigation: false
+  navigation: true
   oomp_classification: project
   oomp_color: oomlout_organizing_screw_pegs
   oomp_description_extra: flange_20__screw_dameter_m4_screw_wood_multi_hole_3_extra
@@ -27,13 +27,14 @@ kwargs:
   oomp_manufacturer: ''
   oomp_mode: project
   oomp_part_number: ''
-  oomp_run: false
+  oomp_run: true
   oomp_size: oomlout
   oomp_type: github
   overwrite: true
   radius: 10.0
   screw_diameter: m4_screw_wood
   thickness: 9
+  typ: all
   type: oomlout_organizing_screw_pegs_label_holder
   width: 1
 manufacturer: ''

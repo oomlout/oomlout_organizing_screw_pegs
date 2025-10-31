@@ -21,7 +21,7 @@ kwargs:
   height: 1
   modes:
   - 3dpr
-  navigation: false
+  navigation: true
   oomp_classification: project
   oomp_color: oomlout_organizing_screw_pegs
   oomp_description_extra: flange_20_flange_extra_6_flange_depth_3_flat_length_10_depth_15_extra
@@ -29,12 +29,13 @@ kwargs:
   oomp_manufacturer: ''
   oomp_mode: project
   oomp_part_number: ''
-  oomp_run: false
+  oomp_run: true
   oomp_size: oomlout
   oomp_type: github
   overwrite: true
   radius: 10.0
   thickness: 15
+  typ: all
   type: oomlout_organizing_screw_pegs_peg
   width: 1
 manufacturer: ''
