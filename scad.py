@@ -28,7 +28,9 @@ def make_scad(**kwargs):
     #test = True
 
     if typ == "all":
-        filter = ""; save_type = "all"; navigation = True; overwrite = True; modes = ["3dpr"]; oomp_run = True; test = False
+        #no overwrite
+        
+        filter = ""; save_type = "all"; navigation = True; overwrite = False; modes = ["3dpr"]; oomp_run = True; test = False
         #default
         #filter = ""; save_type = "all"; navigation = True; overwrite = True; modes = ["3dpr"]; oomp_run = True; test = False
     elif typ == "fast":
@@ -275,6 +277,8 @@ def make_scad(**kwargs):
 
             pegs = []
             
+            flange_extras = [15,0,30,100,50]
+
             peg = {}            
             peg["diam"] = 20
             peg["flange_extra"] = 15
@@ -298,29 +302,62 @@ def make_scad(**kwargs):
             peg["screw_diameter"] = "m6_screw_wood"                     
             peg["diam"] = 25
             pegs.append(peg)
+            
+            peg = copy.deepcopy(peg)
+            peg["thickness"] = 0
+            peg["screw_diameter"] = "m6_screw_wood"                     
+            peg["diam"] = 25
+            pegs.append(peg)
+
+            
+            peg = copy.deepcopy(peg)
+            peg["thickness"] = 175
+            peg["screw_diameter"] = "m6_screw_wood"                     
+            peg["diam"] = 25
+            pegs.append(peg)
+
+            peg = copy.deepcopy(peg)
+            peg["thickness"] = 25
+            peg["screw_diameter"] = "m6_screw_wood"                     
+            peg["diam"] = 25
+            pegs.append(peg)
+
+            peg = copy.deepcopy(peg)
+            peg["thickness"] = 50
+            peg["screw_diameter"] = "m6_screw_wood"                     
+            peg["diam"] = 25
+            pegs.append(peg)
+
+            peg = copy.deepcopy(peg)
+            peg["thickness"] = 75
+            peg["screw_diameter"] = "m6_screw_wood"                     
+            peg["diam"] = 25
+            pegs.append(peg)
 
 
             for peg in pegs:
-                thickness = peg["thickness"]
-                diam = peg["diam"]
-                flange_extra = peg["flange_extra"]
-                flange_depth = peg["flange_depth"]
-                screw_diameter = peg["screw_diameter"]
-                part = copy.deepcopy(part_default)
-                p3 = copy.deepcopy(kwargs)
-                
-                p3["thickness"] = thickness               
-                p3["radius"] = diam/2        
-                p3["flange_extra"] = flange_extra
-                p3["flange_depth"] = flange_depth
-                p3["screw_diameter"] = screw_diameter
-                multi_hole = 3
-                p3["multi_hole"] = multi_hole                        
-                p3["extra"] = f"_flange_{diam}_flange_extra_{flange_extra}_flange_depth_{flange_depth}_screw_dameter_{screw_diameter}_multi_hole_{multi_hole}"        
-                part["kwargs"] = p3
-                part["name"] = f"peg"
-                
-                parts.append(part)
+                for flange_extra in flange_extras:
+                    thickness = peg["thickness"]
+                    diam = peg["diam"]
+                    #flange_extra = peg["flange_extra"]
+                    flange_extra = flange_extra
+                    flange_depth = peg["flange_depth"]
+                    screw_diameter = peg["screw_diameter"]
+                    part = copy.deepcopy(part_default)
+                    p3 = copy.deepcopy(kwargs)
+                    
+                    p3["thickness"] = thickness               
+                    p3["radius"] = diam/2        
+                    p3["flange_extra"] = flange_extra
+                    p3["flange_depth"] = flange_depth
+                    p3["screw_diameter"] = screw_diameter
+                    multi_hole = 3
+                    p3["multi_hole"] = multi_hole                        
+                    p3["extra"] = f"_flange_{diam}_flange_extra_{flange_extra}_flange_depth_{flange_depth}_screw_dameter_{screw_diameter}_multi_hole_{multi_hole}"        
+                    part["kwargs"] = p3
+                    part["name"] = f"peg"
+                    
+                    parts.append(part)
 
             
             diams = [20]

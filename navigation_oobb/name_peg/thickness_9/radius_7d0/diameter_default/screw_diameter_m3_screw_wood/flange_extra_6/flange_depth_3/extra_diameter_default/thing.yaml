@@ -31,7 +31,7 @@ kwargs:
   oomp_run: true
   oomp_size: oomlout
   oomp_type: github
-  overwrite: true
+  overwrite: false
   radius: 7.0
   screw_diameter: m3_screw_wood
   thickness: 9
@@ -59,7 +59,7 @@ thing:
       r: 7.0
       radius: 7.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
     - depth: 9
       extra: flange_14_flange_extra_6_flange_depth_3_screw_dameter_m3_screw_wood
@@ -68,8 +68,9 @@ thing:
       inclusion: 3dpr
       pos: *id001
       r: 7.0
+      radius: 7.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
     - depth: 9
       extra: flange_14_flange_extra_6_flange_depth_3_screw_dameter_m3_screw_wood
@@ -80,7 +81,7 @@ thing:
       r: 7.0
       radius: 7.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
   - - depth: 3
       extra: flange_14_flange_extra_6_flange_depth_3_screw_dameter_m3_screw_wood
@@ -94,7 +95,7 @@ thing:
       r: 10.0
       radius: 10.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
     - depth: 3
       extra: flange_14_flange_extra_6_flange_depth_3_screw_dameter_m3_screw_wood
@@ -103,8 +104,9 @@ thing:
       inclusion: 3dpr
       pos: *id002
       r: 10.0
+      radius: 10.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
     - depth: 3
       extra: flange_14_flange_extra_6_flange_depth_3_screw_dameter_m3_screw_wood
@@ -115,7 +117,7 @@ thing:
       r: 10.0
       radius: 10.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
   - - objects:
       - - depth: 9
@@ -157,6 +159,7 @@ thing:
           m: '#'
           pos: *id003
           r: 2.0
+          radius: 2.0
           shape: cylinder
           type: positive
           width: 1
@@ -182,9 +185,9 @@ thing:
           - 0
           - 0
           - -3
-          r: 7.0
           r1: 2.125
           r2: 3.75
+          radius: 7.0
           shape: cylinder
           type: positive
           width: 1
@@ -211,6 +214,7 @@ thing:
           m: '#'
           pos: *id004
           r: 2.125
+          radius: 2.125
           shape: cylinder
           type: positive
           width: 1
@@ -265,6 +269,7 @@ thing:
           m: '#'
           pos: *id005
           r: 2.0
+          radius: 2.0
           shape: cylinder
           type: positive
           width: 1
@@ -310,7 +315,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - 0
     - 0
@@ -343,7 +348,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - 0
     - 0
@@ -377,7 +382,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - 0
     - 0
@@ -392,9 +397,9 @@ thing:
     type: n
     width: 1
   components_string:
-  - oobb_cylinder_shape_p_type_9_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_7.0_radius_6_flange_extra_3_flange_depth_m3_screw_wood_screw_diameter_flange_14_flange_extra_6_flange_depth_3_screw_dameter_m3_screw_wood_extra_top_zz
-  - oobb_cylinder_shape_p_type_3_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_6_flange_extra_3_flange_depth_m3_screw_wood_screw_diameter_flange_14_flange_extra_6_flange_depth_3_screw_dameter_m3_screw_wood_extra_top_zz
-  - oobb_screw_countersunk_shape_n_type_m3_screw_wood_radius_name_9_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_7.0_radius_6_flange_extra_3_flange_depth_m3_screw_wood_screw_diameter_flange_14_flange_extra_6_flange_depth_3_screw_dameter_m3_screw_wood_extra
+  - oobb_cylinder_shape_p_type_9_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_7.0_radius_6_flange_extra_3_flange_depth_m3_screw_wood_screw_diameter_flange_14_flange_extra_6_flange_depth_3_screw_dameter_m3_screw_wood_extra_top_zz
+  - oobb_cylinder_shape_p_type_3_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_6_flange_extra_3_flange_depth_m3_screw_wood_screw_diameter_flange_14_flange_extra_6_flange_depth_3_screw_dameter_m3_screw_wood_extra_top_zz
+  - oobb_screw_countersunk_shape_n_type_m3_screw_wood_radius_name_9_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_7.0_radius_6_flange_extra_3_flange_depth_m3_screw_wood_screw_diameter_flange_14_flange_extra_6_flange_depth_3_screw_dameter_m3_screw_wood_extra
   description: oomlout organizing screw pegs peg 1x1x9
   description_extra: flange_14_flange_extra_6_flange_depth_3_screw_dameter_m3_screw_wood_extra
   description_main: 1_width_1_height_9_mm_depth

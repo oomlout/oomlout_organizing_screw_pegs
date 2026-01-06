@@ -31,7 +31,7 @@ kwargs:
   oomp_run: true
   oomp_size: oomlout
   oomp_type: github
-  overwrite: true
+  overwrite: false
   radius: 7.0
   screw_diameter: m4_screw_wood
   thickness: 54
@@ -57,7 +57,7 @@ thing:
       - 0
       r: 7.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
   - - depth: 54
       extra: flange_14_flange_extra_6
@@ -69,7 +69,7 @@ thing:
       - 0
       r: 7.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
   - - - depth: 54
         h: 54
@@ -185,13 +185,13 @@ thing:
       - -11.5
       - 0
       - 0
-      r: 7.5
+      radius: 7.5
       shape: rounded_rectangle
       size:
       - 22.5
       - 15.0
       - 54
-      type: negative
+      type: n
       width: 1
   - - depth: 54
       extra: flange_14_flange_extra_6
@@ -205,7 +205,7 @@ thing:
       r: 10.5
       radius: 10.5
       shape: cylinder
-      type: negative
+      type: n
       width: 1
     - depth: 54
       extra: flange_14_flange_extra_6
@@ -214,8 +214,9 @@ thing:
       inclusion: 3dpr
       pos: *id005
       r: 10.5
+      radius: 10.5
       shape: cylinder
-      type: negative
+      type: n
       width: 1
     - depth: 54
       extra: flange_14_flange_extra_6
@@ -226,7 +227,7 @@ thing:
       r: 10.5
       radius: 10.5
       shape: cylinder
-      type: negative
+      type: n
       width: 1
   components_objects:
   - depth: 54
@@ -248,7 +249,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - 0
     - 0
@@ -279,7 +280,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - -7.0
     - 0
@@ -312,7 +313,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - 0
     - 0
@@ -342,7 +343,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - -11.5
     - 0
@@ -378,7 +379,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - -4.0
     - 0
@@ -392,11 +393,11 @@ thing:
     type: n
     width: 1
   components_string:
-  - oobb_plate_shape_p_type_54_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_54_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_6_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_flange_14_flange_extra_6_extra
-  - oobb_plate_shape_p_type_54_depth_-7.0_0_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_54_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_6_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_flange_14_flange_extra_6_extra
-  - oobb_holes_shape_p_type_54_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_54_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_6_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_flange_14_flange_extra_6_extra_true_both_holes_bottom_holes
-  - rounded_rectangle_shape_n_type_-11.5_0_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_54_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_7.5_radius_6_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_flange_14_flange_extra_6_extra_22.5_15.0_54_size
-  - oobb_cylinder_shape_n_type_54_depth_-4.0_0_27.0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_54_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.5_radius_6_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_flange_14_flange_extra_6_extra
+  - oobb_plate_shape_p_type_54_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_54_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_6_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_flange_14_flange_extra_6_extra
+  - oobb_plate_shape_p_type_54_depth_-7.0_0_0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_54_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_6_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_flange_14_flange_extra_6_extra
+  - oobb_holes_shape_p_type_54_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_54_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_6_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_flange_14_flange_extra_6_extra_true_both_holes_bottom_holes
+  - rounded_rectangle_shape_n_type_-11.5_0_0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_54_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_7.5_radius_6_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_flange_14_flange_extra_6_extra_22.5_15.0_54_size
+  - oobb_cylinder_shape_n_type_54_depth_-4.0_0_27.0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_54_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.5_radius_6_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_flange_14_flange_extra_6_extra
   description: oomlout organizing screw pegs socket 1x1x54
   description_extra: flange_14_flange_extra_6_extra
   description_main: 1_width_1_height_54_mm_depth

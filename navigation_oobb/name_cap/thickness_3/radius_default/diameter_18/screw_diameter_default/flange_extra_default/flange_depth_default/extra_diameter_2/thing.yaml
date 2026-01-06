@@ -31,7 +31,7 @@ kwargs:
   oomp_run: true
   oomp_size: oomlout
   oomp_type: github
-  overwrite: true
+  overwrite: false
   thickness: 3
   typ: all
   type: oomlout_organizing_screw_pegs_cap
@@ -57,7 +57,7 @@ thing:
       r: 10.0
       radius: 10.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
     - depth: 4
       extra: 2_extra_diameter
@@ -66,8 +66,9 @@ thing:
       inclusion: 3dpr
       pos: *id001
       r: 10.0
+      radius: 10.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
     - depth: 4
       extra: 2_extra_diameter
@@ -78,7 +79,7 @@ thing:
       r: 10.0
       radius: 10.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
   - - depth: 3
       extra: 2_extra_diameter
@@ -103,6 +104,7 @@ thing:
       m: '#'
       pos: *id002
       r: 9.1
+      radius: 9.1
       shape: cylinder
       type: negative
       width: 1
@@ -138,7 +140,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - 0
     - 0
@@ -171,7 +173,7 @@ thing:
     oomp_run: true
     oomp_size: oomlout
     oomp_type: github
-    overwrite: true
+    overwrite: false
     pos:
     - 0
     - 0
@@ -185,8 +187,8 @@ thing:
     width: 1
     zz: top
   components_string:
-  - oobb_cylinder_shape_p_type_4_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_3_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_18_diameter_2_extra_diameter_2_extra_diameter_extra_10.0_radius_top_zz
-  - oobb_cylinder_shape_negative_type_3_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_3_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_18_diameter_2_extra_diameter_2_extra_diameter_extra_9.1_radius_top_zz
+  - oobb_cylinder_shape_p_type_4_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_3_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_18_diameter_2_extra_diameter_2_extra_diameter_extra_10.0_radius_top_zz
+  - oobb_cylinder_shape_negative_type_3_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_3_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_18_diameter_2_extra_diameter_2_extra_diameter_extra_9.1_radius_top_zz
   description: oomlout organizing screw pegs cap 1x1x3
   description_extra: 2_extra_diameter_extra
   description_main: 1_width_1_height_18_diameter_3_mm_depth
