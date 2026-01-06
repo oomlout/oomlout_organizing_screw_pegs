@@ -29,7 +29,7 @@ def make_scad(**kwargs):
 
     if typ == "all":
         #no overwrite
-        
+
         filter = ""; save_type = "all"; navigation = True; overwrite = False; modes = ["3dpr"]; oomp_run = True; test = False
         #default
         #filter = ""; save_type = "all"; navigation = True; overwrite = True; modes = ["3dpr"]; oomp_run = True; test = False
@@ -331,6 +331,13 @@ def make_scad(**kwargs):
             peg = copy.deepcopy(peg)
             peg["thickness"] = 75
             peg["screw_diameter"] = "m6_screw_wood"                     
+            peg["diam"] = 25
+            pegs.append(peg)
+
+            #100
+            peg = copy.deepcopy(peg)
+            peg["thickness"] = 100
+            peg["screw_diameter"] = "m6_screw_wood"
             peg["diam"] = 25
             pegs.append(peg)
 
