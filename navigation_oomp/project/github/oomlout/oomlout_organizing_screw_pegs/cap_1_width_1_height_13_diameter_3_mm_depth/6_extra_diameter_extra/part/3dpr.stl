@@ -223,6 +223,20 @@ solid OpenSCAD_Model
       vertex -2.93566 9.03504 -4
     endloop
   endfacet
+  facet normal 0.125329 -0.992115 0
+    outer loop
+      vertex 0.59651 -9.48125 -4
+      vertex 1.78012 -9.33173 0
+      vertex 0.59651 -9.48125 0
+    endloop
+  endfacet
+  facet normal 0.125329 -0.992115 0
+    outer loop
+      vertex 1.78012 -9.33173 0
+      vertex 0.59651 -9.48125 -4
+      vertex 1.78012 -9.33173 -4
+    endloop
+  endfacet
   facet normal 0.951057 0.309014 0
     outer loop
       vertex 9.20154 2.36255 0
@@ -1553,20 +1567,6 @@ solid OpenSCAD_Model
       vertex 2.93566 -9.03504 -4
     endloop
   endfacet
-  facet normal 0.125329 -0.992115 0
-    outer loop
-      vertex 0.59651 -9.48125 -4
-      vertex 1.78012 -9.33173 0
-      vertex 0.59651 -9.48125 0
-    endloop
-  endfacet
-  facet normal 0.125329 -0.992115 0
-    outer loop
-      vertex 1.78012 -9.33173 0
-      vertex 0.59651 -9.48125 -4
-      vertex 1.78012 -9.33173 -4
-    endloop
-  endfacet
   facet normal 0.904825 -0.425783 0
     outer loop
       vertex 8.32491 -4.57666 0
@@ -2561,20 +2561,6 @@ solid OpenSCAD_Model
       vertex 5.78362 -3.17957 0
     endloop
   endfacet
-  facet normal 0.770514 0.637424 0
-    outer loop
-      vertex -4.81119 -4.51801 0
-      vertex -5.33951 -3.87938 -3
-      vertex -5.33951 -3.87938 0
-    endloop
-  endfacet
-  facet normal 0.770514 0.637424 0
-    outer loop
-      vertex -5.33951 -3.87938 -3
-      vertex -4.81119 -4.51801 0
-      vertex -4.81119 -4.51801 -3
-    endloop
-  endfacet
   facet normal 0.84433 0.535824 0
     outer loop
       vertex -5.33951 -3.87938 0
@@ -2684,6 +2670,20 @@ solid OpenSCAD_Model
     outer loop
       vertex -4.81119 -4.51801 0
       vertex -4.207 -5.08539 -3
+      vertex -4.81119 -4.51801 -3
+    endloop
+  endfacet
+  facet normal 0.770514 0.637424 0
+    outer loop
+      vertex -4.81119 -4.51801 0
+      vertex -5.33951 -3.87938 -3
+      vertex -5.33951 -3.87938 0
+    endloop
+  endfacet
+  facet normal 0.770514 0.637424 0
+    outer loop
+      vertex -5.33951 -3.87938 -3
+      vertex -4.81119 -4.51801 0
       vertex -4.81119 -4.51801 -3
     endloop
   endfacet

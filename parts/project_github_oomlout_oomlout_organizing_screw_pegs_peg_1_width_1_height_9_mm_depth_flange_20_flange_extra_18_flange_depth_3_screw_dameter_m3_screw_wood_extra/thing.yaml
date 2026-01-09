@@ -59,7 +59,7 @@ thing:
       r: 10.0
       radius: 10.0
       shape: cylinder
-      type: p
+      type: positive
       width: 1
     - depth: 9
       extra: flange_20_flange_extra_18_flange_depth_3_screw_dameter_m3_screw_wood
@@ -68,9 +68,8 @@ thing:
       inclusion: 3dpr
       pos: *id001
       r: 10.0
-      radius: 10.0
       shape: cylinder
-      type: p
+      type: positive
       width: 1
     - depth: 9
       extra: flange_20_flange_extra_18_flange_depth_3_screw_dameter_m3_screw_wood
@@ -81,7 +80,7 @@ thing:
       r: 10.0
       radius: 10.0
       shape: cylinder
-      type: p
+      type: positive
       width: 1
   - - depth: 3
       extra: flange_20_flange_extra_18_flange_depth_3_screw_dameter_m3_screw_wood
@@ -95,7 +94,7 @@ thing:
       r: 19.0
       radius: 19.0
       shape: cylinder
-      type: p
+      type: positive
       width: 1
     - depth: 3
       extra: flange_20_flange_extra_18_flange_depth_3_screw_dameter_m3_screw_wood
@@ -104,9 +103,8 @@ thing:
       inclusion: 3dpr
       pos: *id002
       r: 19.0
-      radius: 19.0
       shape: cylinder
-      type: p
+      type: positive
       width: 1
     - depth: 3
       extra: flange_20_flange_extra_18_flange_depth_3_screw_dameter_m3_screw_wood
@@ -117,7 +115,7 @@ thing:
       r: 19.0
       radius: 19.0
       shape: cylinder
-      type: p
+      type: positive
       width: 1
   - - objects:
       - - depth: 9
@@ -159,7 +157,6 @@ thing:
           m: '#'
           pos: *id003
           r: 2.0
-          radius: 2.0
           shape: cylinder
           type: positive
           width: 1
@@ -185,9 +182,9 @@ thing:
           - 0
           - 0
           - -3
+          r: 10.0
           r1: 2.125
           r2: 3.75
-          radius: 10.0
           shape: cylinder
           type: positive
           width: 1
@@ -214,7 +211,6 @@ thing:
           m: '#'
           pos: *id004
           r: 2.125
-          radius: 2.125
           shape: cylinder
           type: positive
           width: 1
@@ -269,7 +265,6 @@ thing:
           m: '#'
           pos: *id005
           r: 2.0
-          radius: 2.0
           shape: cylinder
           type: positive
           width: 1

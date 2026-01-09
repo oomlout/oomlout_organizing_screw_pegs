@@ -191,7 +191,7 @@ def make_scad(**kwargs):
             flange_extras = [6]
             flange_depths = [0,3]
             screw_diams = ["m4_screw_wood"]
-
+            countersinks = ["", "no_countersink"]
             
 
             for thickness in thicknesses:
@@ -199,13 +199,15 @@ def make_scad(**kwargs):
                     for flange_extra in flange_extras:
                         for flange_depth in flange_depths:
                             for screw_diameter in screw_diams:
-                                option = {}
-                                option["thickness"] = thickness
-                                option["diam"] = diam
-                                option["flange_extra"] = flange_extra
-                                option["flange_depth"] = flange_depth
-                                option["screw_diameter"] = screw_diameter
-                                options.append(option)
+                                for countersink in countersinks:
+                                    option = {}
+                                    option["thickness"] = thickness
+                                    option["diam"] = diam
+                                    option["flange_extra"] = flange_extra
+                                    option["flange_depth"] = flange_depth
+                                    option["screw_diameter"] = screw_diameter
+                                    option["countersink"] = countersink
+                                    options.append(option)
 
 
             # pegs
@@ -291,56 +293,18 @@ def make_scad(**kwargs):
                 peg["thickness"] = thickness
                 pegs.append(peg)
 
+            thicknesses = [80,130,0,175,25,50,75,100]
 
-            peg = copy.deepcopy(peg)
-            peg["thickness"] = 80
-            peg["screw_diameter"] = "m5_screw_wood"
-            pegs.append(peg)
+            countersinks = ["", "no_countersink"]
 
-            peg = copy.deepcopy(peg)
-            peg["thickness"] = 130
-            peg["screw_diameter"] = "m6_screw_wood"                     
-            peg["diam"] = 25
-            pegs.append(peg)
-            
-            peg = copy.deepcopy(peg)
-            peg["thickness"] = 0
-            peg["screw_diameter"] = "m6_screw_wood"                     
-            peg["diam"] = 25
-            pegs.append(peg)
-
-            
-            peg = copy.deepcopy(peg)
-            peg["thickness"] = 175
-            peg["screw_diameter"] = "m6_screw_wood"                     
-            peg["diam"] = 25
-            pegs.append(peg)
-
-            peg = copy.deepcopy(peg)
-            peg["thickness"] = 25
-            peg["screw_diameter"] = "m6_screw_wood"                     
-            peg["diam"] = 25
-            pegs.append(peg)
-
-            peg = copy.deepcopy(peg)
-            peg["thickness"] = 50
-            peg["screw_diameter"] = "m6_screw_wood"                     
-            peg["diam"] = 25
-            pegs.append(peg)
-
-            peg = copy.deepcopy(peg)
-            peg["thickness"] = 75
-            peg["screw_diameter"] = "m6_screw_wood"                     
-            peg["diam"] = 25
-            pegs.append(peg)
-
-            #100
-            peg = copy.deepcopy(peg)
-            peg["thickness"] = 100
-            peg["screw_diameter"] = "m6_screw_wood"
-            peg["diam"] = 25
-            pegs.append(peg)
-
+            for thickness in thicknesses:        
+                for countersink in countersinks:
+                    peg = copy.deepcopy(peg)
+                    peg["thickness"] = thickness
+                    peg["screw_diameter"] = "m6_screw_wood"                     
+                    peg["diam"] = 25
+                    pegs.append(peg)
+                
 
             for peg in pegs:
                 for flange_extra in flange_extras:
@@ -361,6 +325,9 @@ def make_scad(**kwargs):
                     multi_hole = 3
                     p3["multi_hole"] = multi_hole                        
                     p3["extra"] = f"_flange_{diam}_flange_extra_{flange_extra}_flange_depth_{flange_depth}_screw_dameter_{screw_diameter}_multi_hole_{multi_hole}"        
+                    if countersink != "":
+                        p3["countersink"] = countersink
+                        p3["extra"] += f"_{countersink}"
                     part["kwargs"] = p3
                     part["name"] = f"peg"
                     
@@ -447,7 +414,7 @@ def make_scad(**kwargs):
     #generate navigation
     if navigation:
         sort = []
-        #sort.append("extra")
+        
         sort.append("name")
         #sort.append("width")
         #sort.append("height")
@@ -459,7 +426,8 @@ def make_scad(**kwargs):
         sort.append("flange_depth")
         #extra_diameter
         sort.append("extra_diameter")
-        
+        sort.append("countersink")
+
         scad_help.generate_navigation(sort = sort)
 
 

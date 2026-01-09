@@ -59,7 +59,7 @@ thing:
       r: 7.0
       radius: 7.0
       shape: cylinder
-      type: p
+      type: positive
       width: 1
     - depth: 21
       extra: flange_14_flange_extra_0_flange_depth_3_screw_dameter_m4_screw_wood
@@ -68,9 +68,8 @@ thing:
       inclusion: 3dpr
       pos: *id001
       r: 7.0
-      radius: 7.0
       shape: cylinder
-      type: p
+      type: positive
       width: 1
     - depth: 21
       extra: flange_14_flange_extra_0_flange_depth_3_screw_dameter_m4_screw_wood
@@ -81,7 +80,7 @@ thing:
       r: 7.0
       radius: 7.0
       shape: cylinder
-      type: p
+      type: positive
       width: 1
   - - objects:
       - - depth: 21
@@ -123,7 +122,6 @@ thing:
           m: '#'
           pos: *id002
           r: 2.6
-          radius: 2.6
           shape: cylinder
           type: positive
           width: 1
@@ -149,9 +147,9 @@ thing:
           - 0
           - 0
           - -3.9
+          r: 7.0
           r1: 2.875
           r2: 5.4
-          radius: 7.0
           shape: cylinder
           type: positive
           width: 1
@@ -178,7 +176,6 @@ thing:
           m: '#'
           pos: *id003
           r: 2.875
-          radius: 2.875
           shape: cylinder
           type: positive
           width: 1
@@ -233,7 +230,6 @@ thing:
           m: '#'
           pos: *id004
           r: 2.6
-          radius: 2.6
           shape: cylinder
           type: positive
           width: 1

@@ -59,7 +59,7 @@ thing:
       - 44
       - 44
       - 6
-      type: p
+      type: positive
       width: 3
   - - depth: 6
       extra: flange_10_flange_extra_6
@@ -73,7 +73,7 @@ thing:
       - 44
       - 44
       - 6
-      type: p
+      type: positive
       width: 3
   - - - depth: 6
         h: 6
@@ -567,13 +567,13 @@ thing:
       - -9.5
       - 0
       - 0
-      radius: 5.5
+      r: 5.5
       shape: rounded_rectangle
       size:
       - 18.5
       - 11.0
       - 6
-      type: n
+      type: negative
       width: 3
   - - depth: 6
       extra: flange_10_flange_extra_6
@@ -587,7 +587,7 @@ thing:
       r: 8.5
       radius: 8.5
       shape: cylinder
-      type: n
+      type: negative
       width: 3
     - depth: 6
       extra: flange_10_flange_extra_6
@@ -596,9 +596,8 @@ thing:
       inclusion: 3dpr
       pos: *id019
       r: 8.5
-      radius: 8.5
       shape: cylinder
-      type: n
+      type: negative
       width: 3
     - depth: 6
       extra: flange_10_flange_extra_6
@@ -609,7 +608,7 @@ thing:
       r: 8.5
       radius: 8.5
       shape: cylinder
-      type: n
+      type: negative
       width: 3
   components_objects:
   - depth: 6

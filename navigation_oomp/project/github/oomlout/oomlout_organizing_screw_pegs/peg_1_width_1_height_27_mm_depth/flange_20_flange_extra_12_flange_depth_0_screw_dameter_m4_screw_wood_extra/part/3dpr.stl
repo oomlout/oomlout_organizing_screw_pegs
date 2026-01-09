@@ -2827,20 +2827,6 @@ solid OpenSCAD_Model
       vertex 8.76307 4.81754 -27
     endloop
   endfacet
-  facet normal 0.248691 0.968583 -0
-    outer loop
-      vertex 3.09017 9.51056 -27
-      vertex 1.87381 9.82287 0
-      vertex 3.09017 9.51056 0
-    endloop
-  endfacet
-  facet normal 0.248691 0.968583 0
-    outer loop
-      vertex 1.87381 9.82287 0
-      vertex 3.09017 9.51056 -27
-      vertex 1.87381 9.82287 -27
-    endloop
-  endfacet
   facet normal 0.368122 0.929777 -0
     outer loop
       vertex 4.25779 9.04827 -27
@@ -3107,6 +3093,20 @@ solid OpenSCAD_Model
       vertex -0.627905 9.98027 -27
     endloop
   endfacet
+  facet normal 0.248691 0.968583 -0
+    outer loop
+      vertex 3.09017 9.51056 -27
+      vertex 1.87381 9.82287 0
+      vertex 3.09017 9.51056 0
+    endloop
+  endfacet
+  facet normal 0.248691 0.968583 0
+    outer loop
+      vertex 1.87381 9.82287 0
+      vertex 3.09017 9.51056 -27
+      vertex 1.87381 9.82287 -27
+    endloop
+  endfacet
   facet normal 0.587788 0.809015 -0
     outer loop
       vertex 6.37424 7.70513 -27
@@ -3247,20 +3247,6 @@ solid OpenSCAD_Model
       vertex 1.87381 -9.82287 -27
     endloop
   endfacet
-  facet normal 0.368122 -0.929777 0
-    outer loop
-      vertex 3.09017 -9.51056 -27
-      vertex 4.25779 -9.04827 0
-      vertex 3.09017 -9.51056 0
-    endloop
-  endfacet
-  facet normal 0.368122 -0.929777 0
-    outer loop
-      vertex 4.25779 -9.04827 0
-      vertex 3.09017 -9.51056 -27
-      vertex 4.25779 -9.04827 -27
-    endloop
-  endfacet
   facet normal 0.770515 0.637422 0
     outer loop
       vertex 8.09017 5.87785 0
@@ -3303,18 +3289,18 @@ solid OpenSCAD_Model
       vertex 8.09017 -5.87785 -27
     endloop
   endfacet
-  facet normal 0.904831 -0.425771 0
+  facet normal -0.368122 -0.929777 0
     outer loop
-      vertex 8.76307 -4.81754 0
-      vertex 9.29776 -3.68124 -27
-      vertex 9.29776 -3.68124 0
+      vertex -4.25779 -9.04827 -27
+      vertex -3.09017 -9.51056 0
+      vertex -4.25779 -9.04827 0
     endloop
   endfacet
-  facet normal 0.904831 -0.425771 0
+  facet normal -0.368122 -0.929777 -0
     outer loop
-      vertex 9.29776 -3.68124 -27
-      vertex 8.76307 -4.81754 0
-      vertex 8.76307 -4.81754 -27
+      vertex -3.09017 -9.51056 0
+      vertex -4.25779 -9.04827 -27
+      vertex -3.09017 -9.51056 -27
     endloop
   endfacet
   facet normal -0.248691 -0.968583 0
@@ -3373,6 +3359,20 @@ solid OpenSCAD_Model
       vertex -9.29776 -3.68124 0
     endloop
   endfacet
+  facet normal 0.368122 -0.929777 0
+    outer loop
+      vertex 3.09017 -9.51056 -27
+      vertex 4.25779 -9.04827 0
+      vertex 3.09017 -9.51056 0
+    endloop
+  endfacet
+  facet normal 0.368122 -0.929777 0
+    outer loop
+      vertex 4.25779 -9.04827 0
+      vertex 3.09017 -9.51056 -27
+      vertex 4.25779 -9.04827 -27
+    endloop
+  endfacet
   facet normal 0.248691 -0.968583 0
     outer loop
       vertex 1.87381 -9.82287 -27
@@ -3413,6 +3413,20 @@ solid OpenSCAD_Model
       vertex 6.37424 -7.70513 0
       vertex 5.35827 -8.44328 -27
       vertex 6.37424 -7.70513 -27
+    endloop
+  endfacet
+  facet normal 0.904831 -0.425771 0
+    outer loop
+      vertex 8.76307 -4.81754 0
+      vertex 9.29776 -3.68124 -27
+      vertex 9.29776 -3.68124 0
+    endloop
+  endfacet
+  facet normal 0.904831 -0.425771 0
+    outer loop
+      vertex 9.29776 -3.68124 -27
+      vertex 8.76307 -4.81754 0
+      vertex 8.76307 -4.81754 -27
     endloop
   endfacet
   facet normal 0 -1 0
@@ -3483,20 +3497,6 @@ solid OpenSCAD_Model
       vertex -5.35827 -8.44328 0
       vertex -6.37424 -7.70513 -27
       vertex -5.35827 -8.44328 -27
-    endloop
-  endfacet
-  facet normal -0.368122 -0.929777 0
-    outer loop
-      vertex -4.25779 -9.04827 -27
-      vertex -3.09017 -9.51056 0
-      vertex -4.25779 -9.04827 0
-    endloop
-  endfacet
-  facet normal -0.368122 -0.929777 -0
-    outer loop
-      vertex -3.09017 -9.51056 0
-      vertex -4.25779 -9.04827 -27
-      vertex -3.09017 -9.51056 -27
     endloop
   endfacet
 endsolid OpenSCAD_Model
