@@ -132,20 +132,23 @@ def make_scad(**kwargs):
             flange_depths = [0,3,6]
             screw_diams = ["m4_screw_wood", "m3_screw_wood", "m3_5_screw_wood", "m5_screw_wood"]
 
-            
+            countersinks = ["", "no_countersink"]
 
             for thickness in thicknesses:
                 for diam in diams:
                     for flange_extra in flange_extras:
                         for flange_depth in flange_depths:
                             for screw_diameter in screw_diams:
-                                option = {}
-                                option["thickness"] = thickness
-                                option["diam"] = diam
-                                option["flange_extra"] = flange_extra
-                                option["flange_depth"] = flange_depth
-                                option["screw_diameter"] = screw_diameter
-                                options.append(option)
+                                for countersink in countersinks:
+                                    option = {}
+                                    option["thickness"] = thickness
+                                    option["diam"] = diam
+                                    option["flange_extra"] = flange_extra
+                                    option["flange_depth"] = flange_depth
+                                    option["screw_diameter"] = screw_diameter
+                                    if countersink != "":
+                                        option["countersink"] = countersink
+                                    options.append(option)
             #m6 wood screw ones
         if True:
             if True:
@@ -161,13 +164,16 @@ def make_scad(**kwargs):
                         for flange_extra in flange_extras:
                             for flange_depth in flange_depths:
                                 for screw_diameter in screw_diams:
-                                    option = {}
-                                    option["thickness"] = thickness
-                                    option["diam"] = diam
-                                    option["flange_extra"] = flange_extra
-                                    option["flange_depth"] = flange_depth
-                                    option["screw_diameter"] = screw_diameter
-                                    options.append(option)
+                                    for countersink in countersinks:
+                                        option = {}
+                                        option["thickness"] = thickness
+                                        option["diam"] = diam
+                                        option["flange_extra"] = flange_extra
+                                        option["flange_depth"] = flange_depth
+                                        option["screw_diameter"] = screw_diameter   
+                                        if countersink != "":
+                                            option["countersink"] = countersink
+                                        options.append(option)
 
             option = {}
             option["thickness"] = 12
@@ -191,7 +197,9 @@ def make_scad(**kwargs):
             flange_extras = [6]
             flange_depths = [0,3]
             screw_diams = ["m4_screw_wood"]
-            countersinks = ["", "no_countersink"]
+            #countersinks = ["", "no_countersink"]
+            countersinks = ["no_countersink"]
+
             
 
             for thickness in thicknesses:
@@ -228,6 +236,9 @@ def make_scad(**kwargs):
                 p3["flange_depth"] = flange_depth
                 p3["screw_diameter"] = screw_diameter
                 p3["extra"] = f"flange_{diam}_flange_extra_{flange_extra}_flange_depth_{flange_depth}_screw_dameter_{screw_diameter}"        
+                if countersink != "":
+                    p3["countersink"] = countersink
+                    p3["extra"] += f"_{countersink}"
                 part["kwargs"] = p3
                 part["name"] = f"peg"
                 
@@ -265,7 +276,11 @@ def make_scad(**kwargs):
                 p3["flange_extra"] = flange_extra
                 p3["flange_depth"] = flange_depth
                 p3["screw_diameter"] = screw_diameter
+                
                 p3["extra"] = f"flange_{diam}_flange_extra_{flange_extra}" 
+                if countersink != "":
+                    p3["countersink"] = countersink
+                    p3["extra"] += f"_{countersink}"
                 p3["width"] = option.get("width", 1)
                 p3["height"] = option.get("height", 1)
                 part["kwargs"] = p3
@@ -303,6 +318,7 @@ def make_scad(**kwargs):
                     peg["thickness"] = thickness
                     peg["screw_diameter"] = "m6_screw_wood"                     
                     peg["diam"] = 25
+                    peg["countersink"] = countersink
                     pegs.append(peg)
                 
 
@@ -432,6 +448,7 @@ def make_scad(**kwargs):
 
 
 def get_base(thing, **kwargs):
+    #### not really used
     name = kwargs.get("type", "default")
     if "label_holder" in name:
         get_label_holder(thing, **kwargs)
@@ -447,6 +464,7 @@ def get_base(thing, **kwargs):
         flange_depth = kwargs.get("flange_depth", 0)
         flat_length = kwargs.get("flat_length", 0)
         multi_hole = kwargs.get("multi_hole", 1)
+        countersink = kwargs.get("countersink", "")
 
 
 
@@ -513,27 +531,33 @@ def get_base(thing, **kwargs):
 
 
         #add holes
+        shap = "oobb_screw_countersunk"
+        shift_z = 0
+        if countersink == "no_countersink":
+            shap = "oobb_hole"
+            shift_z += -depth
         if True:
             if multi_hole == 1:
                 p3 = copy.deepcopy(kwargs)
                 p3["type"] = "n"
-                p3["shape"] = f"oobb_screw_countersunk"    
+                p3["shape"] = f"{shap}"    
                 p3["depth"] = depth
                 p3["radius_name"] = screw_diameter
                 p3["m"] = "#"
                 pos1 = copy.deepcopy(pos)         
+                pos1[2] += shift_z
                 p3["pos"] = pos1
                 oobb_base.append_full(thing,**p3)
             if multi_hole == 3:
                 
                 p3 = copy.deepcopy(kwargs)
                 p3["type"] = "n"
-                p3["shape"] = f"oobb_screw_countersunk"    
+                p3["shape"] = f"{shap}"    
                 p3["depth"] = depth
                 p3["radius_name"] = screw_diameter
                 p3["m"] = "#"
                 pos1 = copy.deepcopy(pos)         
-                
+                pos1[2] += shift_z
                 import math          
                 if radius == 12.5:
                     shift = 8
@@ -597,6 +621,7 @@ def get_peg(thing, **kwargs):
         flange_depth = kwargs.get("flange_depth", 0)
         flat_length = kwargs.get("flat_length", 0)
         multi_hole = kwargs.get("multi_hole", 1)
+        countersink = kwargs.get("countersink", "")
 
 
 
@@ -629,6 +654,7 @@ def get_peg(thing, **kwargs):
                 p3["zz"] = "top"
                 oobb_base.append_full(thing,**p3)
         else:
+            
             p3 = copy.deepcopy(kwargs)
             p3["type"] = "p"
             p3["shape"] = f"rounded_rectangle"    
@@ -664,25 +690,37 @@ def get_peg(thing, **kwargs):
 
         #add holes
         if True:
+            shap = "oobb_screw_countersunk"
+            shift_z = 0
+            radius_name = screw_diameter
+            if countersink == "no_countersink":
+                shap = "oobb_hole"
+                shift_z += -depth
+                #only the first bit before a _
+                radius_name = screw_diameter.split("_")[0]
             if multi_hole == 1:
                 p3 = copy.deepcopy(kwargs)
+                p3.pop("radius","")
                 p3["type"] = "n"
-                p3["shape"] = f"oobb_screw_countersunk"    
+                p3["shape"] = f"{shap}"    
                 p3["depth"] = depth
-                p3["radius_name"] = screw_diameter
+                p3["radius_name"] = radius_name
                 p3["m"] = "#"
                 pos1 = copy.deepcopy(pos)         
+                pos1[2] += shift_z
                 p3["pos"] = pos1
                 oobb_base.append_full(thing,**p3)
             if multi_hole == 3:
                 
                 p3 = copy.deepcopy(kwargs)
+                p3.pop("radius","")
                 p3["type"] = "n"
-                p3["shape"] = f"oobb_screw_countersunk"    
+                p3["shape"] = f"{shap}"    
                 p3["depth"] = depth
-                p3["radius_name"] = screw_diameter
+                p3["radius_name"] = radius_name
                 p3["m"] = "#"
                 pos1 = copy.deepcopy(pos)         
+                pos1[2] += shift_z
                 
                 import math          
                 if radius == 12.5:

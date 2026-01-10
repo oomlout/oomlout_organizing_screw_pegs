@@ -88,7 +88,6 @@ thing:
           - -3.7
           r1: 2.6
           r2: 4.9
-          radius: 10.0
           shape: cylinder
           type: positive
           width: 1
@@ -140,7 +139,6 @@ thing:
           - 0
           - 0
           - -3.9
-          r: 10.0
           r1: 2.875
           r2: 5.4
           shape: cylinder
@@ -196,7 +194,6 @@ thing:
           - -3.7
           r1: 2.6
           r2: 5.4
-          radius: 10.0
           shape: cylinder
           type: positive
           width: 1
@@ -346,7 +343,6 @@ thing:
     - 0
     - 0
     - 0
-    radius: 10.0
     radius_name: m4_screw_wood
     save_type: all
     shape: oobb_screw_countersunk
@@ -357,7 +353,7 @@ thing:
   components_string:
   - rounded_rectangle_shape_p_type_0_0_-15_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_15_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_10_flat_length_6_flange_extra_3_flange_depth_flange_20_flange_extra_6_flange_depth_3_flat_length_10_depth_15_extra_30.0_20.0_15_size_top_zz
   - rounded_rectangle_shape_p_type_0_0_-3_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_15_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_10_flat_length_6_flange_extra_3_flange_depth_flange_20_flange_extra_6_flange_depth_3_flat_length_10_depth_15_extra_36.0_26.0_3_size
-  - oobb_screw_countersunk_shape_n_type_m4_screw_wood_radius_name_15_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_15_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_10_flat_length_6_flange_extra_3_flange_depth_flange_20_flange_extra_6_flange_depth_3_flat_length_10_depth_15_extra
+  - oobb_screw_countersunk_shape_n_type_m4_screw_wood_radius_name_15_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_15_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10_flat_length_6_flange_extra_3_flange_depth_flange_20_flange_extra_6_flange_depth_3_flat_length_10_depth_15_extra
   description: oomlout organizing screw pegs peg 1x1x15
   description_extra: flange_20_flange_extra_6_flange_depth_3_flat_length_10_depth_15_extra
   description_main: 1_width_1_height_15_mm_depth

@@ -119,525 +119,114 @@ thing:
       shape: cylinder
       type: positive
       width: 1
-  - - objects:
-      - - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 2.5
-          height: 1
-          inclusion: laser
-          m: '#'
-          pos:
-          - 0
-          - 0
-          - -2.5
-          r1: 2.0
-          r2: 3.5
-          radius: 10.0
-          shape: cylinder
-          type: positive
-          width: 1
-      - - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: laser
-          m: '#'
-          pos: &id003
-          - 0
-          - 0
-          - -15.0
-          r: 2.0
-          radius: 2.0
-          shape: cylinder
-          type: positive
-          width: 1
-        - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: 3dpr
-          m: '#'
-          pos: *id003
-          r: 2.0
-          shape: cylinder
-          type: positive
-          width: 1
-        - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: 'true'
-          m: '#'
-          pos: *id003
-          r: 2.0
-          radius: 2.0
-          shape: cylinder
-          type: positive
-          width: 1
-      - - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 3
-          height: 1
-          inclusion: 3dpr
-          m: '#'
-          pos:
-          - 0
-          - 0
-          - -3
-          r: 10.0
-          r1: 2.125
-          r2: 3.75
-          shape: cylinder
-          type: positive
-          width: 1
-      - - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: laser
-          m: '#'
-          pos: &id004
-          - 0
-          - 0
-          - -15.0
-          r: 2.125
-          radius: 2.125
-          shape: cylinder
-          type: positive
-          width: 1
-        - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: 3dpr
-          m: '#'
-          pos: *id004
-          r: 2.125
-          shape: cylinder
-          type: positive
-          width: 1
-        - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: 'true'
-          m: '#'
-          pos: *id004
-          r: 2.125
-          radius: 2.125
-          shape: cylinder
-          type: positive
-          width: 1
-      - - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 2.5
-          height: 1
-          inclusion: 'true'
-          m: '#'
-          pos:
-          - 0
-          - 0
-          - -2.5
-          r1: 2.0
-          r2: 3.5
-          radius: 10.0
-          shape: cylinder
-          type: positive
-          width: 1
-      - - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: laser
-          m: '#'
-          pos: &id005
-          - 0
-          - 0
-          - -15.0
-          r: 2.0
-          radius: 2.0
-          shape: cylinder
-          type: positive
-          width: 1
-        - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: 3dpr
-          m: '#'
-          pos: *id005
-          r: 2.0
-          shape: cylinder
-          type: positive
-          width: 1
-        - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: 'true'
-          m: '#'
-          pos: *id005
-          r: 2.0
-          radius: 2.0
-          shape: cylinder
-          type: positive
-          width: 1
-      pos:
+  - - depth: 15
+      extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
+      h: 15
+      height: 1
+      inclusion: laser
+      m: '#'
+      pos: &id003
       - 6.0
       - 0.0
-      - 0
-      rot:
-      - 0
-      - 0
-      - 0
-      type: rotation
-      typetype: n
-  - - objects:
-      - - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 2.5
-          height: 1
-          inclusion: laser
-          m: '#'
-          pos:
-          - 0
-          - 0
-          - -2.5
-          r1: 2.0
-          r2: 3.5
-          radius: 10.0
-          shape: cylinder
-          type: positive
-          width: 1
-      - - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: laser
-          m: '#'
-          pos: &id006
-          - 0
-          - 0
-          - -15.0
-          r: 2.0
-          radius: 2.0
-          shape: cylinder
-          type: positive
-          width: 1
-        - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: 3dpr
-          m: '#'
-          pos: *id006
-          r: 2.0
-          shape: cylinder
-          type: positive
-          width: 1
-        - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: 'true'
-          m: '#'
-          pos: *id006
-          r: 2.0
-          radius: 2.0
-          shape: cylinder
-          type: positive
-          width: 1
-      - - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 3
-          height: 1
-          inclusion: 3dpr
-          m: '#'
-          pos:
-          - 0
-          - 0
-          - -3
-          r: 10.0
-          r1: 2.125
-          r2: 3.75
-          shape: cylinder
-          type: positive
-          width: 1
-      - - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: laser
-          m: '#'
-          pos: &id007
-          - 0
-          - 0
-          - -15.0
-          r: 2.125
-          radius: 2.125
-          shape: cylinder
-          type: positive
-          width: 1
-        - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: 3dpr
-          m: '#'
-          pos: *id007
-          r: 2.125
-          shape: cylinder
-          type: positive
-          width: 1
-        - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: 'true'
-          m: '#'
-          pos: *id007
-          r: 2.125
-          radius: 2.125
-          shape: cylinder
-          type: positive
-          width: 1
-      - - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 2.5
-          height: 1
-          inclusion: 'true'
-          m: '#'
-          pos:
-          - 0
-          - 0
-          - -2.5
-          r1: 2.0
-          r2: 3.5
-          radius: 10.0
-          shape: cylinder
-          type: positive
-          width: 1
-      - - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: laser
-          m: '#'
-          pos: &id008
-          - 0
-          - 0
-          - -15.0
-          r: 2.0
-          radius: 2.0
-          shape: cylinder
-          type: positive
-          width: 1
-        - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: 3dpr
-          m: '#'
-          pos: *id008
-          r: 2.0
-          shape: cylinder
-          type: positive
-          width: 1
-        - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: 'true'
-          m: '#'
-          pos: *id008
-          r: 2.0
-          radius: 2.0
-          shape: cylinder
-          type: positive
-          width: 1
-      pos:
+      - -15
+      r: 1.5
+      shape: cylinder
+      type: negative
+      width: 1
+    - depth: 15
+      extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
+      h: 15
+      height: 1
+      inclusion: 3dpr
+      m: '#'
+      pos: *id003
+      r: 1.8
+      shape: cylinder
+      type: negative
+      width: 1
+    - depth: 15
+      extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
+      h: 15
+      height: 1
+      inclusion: 'true'
+      m: '#'
+      pos: *id003
+      r: 1.5
+      shape: cylinder
+      type: negative
+      width: 1
+  - - depth: 15
+      extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
+      h: 15
+      height: 1
+      inclusion: laser
+      m: '#'
+      pos: &id004
       - -2.9999999999999987
       - 5.196152422706632
-      - 0
-      rot:
-      - 0
-      - 0
-      - 0
-      type: rotation
-      typetype: n
-  - - objects:
-      - - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 2.5
-          height: 1
-          inclusion: laser
-          m: '#'
-          pos:
-          - 0
-          - 0
-          - -2.5
-          r1: 2.0
-          r2: 3.5
-          radius: 10.0
-          shape: cylinder
-          type: positive
-          width: 1
-      - - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: laser
-          m: '#'
-          pos: &id009
-          - 0
-          - 0
-          - -15.0
-          r: 2.0
-          radius: 2.0
-          shape: cylinder
-          type: positive
-          width: 1
-        - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: 3dpr
-          m: '#'
-          pos: *id009
-          r: 2.0
-          shape: cylinder
-          type: positive
-          width: 1
-        - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: 'true'
-          m: '#'
-          pos: *id009
-          r: 2.0
-          radius: 2.0
-          shape: cylinder
-          type: positive
-          width: 1
-      - - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 3
-          height: 1
-          inclusion: 3dpr
-          m: '#'
-          pos:
-          - 0
-          - 0
-          - -3
-          r: 10.0
-          r1: 2.125
-          r2: 3.75
-          shape: cylinder
-          type: positive
-          width: 1
-      - - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: laser
-          m: '#'
-          pos: &id010
-          - 0
-          - 0
-          - -15.0
-          r: 2.125
-          radius: 2.125
-          shape: cylinder
-          type: positive
-          width: 1
-        - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: 3dpr
-          m: '#'
-          pos: *id010
-          r: 2.125
-          shape: cylinder
-          type: positive
-          width: 1
-        - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: 'true'
-          m: '#'
-          pos: *id010
-          r: 2.125
-          radius: 2.125
-          shape: cylinder
-          type: positive
-          width: 1
-      - - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 2.5
-          height: 1
-          inclusion: 'true'
-          m: '#'
-          pos:
-          - 0
-          - 0
-          - -2.5
-          r1: 2.0
-          r2: 3.5
-          radius: 10.0
-          shape: cylinder
-          type: positive
-          width: 1
-      - - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: laser
-          m: '#'
-          pos: &id011
-          - 0
-          - 0
-          - -15.0
-          r: 2.0
-          radius: 2.0
-          shape: cylinder
-          type: positive
-          width: 1
-        - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: 3dpr
-          m: '#'
-          pos: *id011
-          r: 2.0
-          shape: cylinder
-          type: positive
-          width: 1
-        - depth: 15
-          extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
-          h: 15
-          height: 1
-          inclusion: 'true'
-          m: '#'
-          pos: *id011
-          r: 2.0
-          radius: 2.0
-          shape: cylinder
-          type: positive
-          width: 1
-      pos:
+      - -15
+      r: 1.5
+      shape: cylinder
+      type: negative
+      width: 1
+    - depth: 15
+      extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
+      h: 15
+      height: 1
+      inclusion: 3dpr
+      m: '#'
+      pos: *id004
+      r: 1.8
+      shape: cylinder
+      type: negative
+      width: 1
+    - depth: 15
+      extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
+      h: 15
+      height: 1
+      inclusion: 'true'
+      m: '#'
+      pos: *id004
+      r: 1.5
+      shape: cylinder
+      type: negative
+      width: 1
+  - - depth: 15
+      extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
+      h: 15
+      height: 1
+      inclusion: laser
+      m: '#'
+      pos: &id005
       - -3.0000000000000027
       - -5.196152422706631
-      - 0
-      rot:
-      - 0
-      - 0
-      - 0
-      type: rotation
-      typetype: n
+      - -15
+      r: 1.5
+      shape: cylinder
+      type: negative
+      width: 1
+    - depth: 15
+      extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
+      h: 15
+      height: 1
+      inclusion: 3dpr
+      m: '#'
+      pos: *id005
+      r: 1.8
+      shape: cylinder
+      type: negative
+      width: 1
+    - depth: 15
+      extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink
+      h: 15
+      height: 1
+      inclusion: 'true'
+      m: '#'
+      pos: *id005
+      r: 1.5
+      shape: cylinder
+      type: negative
+      width: 1
   components_objects:
   - countersink: no_countersink
     depth: 15
@@ -735,12 +324,11 @@ thing:
     pos:
     - 6.0
     - 0.0
-    - 0
-    radius: 10.0
-    radius_name: m3_screw_wood
+    - -15
+    radius_name: m3
     save_type: all
     screw_diameter: m3_screw_wood
-    shape: oobb_screw_countersunk
+    shape: oobb_hole
     thickness: 15
     typ: all
     type: n
@@ -771,12 +359,11 @@ thing:
     pos:
     - -2.9999999999999987
     - 5.196152422706632
-    - 0
-    radius: 10.0
-    radius_name: m3_screw_wood
+    - -15
+    radius_name: m3
     save_type: all
     screw_diameter: m3_screw_wood
-    shape: oobb_screw_countersunk
+    shape: oobb_hole
     thickness: 15
     typ: all
     type: n
@@ -807,12 +394,11 @@ thing:
     pos:
     - -3.0000000000000027
     - -5.196152422706631
-    - 0
-    radius: 10.0
-    radius_name: m3_screw_wood
+    - -15
+    radius_name: m3
     save_type: all
     screw_diameter: m3_screw_wood
-    shape: oobb_screw_countersunk
+    shape: oobb_hole
     thickness: 15
     typ: all
     type: n
@@ -820,9 +406,9 @@ thing:
   components_string:
   - oobb_cylinder_shape_p_type_15_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_15_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_15_flange_extra_6_flange_depth_m3_screw_wood_screw_diameter_3_multi_hole__flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink_extra_no_countersink_countersink_top_zz
   - oobb_cylinder_shape_p_type_6_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_15_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_17.5_radius_15_flange_extra_6_flange_depth_m3_screw_wood_screw_diameter_3_multi_hole__flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink_extra_no_countersink_countersink_top_zz
-  - oobb_screw_countersunk_shape_n_type_m3_screw_wood_radius_name_15_depth_6.0_0.0_0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_15_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_15_flange_extra_6_flange_depth_m3_screw_wood_screw_diameter_3_multi_hole__flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink_extra_no_countersink_countersink
-  - oobb_screw_countersunk_shape_n_type_m3_screw_wood_radius_name_15_depth_-2.9999999999999987_5.196152422706632_0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_15_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_15_flange_extra_6_flange_depth_m3_screw_wood_screw_diameter_3_multi_hole__flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink_extra_no_countersink_countersink
-  - oobb_screw_countersunk_shape_n_type_m3_screw_wood_radius_name_15_depth_-3.0000000000000027_-5.196152422706631_0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_15_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_15_flange_extra_6_flange_depth_m3_screw_wood_screw_diameter_3_multi_hole__flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink_extra_no_countersink_countersink
+  - oobb_hole_shape_n_type_m3_radius_name_15_depth_6.0_0.0_-15_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_15_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_15_flange_extra_6_flange_depth_m3_screw_wood_screw_diameter_3_multi_hole__flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink_extra_no_countersink_countersink
+  - oobb_hole_shape_n_type_m3_radius_name_15_depth_-2.9999999999999987_5.196152422706632_-15_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_15_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_15_flange_extra_6_flange_depth_m3_screw_wood_screw_diameter_3_multi_hole__flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink_extra_no_countersink_countersink
+  - oobb_hole_shape_n_type_m3_radius_name_15_depth_-3.0000000000000027_-5.196152422706631_-15_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_15_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_15_flange_extra_6_flange_depth_m3_screw_wood_screw_diameter_3_multi_hole__flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink_extra_no_countersink_countersink
   description: oomlout organizing screw pegs peg 1x1x15
   description_extra: _flange_20_flange_extra_15_flange_depth_6_screw_dameter_m3_screw_wood_multi_hole_3_no_countersink_extra
   description_main: 1_width_1_height_15_mm_depth

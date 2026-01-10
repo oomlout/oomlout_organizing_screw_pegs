@@ -1,0 +1,429 @@
+classification: project
+color: oomlout_organizing_screw_pegs
+description_extra: flange_14_flange_extra_0_no_countersink_extra
+description_main: socket_1_width_1_height_60_mm_depth
+full_rotations:
+- 0
+- 0
+- 0
+full_shift:
+- 0
+- 0
+- 0
+id: project_github_oomlout_oomlout_organizing_screw_pegs_socket_1_width_1_height_60_mm_depth_flange_14_flange_extra_0_no_countersink_extra
+id_oobb: oobb_part_oomlout_organizing_screw_pegs_socket_1_width_1_height_60_mm_depth_flange_14_flange_extra_0_no_countersink_extra
+kwargs:
+  countersink: no_countersink
+  extra: flange_14_flange_extra_0_no_countersink
+  filter: ''
+  flange_depth: 3
+  flange_extra: 0
+  height: 1
+  modes:
+  - 3dpr
+  navigation: true
+  oomp_classification: project
+  oomp_color: oomlout_organizing_screw_pegs
+  oomp_description_extra: flange_14_flange_extra_0_no_countersink_extra
+  oomp_description_main: socket_1_width_1_height_60_mm_depth
+  oomp_manufacturer: ''
+  oomp_mode: project
+  oomp_part_number: ''
+  oomp_run: true
+  oomp_size: oomlout
+  oomp_type: github
+  overwrite: false
+  radius: 7.0
+  screw_diameter: m4_screw_wood
+  thickness: 60
+  typ: all
+  type: oomlout_organizing_screw_pegs_socket
+  width: 1
+manufacturer: ''
+name: socket
+part_number: ''
+project_name: C:\od\OneDrive\docs\oomlout_organizing_screw_pegs
+size: oomlout
+thing:
+  classification: oobb
+  color: ''
+  components:
+  - - depth: 60
+      extra: flange_14_flange_extra_0_no_countersink
+      h: 60
+      height: 1
+      pos:
+      - 0
+      - 0
+      - 0
+      r: 7.0
+      shape: cylinder
+      type: p
+      width: 1
+  - - depth: 60
+      extra: flange_14_flange_extra_0_no_countersink
+      h: 60
+      height: 1
+      pos:
+      - -4.0
+      - 0
+      - 0
+      r: 7.0
+      shape: cylinder
+      type: p
+      width: 1
+  - - - depth: 60
+        h: 60
+        inclusion: laser
+        m: ''
+        pos: &id001
+        - 0.0
+        - 0.0
+        - 0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - depth: 60
+        h: 60
+        inclusion: 3dpr
+        m: ''
+        pos: *id001
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - depth: 60
+        h: 60
+        inclusion: 'true'
+        m: ''
+        pos: *id001
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - depth: 60
+        h: 60
+        inclusion: laser
+        m: ''
+        pos: &id002
+        - 0.0
+        - 0.0
+        - 0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - depth: 60
+        h: 60
+        inclusion: 3dpr
+        m: ''
+        pos: *id002
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - depth: 60
+        h: 60
+        inclusion: 'true'
+        m: ''
+        pos: *id002
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - depth: 60
+        h: 60
+        inclusion: laser
+        m: ''
+        pos: &id003
+        - 0.0
+        - 0.0
+        - 0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - depth: 60
+        h: 60
+        inclusion: 3dpr
+        m: ''
+        pos: *id003
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - depth: 60
+        h: 60
+        inclusion: 'true'
+        m: ''
+        pos: *id003
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - depth: 60
+        h: 60
+        inclusion: laser
+        m: ''
+        pos: &id004
+        - 0.0
+        - 0.0
+        - 0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - depth: 60
+        h: 60
+        inclusion: 3dpr
+        m: ''
+        pos: *id004
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - depth: 60
+        h: 60
+        inclusion: 'true'
+        m: ''
+        pos: *id004
+        r: 1.5
+        shape: cylinder
+        type: negative
+  - - extra: flange_14_flange_extra_0_no_countersink
+      height: 1
+      pos:
+      - -8.5
+      - 0
+      - 0
+      radius: 7.5
+      shape: rounded_rectangle
+      size:
+      - 22.5
+      - 15.0
+      - 60
+      type: n
+      width: 1
+  - - depth: 60
+      extra: flange_14_flange_extra_0_no_countersink
+      h: 60
+      height: 1
+      inclusion: laser
+      pos: &id005
+      - -1.0
+      - 0
+      - 0.0
+      r: 7.5
+      radius: 7.5
+      shape: cylinder
+      type: n
+      width: 1
+    - depth: 60
+      extra: flange_14_flange_extra_0_no_countersink
+      h: 60
+      height: 1
+      inclusion: 3dpr
+      pos: *id005
+      r: 7.5
+      radius: 7.5
+      shape: cylinder
+      type: n
+      width: 1
+    - depth: 60
+      extra: flange_14_flange_extra_0_no_countersink
+      h: 60
+      height: 1
+      inclusion: 'true'
+      pos: *id005
+      r: 7.5
+      radius: 7.5
+      shape: cylinder
+      type: n
+      width: 1
+  components_objects:
+  - countersink: no_countersink
+    depth: 60
+    extra: flange_14_flange_extra_0_no_countersink
+    filter: ''
+    flange_depth: 3
+    flange_extra: 0
+    height: 1
+    modes:
+    - 3dpr
+    navigation: true
+    oomp_classification: project
+    oomp_color: oomlout_organizing_screw_pegs
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: true
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: false
+    pos:
+    - 0
+    - 0
+    - 0
+    save_type: all
+    screw_diameter: m4_screw_wood
+    shape: oobb_plate
+    thickness: 60
+    typ: all
+    type: p
+    width: 1
+  - countersink: no_countersink
+    depth: 60
+    extra: flange_14_flange_extra_0_no_countersink
+    filter: ''
+    flange_depth: 3
+    flange_extra: 0
+    height: 1
+    modes:
+    - 3dpr
+    navigation: true
+    oomp_classification: project
+    oomp_color: oomlout_organizing_screw_pegs
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: true
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: false
+    pos:
+    - -4.0
+    - 0
+    - 0
+    save_type: all
+    screw_diameter: m4_screw_wood
+    shape: oobb_plate
+    thickness: 60
+    typ: all
+    type: p
+    width: 1
+  - both_holes: true
+    countersink: no_countersink
+    depth: 60
+    extra: flange_14_flange_extra_0_no_countersink
+    filter: ''
+    flange_depth: 3
+    flange_extra: 0
+    height: 1
+    holes: bottom
+    modes:
+    - 3dpr
+    navigation: true
+    oomp_classification: project
+    oomp_color: oomlout_organizing_screw_pegs
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: true
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: false
+    pos:
+    - 0
+    - 0
+    - 0
+    save_type: all
+    screw_diameter: m4_screw_wood
+    shape: oobb_holes
+    thickness: 60
+    typ: all
+    type: p
+    width: 1
+  - countersink: no_countersink
+    extra: flange_14_flange_extra_0_no_countersink
+    filter: ''
+    flange_depth: 3
+    flange_extra: 0
+    height: 1
+    modes:
+    - 3dpr
+    navigation: true
+    oomp_classification: project
+    oomp_color: oomlout_organizing_screw_pegs
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: true
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: false
+    pos:
+    - -8.5
+    - 0
+    - 0
+    radius: 7.5
+    save_type: all
+    screw_diameter: m4_screw_wood
+    shape: rounded_rectangle
+    size:
+    - 22.5
+    - 15.0
+    - 60
+    thickness: 60
+    typ: all
+    type: n
+    width: 1
+  - countersink: no_countersink
+    depth: 60
+    extra: flange_14_flange_extra_0_no_countersink
+    filter: ''
+    flange_depth: 3
+    flange_extra: 0
+    height: 1
+    modes:
+    - 3dpr
+    navigation: true
+    oomp_classification: project
+    oomp_color: oomlout_organizing_screw_pegs
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: true
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: false
+    pos:
+    - -1.0
+    - 0
+    - 30.0
+    radius: 7.5
+    save_type: all
+    screw_diameter: m4_screw_wood
+    shape: oobb_cylinder
+    thickness: 60
+    typ: all
+    type: n
+    width: 1
+  components_string:
+  - oobb_plate_shape_p_type_60_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_60_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_0_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_flange_14_flange_extra_0_no_countersink_extra_no_countersink_countersink
+  - oobb_plate_shape_p_type_60_depth_-4.0_0_0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_60_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_0_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_flange_14_flange_extra_0_no_countersink_extra_no_countersink_countersink
+  - oobb_holes_shape_p_type_60_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_60_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_0_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_flange_14_flange_extra_0_no_countersink_extra_no_countersink_countersink_true_both_holes_bottom_holes
+  - rounded_rectangle_shape_n_type_-8.5_0_0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_60_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_7.5_radius_0_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_flange_14_flange_extra_0_no_countersink_extra_no_countersink_countersink_22.5_15.0_60_size
+  - oobb_cylinder_shape_n_type_60_depth_-1.0_0_30.0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_60_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_7.5_radius_0_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_flange_14_flange_extra_0_no_countersink_extra_no_countersink_countersink
+  description: oomlout organizing screw pegs socket 1x1x60
+  description_extra: flange_14_flange_extra_0_no_countersink_extra
+  description_main: 1_width_1_height_60_mm_depth
+  extra: flange_14_flange_extra_0_no_countersink
+  folder: C:\gh\oomlout_oobb_version_4_generated_parts\parts\oobb_part_oomlout_organizing_screw_pegs_socket_1_width_1_height_60_mm_depth_flange_14_flange_extra_0_no_countersink_extra
+  height: 1
+  height_mm: 14
+  id: oobb_part_oomlout_organizing_screw_pegs_socket_1_width_1_height_60_mm_depth_flange_14_flange_extra_0_no_countersink_extra
+  link_main: https://github.com/oomlout/oomlout_oobb_version_4_generated_parts/tree/main/navigation_oomp/oobb/part/oomlout_organizing_screw_pegs_socket/1_width_1_height_60_mm_depth/flange_14_flange_extra_0_no_countersink_extra/part
+  link_redirect: https://github.com/oomlout/oomlout_oobb_version_4_generated_parts/tree/main/parts/oobb_oomlout_organizing_screw_pegs_socket_01_01_60_ex_flange_14_flange_extra_0_no_countersink
+  manufacturer: ''
+  name: Oobb Part Oomlout Organizing Screw Pegs Socket 1 Width 1 Height 60 mm Depth
+    Flange 14 Flange Extra 0 No Countersink Extra
+  name_short: Oomlout Organizing Screw Pegs Socket
+  part_number: ''
+  short_name: ''
+  size: oomlout_organizing_screw_pegs_socket
+  thickness: 60
+  thickness_mm: 60
+  type: part
+  width: 1
+  width_mm: 14
+type: github

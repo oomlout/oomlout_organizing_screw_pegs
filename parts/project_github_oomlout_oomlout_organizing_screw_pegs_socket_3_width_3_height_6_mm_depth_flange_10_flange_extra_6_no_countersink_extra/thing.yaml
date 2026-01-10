@@ -1,0 +1,811 @@
+classification: project
+color: oomlout_organizing_screw_pegs
+description_extra: flange_10_flange_extra_6_no_countersink_extra
+description_main: socket_3_width_3_height_6_mm_depth
+full_rotations:
+- 0
+- 0
+- 0
+full_shift:
+- 0
+- 0
+- 0
+id: project_github_oomlout_oomlout_organizing_screw_pegs_socket_3_width_3_height_6_mm_depth_flange_10_flange_extra_6_no_countersink_extra
+id_oobb: oobb_part_oomlout_organizing_screw_pegs_socket_3_width_3_height_6_mm_depth_flange_10_flange_extra_6_no_countersink_extra
+kwargs:
+  countersink: no_countersink
+  extra: flange_10_flange_extra_6_no_countersink
+  filter: ''
+  flange_depth: 3
+  flange_extra: 6
+  height: 3
+  modes:
+  - 3dpr
+  navigation: true
+  oomp_classification: project
+  oomp_color: oomlout_organizing_screw_pegs
+  oomp_description_extra: flange_10_flange_extra_6_no_countersink_extra
+  oomp_description_main: socket_3_width_3_height_6_mm_depth
+  oomp_manufacturer: ''
+  oomp_mode: project
+  oomp_part_number: ''
+  oomp_run: true
+  oomp_size: oomlout
+  oomp_type: github
+  overwrite: false
+  radius: 5.0
+  screw_diameter: m4_screw_wood
+  thickness: 6
+  typ: all
+  type: oomlout_organizing_screw_pegs_socket
+  width: 3
+manufacturer: ''
+name: socket
+part_number: ''
+project_name: C:\od\OneDrive\docs\oomlout_organizing_screw_pegs
+size: oomlout
+thing:
+  classification: oobb
+  color: ''
+  components:
+  - - depth: 6
+      extra: flange_10_flange_extra_6_no_countersink
+      height: 3
+      pos:
+      - 0
+      - 0
+      - 0
+      shape: rounded_rectangle
+      size:
+      - 44
+      - 44
+      - 6
+      type: p
+      width: 3
+  - - depth: 6
+      extra: flange_10_flange_extra_6_no_countersink
+      height: 3
+      pos:
+      - -5.0
+      - 0
+      - 0
+      shape: rounded_rectangle
+      size:
+      - 44
+      - 44
+      - 6
+      type: p
+      width: 3
+  - - - depth: 6
+        h: 6
+        inclusion: laser
+        m: ''
+        pos: &id001
+        - 15.0
+        - -15.0
+        - 0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 3dpr
+        m: ''
+        pos: *id001
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 'true'
+        m: ''
+        pos: *id001
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - depth: 6
+        h: 6
+        inclusion: laser
+        m: ''
+        pos: &id002
+        - 15.0
+        - 0.0
+        - 0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 3dpr
+        m: ''
+        pos: *id002
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 'true'
+        m: ''
+        pos: *id002
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - depth: 6
+        h: 6
+        inclusion: laser
+        m: ''
+        pos: &id003
+        - 15.0
+        - 15.0
+        - 0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 3dpr
+        m: ''
+        pos: *id003
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 'true'
+        m: ''
+        pos: *id003
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - depth: 6
+        h: 6
+        inclusion: laser
+        m: ''
+        pos: &id004
+        - 15.0
+        - -15.0
+        - 0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 3dpr
+        m: ''
+        pos: *id004
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 'true'
+        m: ''
+        pos: *id004
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - depth: 6
+        h: 6
+        inclusion: laser
+        m: ''
+        pos: &id005
+        - 15.0
+        - -7.5
+        - 0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 3dpr
+        m: ''
+        pos: *id005
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 'true'
+        m: ''
+        pos: *id005
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - depth: 6
+        h: 6
+        inclusion: laser
+        m: ''
+        pos: &id006
+        - 15.0
+        - 0.0
+        - 0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 3dpr
+        m: ''
+        pos: *id006
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 'true'
+        m: ''
+        pos: *id006
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - depth: 6
+        h: 6
+        inclusion: laser
+        m: ''
+        pos: &id007
+        - 15.0
+        - 7.5
+        - 0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 3dpr
+        m: ''
+        pos: *id007
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 'true'
+        m: ''
+        pos: *id007
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - depth: 6
+        h: 6
+        inclusion: laser
+        m: ''
+        pos: &id008
+        - 15.0
+        - 15.0
+        - 0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 3dpr
+        m: ''
+        pos: *id008
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 'true'
+        m: ''
+        pos: *id008
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - depth: 6
+        h: 6
+        inclusion: laser
+        m: ''
+        pos: &id009
+        - 15.0
+        - -15.0
+        - 0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 3dpr
+        m: ''
+        pos: *id009
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 'true'
+        m: ''
+        pos: *id009
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - depth: 6
+        h: 6
+        inclusion: laser
+        m: ''
+        pos: &id010
+        - 15.0
+        - -7.5
+        - 0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 3dpr
+        m: ''
+        pos: *id010
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 'true'
+        m: ''
+        pos: *id010
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - depth: 6
+        h: 6
+        inclusion: laser
+        m: ''
+        pos: &id011
+        - 15.0
+        - 0.0
+        - 0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 3dpr
+        m: ''
+        pos: *id011
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 'true'
+        m: ''
+        pos: *id011
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - depth: 6
+        h: 6
+        inclusion: laser
+        m: ''
+        pos: &id012
+        - 15.0
+        - 7.5
+        - 0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 3dpr
+        m: ''
+        pos: *id012
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 'true'
+        m: ''
+        pos: *id012
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - depth: 6
+        h: 6
+        inclusion: laser
+        m: ''
+        pos: &id013
+        - 15.0
+        - 15.0
+        - 0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 3dpr
+        m: ''
+        pos: *id013
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 'true'
+        m: ''
+        pos: *id013
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - depth: 6
+        h: 6
+        inclusion: laser
+        m: ''
+        pos: &id014
+        - 15.0
+        - -15.0
+        - 0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 3dpr
+        m: ''
+        pos: *id014
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 'true'
+        m: ''
+        pos: *id014
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - depth: 6
+        h: 6
+        inclusion: laser
+        m: ''
+        pos: &id015
+        - 15.0
+        - -7.5
+        - 0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 3dpr
+        m: ''
+        pos: *id015
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 'true'
+        m: ''
+        pos: *id015
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - depth: 6
+        h: 6
+        inclusion: laser
+        m: ''
+        pos: &id016
+        - 15.0
+        - 0.0
+        - 0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 3dpr
+        m: ''
+        pos: *id016
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 'true'
+        m: ''
+        pos: *id016
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - depth: 6
+        h: 6
+        inclusion: laser
+        m: ''
+        pos: &id017
+        - 15.0
+        - 7.5
+        - 0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 3dpr
+        m: ''
+        pos: *id017
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 'true'
+        m: ''
+        pos: *id017
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - depth: 6
+        h: 6
+        inclusion: laser
+        m: ''
+        pos: &id018
+        - 15.0
+        - 15.0
+        - 0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 3dpr
+        m: ''
+        pos: *id018
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - depth: 6
+        h: 6
+        inclusion: 'true'
+        m: ''
+        pos: *id018
+        r: 1.5
+        shape: cylinder
+        type: negative
+  - - extra: flange_10_flange_extra_6_no_countersink
+      height: 3
+      pos:
+      - -9.5
+      - 0
+      - 0
+      radius: 5.5
+      shape: rounded_rectangle
+      size:
+      - 18.5
+      - 11.0
+      - 6
+      type: n
+      width: 3
+  - - depth: 6
+      extra: flange_10_flange_extra_6_no_countersink
+      h: 6
+      height: 3
+      inclusion: laser
+      pos: &id019
+      - -2.0
+      - 0
+      - 0.0
+      r: 8.5
+      radius: 8.5
+      shape: cylinder
+      type: n
+      width: 3
+    - depth: 6
+      extra: flange_10_flange_extra_6_no_countersink
+      h: 6
+      height: 3
+      inclusion: 3dpr
+      pos: *id019
+      r: 8.5
+      radius: 8.5
+      shape: cylinder
+      type: n
+      width: 3
+    - depth: 6
+      extra: flange_10_flange_extra_6_no_countersink
+      h: 6
+      height: 3
+      inclusion: 'true'
+      pos: *id019
+      r: 8.5
+      radius: 8.5
+      shape: cylinder
+      type: n
+      width: 3
+  components_objects:
+  - countersink: no_countersink
+    depth: 6
+    extra: flange_10_flange_extra_6_no_countersink
+    filter: ''
+    flange_depth: 3
+    flange_extra: 6
+    height: 3
+    modes:
+    - 3dpr
+    navigation: true
+    oomp_classification: project
+    oomp_color: oomlout_organizing_screw_pegs
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: true
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: false
+    pos:
+    - 0
+    - 0
+    - 0
+    save_type: all
+    screw_diameter: m4_screw_wood
+    shape: oobb_plate
+    thickness: 6
+    typ: all
+    type: p
+    width: 3
+  - countersink: no_countersink
+    depth: 6
+    extra: flange_10_flange_extra_6_no_countersink
+    filter: ''
+    flange_depth: 3
+    flange_extra: 6
+    height: 3
+    modes:
+    - 3dpr
+    navigation: true
+    oomp_classification: project
+    oomp_color: oomlout_organizing_screw_pegs
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: true
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: false
+    pos:
+    - -5.0
+    - 0
+    - 0
+    save_type: all
+    screw_diameter: m4_screw_wood
+    shape: oobb_plate
+    thickness: 6
+    typ: all
+    type: p
+    width: 3
+  - both_holes: true
+    countersink: no_countersink
+    depth: 6
+    extra: flange_10_flange_extra_6_no_countersink
+    filter: ''
+    flange_depth: 3
+    flange_extra: 6
+    height: 3
+    holes: bottom
+    modes:
+    - 3dpr
+    navigation: true
+    oomp_classification: project
+    oomp_color: oomlout_organizing_screw_pegs
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: true
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: false
+    pos:
+    - 0
+    - 0
+    - 0
+    save_type: all
+    screw_diameter: m4_screw_wood
+    shape: oobb_holes
+    thickness: 6
+    typ: all
+    type: p
+    width: 3
+  - countersink: no_countersink
+    extra: flange_10_flange_extra_6_no_countersink
+    filter: ''
+    flange_depth: 3
+    flange_extra: 6
+    height: 3
+    modes:
+    - 3dpr
+    navigation: true
+    oomp_classification: project
+    oomp_color: oomlout_organizing_screw_pegs
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: true
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: false
+    pos:
+    - -9.5
+    - 0
+    - 0
+    radius: 5.5
+    save_type: all
+    screw_diameter: m4_screw_wood
+    shape: rounded_rectangle
+    size:
+    - 18.5
+    - 11.0
+    - 6
+    thickness: 6
+    typ: all
+    type: n
+    width: 3
+  - countersink: no_countersink
+    depth: 6
+    extra: flange_10_flange_extra_6_no_countersink
+    filter: ''
+    flange_depth: 3
+    flange_extra: 6
+    height: 3
+    modes:
+    - 3dpr
+    navigation: true
+    oomp_classification: project
+    oomp_color: oomlout_organizing_screw_pegs
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: true
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: false
+    pos:
+    - -2.0
+    - 0
+    - 3.0
+    radius: 8.5
+    save_type: all
+    screw_diameter: m4_screw_wood
+    shape: oobb_cylinder
+    thickness: 6
+    typ: all
+    type: n
+    width: 3
+  components_string:
+  - oobb_plate_shape_p_type_6_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_6_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_flange_10_flange_extra_6_no_countersink_extra_no_countersink_countersink
+  - oobb_plate_shape_p_type_6_depth_-5.0_0_0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_6_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_flange_10_flange_extra_6_no_countersink_extra_no_countersink_countersink
+  - oobb_holes_shape_p_type_6_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_6_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_flange_10_flange_extra_6_no_countersink_extra_no_countersink_countersink_true_both_holes_bottom_holes
+  - rounded_rectangle_shape_n_type_-9.5_0_0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_5.5_radius_6_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_flange_10_flange_extra_6_no_countersink_extra_no_countersink_countersink_18.5_11.0_6_size
+  - oobb_cylinder_shape_n_type_6_depth_-2.0_0_3.0_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_3_width_3_height_6_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_8.5_radius_6_flange_extra_3_flange_depth_m4_screw_wood_screw_diameter_flange_10_flange_extra_6_no_countersink_extra_no_countersink_countersink
+  description: oomlout organizing screw pegs socket 3x3x6
+  description_extra: flange_10_flange_extra_6_no_countersink_extra
+  description_main: 3_width_3_height_6_mm_depth
+  extra: flange_10_flange_extra_6_no_countersink
+  folder: C:\gh\oomlout_oobb_version_4_generated_parts\parts\oobb_part_oomlout_organizing_screw_pegs_socket_3_width_3_height_6_mm_depth_flange_10_flange_extra_6_no_countersink_extra
+  height: 3
+  height_mm: 44
+  id: oobb_part_oomlout_organizing_screw_pegs_socket_3_width_3_height_6_mm_depth_flange_10_flange_extra_6_no_countersink_extra
+  link_main: https://github.com/oomlout/oomlout_oobb_version_4_generated_parts/tree/main/navigation_oomp/oobb/part/oomlout_organizing_screw_pegs_socket/3_width_3_height_6_mm_depth/flange_10_flange_extra_6_no_countersink_extra/part
+  link_redirect: https://github.com/oomlout/oomlout_oobb_version_4_generated_parts/tree/main/parts/oobb_oomlout_organizing_screw_pegs_socket_03_03_06_ex_flange_10_flange_extra_6_no_countersink
+  manufacturer: ''
+  name: Oobb Part Oomlout Organizing Screw Pegs Socket 3 Width 3 Height 6 mm Depth
+    Flange 10 Flange Extra 6 No Countersink Extra
+  name_short: Oomlout Organizing Screw Pegs Socket
+  part_number: ''
+  short_name: ''
+  size: oomlout_organizing_screw_pegs_socket
+  thickness: 6
+  thickness_mm: 6
+  type: part
+  width: 3
+  width_mm: 44
+type: github
