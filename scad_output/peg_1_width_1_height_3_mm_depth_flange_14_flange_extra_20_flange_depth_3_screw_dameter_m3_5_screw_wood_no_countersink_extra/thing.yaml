@@ -60,7 +60,7 @@ thing:
       r: 7.0
       radius: 7.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
     - depth: 3
       extra: flange_14_flange_extra_20_flange_depth_3_screw_dameter_m3_5_screw_wood_no_countersink
@@ -69,8 +69,9 @@ thing:
       inclusion: 3dpr
       pos: *id001
       r: 7.0
+      radius: 7.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
     - depth: 3
       extra: flange_14_flange_extra_20_flange_depth_3_screw_dameter_m3_5_screw_wood_no_countersink
@@ -81,7 +82,7 @@ thing:
       r: 7.0
       radius: 7.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
   - - depth: 3
       extra: flange_14_flange_extra_20_flange_depth_3_screw_dameter_m3_5_screw_wood_no_countersink
@@ -95,7 +96,7 @@ thing:
       r: 17.0
       radius: 17.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
     - depth: 3
       extra: flange_14_flange_extra_20_flange_depth_3_screw_dameter_m3_5_screw_wood_no_countersink
@@ -104,8 +105,9 @@ thing:
       inclusion: 3dpr
       pos: *id002
       r: 17.0
+      radius: 17.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
     - depth: 3
       extra: flange_14_flange_extra_20_flange_depth_3_screw_dameter_m3_5_screw_wood_no_countersink
@@ -116,7 +118,7 @@ thing:
       r: 17.0
       radius: 17.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
   - - depth: 3
       extra: flange_14_flange_extra_20_flange_depth_3_screw_dameter_m3_5_screw_wood_no_countersink
@@ -130,7 +132,7 @@ thing:
       - -3
       r: 1.5
       shape: cylinder
-      type: negative
+      type: n
       width: 1
     - depth: 3
       extra: flange_14_flange_extra_20_flange_depth_3_screw_dameter_m3_5_screw_wood_no_countersink
@@ -141,7 +143,7 @@ thing:
       pos: *id003
       r: 1.8
       shape: cylinder
-      type: negative
+      type: n
       width: 1
     - depth: 3
       extra: flange_14_flange_extra_20_flange_depth_3_screw_dameter_m3_5_screw_wood_no_countersink
@@ -152,7 +154,7 @@ thing:
       pos: *id003
       r: 1.5
       shape: cylinder
-      type: negative
+      type: n
       width: 1
   components_objects:
   - countersink: no_countersink

@@ -197,8 +197,8 @@ def make_scad(**kwargs):
             flange_extras = [6]
             flange_depths = [0,3]
             screw_diams = ["m4_screw_wood"]
-            #countersinks = ["", "no_countersink"]
-            countersinks = ["no_countersink"]
+            countersinks = ["", "no_countersink"]
+            #countersinks = ["no_countersink"]
 
             
 

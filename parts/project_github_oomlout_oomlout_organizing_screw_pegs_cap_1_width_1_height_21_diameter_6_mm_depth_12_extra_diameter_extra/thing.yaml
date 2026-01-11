@@ -57,7 +57,7 @@ thing:
       r: 16.5
       radius: 16.5
       shape: cylinder
-      type: positive
+      type: p
       width: 1
     - depth: 7
       extra: 12_extra_diameter
@@ -66,8 +66,9 @@ thing:
       inclusion: 3dpr
       pos: *id001
       r: 16.5
+      radius: 16.5
       shape: cylinder
-      type: positive
+      type: p
       width: 1
     - depth: 7
       extra: 12_extra_diameter
@@ -78,7 +79,7 @@ thing:
       r: 16.5
       radius: 16.5
       shape: cylinder
-      type: positive
+      type: p
       width: 1
   - - depth: 6
       extra: 12_extra_diameter
@@ -103,6 +104,7 @@ thing:
       m: '#'
       pos: *id002
       r: 10.6
+      radius: 10.6
       shape: cylinder
       type: negative
       width: 1

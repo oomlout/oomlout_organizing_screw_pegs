@@ -58,7 +58,7 @@ thing:
       r: 15.0
       radius: 15.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
     - depth: 3
       extra: flange_20__screw_dameter_m4_screw_wood_multi_hole_3
@@ -67,8 +67,9 @@ thing:
       inclusion: 3dpr
       pos: *id001
       r: 15.0
+      radius: 15.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
     - depth: 3
       extra: flange_20__screw_dameter_m4_screw_wood_multi_hole_3
@@ -79,7 +80,7 @@ thing:
       r: 15.0
       radius: 15.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
   - - depth: 100
       extra: flange_20__screw_dameter_m4_screw_wood_multi_hole_3
@@ -93,7 +94,7 @@ thing:
       r: 10.0
       radius: 10.0
       shape: cylinder
-      type: negative
+      type: n
       width: 1
     - depth: 100
       extra: flange_20__screw_dameter_m4_screw_wood_multi_hole_3
@@ -102,8 +103,9 @@ thing:
       inclusion: 3dpr
       pos: *id002
       r: 10.0
+      radius: 10.0
       shape: cylinder
-      type: negative
+      type: n
       width: 1
     - depth: 100
       extra: flange_20__screw_dameter_m4_screw_wood_multi_hole_3
@@ -114,7 +116,7 @@ thing:
       r: 10.0
       radius: 10.0
       shape: cylinder
-      type: negative
+      type: n
       width: 1
   - - depth: 9
       extra: flange_20__screw_dameter_m4_screw_wood_multi_hole_3
@@ -128,7 +130,7 @@ thing:
       - 14
       - 44
       - 9
-      type: positive
+      type: p
       width: 1
   - - - depth: 9
         h: 9
@@ -223,7 +225,7 @@ thing:
       - 21.5
       - 44
       - 9
-      type: positive
+      type: p
       width: 1.5
   - - objects:
       - extra: flange_20__screw_dameter_m4_screw_wood_multi_hole_3
@@ -559,6 +561,7 @@ thing:
           inclusion: 3dpr
           pos: *id006
           r: 2.6
+          radius: 2.6
           shape: cylinder
           type: positive
           width: 1
@@ -608,6 +611,7 @@ thing:
           inclusion: 3dpr
           pos: *id007
           r: 2.875
+          radius: 2.875
           shape: cylinder
           type: positive
           width: 1
@@ -657,6 +661,7 @@ thing:
           inclusion: 3dpr
           pos: *id008
           r: 2.6
+          radius: 2.6
           shape: cylinder
           type: positive
           width: 1
@@ -717,6 +722,7 @@ thing:
           inclusion: 3dpr
           pos: *id009
           r: 2.6
+          radius: 2.6
           shape: cylinder
           type: positive
           width: 1
@@ -766,6 +772,7 @@ thing:
           inclusion: 3dpr
           pos: *id010
           r: 2.875
+          radius: 2.875
           shape: cylinder
           type: positive
           width: 1
@@ -815,6 +822,7 @@ thing:
           inclusion: 3dpr
           pos: *id011
           r: 2.6
+          radius: 2.6
           shape: cylinder
           type: positive
           width: 1
@@ -875,6 +883,7 @@ thing:
           inclusion: 3dpr
           pos: *id012
           r: 2.6
+          radius: 2.6
           shape: cylinder
           type: positive
           width: 1
@@ -924,6 +933,7 @@ thing:
           inclusion: 3dpr
           pos: *id013
           r: 2.875
+          radius: 2.875
           shape: cylinder
           type: positive
           width: 1
@@ -973,6 +983,7 @@ thing:
           inclusion: 3dpr
           pos: *id014
           r: 2.6
+          radius: 2.6
           shape: cylinder
           type: positive
           width: 1

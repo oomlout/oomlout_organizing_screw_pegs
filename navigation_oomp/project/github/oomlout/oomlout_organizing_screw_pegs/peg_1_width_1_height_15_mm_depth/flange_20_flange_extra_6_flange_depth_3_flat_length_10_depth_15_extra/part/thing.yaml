@@ -53,13 +53,13 @@ thing:
       - 0
       - 0
       - -15
-      r: 10.0
+      radius: 10.0
       shape: rounded_rectangle
       size:
       - 30.0
       - 20.0
       - 15
-      type: positive
+      type: p
       width: 1
   - - extra: flange_20_flange_extra_6_flange_depth_3_flat_length_10_depth_15
       height: 1
@@ -67,13 +67,13 @@ thing:
       - 0
       - 0
       - -3
-      r: 10.0
+      radius: 10.0
       shape: rounded_rectangle
       size:
       - 36.0
       - 26.0
       - 3
-      type: positive
+      type: p
       width: 1
   - - objects:
       - - depth: 15
@@ -114,6 +114,7 @@ thing:
           m: '#'
           pos: *id001
           r: 2.6
+          radius: 2.6
           shape: cylinder
           type: positive
           width: 1
@@ -167,6 +168,7 @@ thing:
           m: '#'
           pos: *id002
           r: 2.875
+          radius: 2.875
           shape: cylinder
           type: positive
           width: 1
@@ -220,6 +222,7 @@ thing:
           m: '#'
           pos: *id003
           r: 2.6
+          radius: 2.6
           shape: cylinder
           type: positive
           width: 1

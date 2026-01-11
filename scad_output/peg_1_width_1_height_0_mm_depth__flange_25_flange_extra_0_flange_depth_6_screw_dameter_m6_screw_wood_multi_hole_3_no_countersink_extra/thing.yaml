@@ -61,7 +61,7 @@ thing:
       r: 12.5
       radius: 12.5
       shape: cylinder
-      type: positive
+      type: p
       width: 1
     - depth: 0
       extra: _flange_25_flange_extra_0_flange_depth_6_screw_dameter_m6_screw_wood_multi_hole_3_no_countersink
@@ -70,8 +70,9 @@ thing:
       inclusion: 3dpr
       pos: *id001
       r: 12.5
+      radius: 12.5
       shape: cylinder
-      type: positive
+      type: p
       width: 1
     - depth: 0
       extra: _flange_25_flange_extra_0_flange_depth_6_screw_dameter_m6_screw_wood_multi_hole_3_no_countersink
@@ -82,7 +83,7 @@ thing:
       r: 12.5
       radius: 12.5
       shape: cylinder
-      type: positive
+      type: p
       width: 1
   - - depth: 0
       extra: _flange_25_flange_extra_0_flange_depth_6_screw_dameter_m6_screw_wood_multi_hole_3_no_countersink
@@ -96,7 +97,7 @@ thing:
       - 0
       r: 3.0
       shape: cylinder
-      type: negative
+      type: n
       width: 1
     - depth: 0
       extra: _flange_25_flange_extra_0_flange_depth_6_screw_dameter_m6_screw_wood_multi_hole_3_no_countersink
@@ -107,7 +108,7 @@ thing:
       pos: *id002
       r: 3.25
       shape: cylinder
-      type: negative
+      type: n
       width: 1
     - depth: 0
       extra: _flange_25_flange_extra_0_flange_depth_6_screw_dameter_m6_screw_wood_multi_hole_3_no_countersink
@@ -118,7 +119,7 @@ thing:
       pos: *id002
       r: 3.0
       shape: cylinder
-      type: negative
+      type: n
       width: 1
   - - depth: 0
       extra: _flange_25_flange_extra_0_flange_depth_6_screw_dameter_m6_screw_wood_multi_hole_3_no_countersink
@@ -132,7 +133,7 @@ thing:
       - 0
       r: 3.0
       shape: cylinder
-      type: negative
+      type: n
       width: 1
     - depth: 0
       extra: _flange_25_flange_extra_0_flange_depth_6_screw_dameter_m6_screw_wood_multi_hole_3_no_countersink
@@ -143,7 +144,7 @@ thing:
       pos: *id003
       r: 3.25
       shape: cylinder
-      type: negative
+      type: n
       width: 1
     - depth: 0
       extra: _flange_25_flange_extra_0_flange_depth_6_screw_dameter_m6_screw_wood_multi_hole_3_no_countersink
@@ -154,7 +155,7 @@ thing:
       pos: *id003
       r: 3.0
       shape: cylinder
-      type: negative
+      type: n
       width: 1
   - - depth: 0
       extra: _flange_25_flange_extra_0_flange_depth_6_screw_dameter_m6_screw_wood_multi_hole_3_no_countersink
@@ -168,7 +169,7 @@ thing:
       - 0
       r: 3.0
       shape: cylinder
-      type: negative
+      type: n
       width: 1
     - depth: 0
       extra: _flange_25_flange_extra_0_flange_depth_6_screw_dameter_m6_screw_wood_multi_hole_3_no_countersink
@@ -179,7 +180,7 @@ thing:
       pos: *id004
       r: 3.25
       shape: cylinder
-      type: negative
+      type: n
       width: 1
     - depth: 0
       extra: _flange_25_flange_extra_0_flange_depth_6_screw_dameter_m6_screw_wood_multi_hole_3_no_countersink
@@ -190,7 +191,7 @@ thing:
       pos: *id004
       r: 3.0
       shape: cylinder
-      type: negative
+      type: n
       width: 1
   components_objects:
   - countersink: no_countersink

@@ -60,7 +60,7 @@ thing:
       r: 7.0
       radius: 7.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
     - depth: 48
       extra: flange_14_flange_extra_0_flange_depth_0_screw_dameter_m5_screw_wood_no_countersink
@@ -69,8 +69,9 @@ thing:
       inclusion: 3dpr
       pos: *id001
       r: 7.0
+      radius: 7.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
     - depth: 48
       extra: flange_14_flange_extra_0_flange_depth_0_screw_dameter_m5_screw_wood_no_countersink
@@ -81,7 +82,7 @@ thing:
       r: 7.0
       radius: 7.0
       shape: cylinder
-      type: positive
+      type: p
       width: 1
   - - depth: 48
       extra: flange_14_flange_extra_0_flange_depth_0_screw_dameter_m5_screw_wood_no_countersink
@@ -95,7 +96,7 @@ thing:
       - -48
       r: 2.5
       shape: cylinder
-      type: negative
+      type: n
       width: 1
     - depth: 48
       extra: flange_14_flange_extra_0_flange_depth_0_screw_dameter_m5_screw_wood_no_countersink
@@ -106,7 +107,7 @@ thing:
       pos: *id002
       r: 2.75
       shape: cylinder
-      type: negative
+      type: n
       width: 1
     - depth: 48
       extra: flange_14_flange_extra_0_flange_depth_0_screw_dameter_m5_screw_wood_no_countersink
@@ -117,7 +118,7 @@ thing:
       pos: *id002
       r: 2.5
       shape: cylinder
-      type: negative
+      type: n
       width: 1
   components_objects:
   - countersink: no_countersink
