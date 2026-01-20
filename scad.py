@@ -224,6 +224,7 @@ def make_scad(**kwargs):
                 diam = option["diam"]
                 flange_extra = option["flange_extra"]
                 screw_diameter = option["screw_diameter"]
+                countersink = option.get("countersink", "")
                 if "flange_depth" in option:
                     flange_depth = option["flange_depth"]
                 
@@ -239,6 +240,8 @@ def make_scad(**kwargs):
                 if countersink != "":
                     p3["countersink"] = countersink
                     p3["extra"] += f"_{countersink}"
+                else:
+                    pass
                 part["kwargs"] = p3
                 part["name"] = f"peg"
                 

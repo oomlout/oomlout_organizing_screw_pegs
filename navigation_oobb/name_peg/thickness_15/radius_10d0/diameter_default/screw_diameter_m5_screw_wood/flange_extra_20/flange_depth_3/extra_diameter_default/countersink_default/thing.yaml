@@ -1,0 +1,416 @@
+classification: project
+color: oomlout_organizing_screw_pegs
+description_extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood_extra
+description_main: peg_1_width_1_height_15_mm_depth
+full_rotations:
+- 0
+- 0
+- 0
+full_shift:
+- 0
+- 0
+- 0
+id: project_github_oomlout_oomlout_organizing_screw_pegs_peg_1_width_1_height_15_mm_depth_flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood_extra
+id_oobb: oobb_part_oomlout_organizing_screw_pegs_peg_1_width_1_height_15_mm_depth_flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood_extra
+kwargs:
+  extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood
+  filter: ''
+  flange_depth: 3
+  flange_extra: 20
+  height: 1
+  modes:
+  - 3dpr
+  navigation: true
+  oomp_classification: project
+  oomp_color: oomlout_organizing_screw_pegs
+  oomp_description_extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood_extra
+  oomp_description_main: peg_1_width_1_height_15_mm_depth
+  oomp_manufacturer: ''
+  oomp_mode: project
+  oomp_part_number: ''
+  oomp_run: true
+  oomp_size: oomlout
+  oomp_type: github
+  overwrite: false
+  radius: 10.0
+  screw_diameter: m5_screw_wood
+  thickness: 15
+  typ: all
+  type: oomlout_organizing_screw_pegs_peg
+  width: 1
+manufacturer: ''
+name: peg
+part_number: ''
+project_name: C:\od\OneDrive\docs\oomlout_organizing_screw_pegs
+size: oomlout
+thing:
+  classification: oobb
+  color: ''
+  components:
+  - - depth: 15
+      extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood
+      h: 15
+      height: 1
+      inclusion: laser
+      pos: &id001
+      - 0
+      - 0
+      - -15.0
+      r: 10.0
+      radius: 10.0
+      shape: cylinder
+      type: positive
+      width: 1
+    - depth: 15
+      extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood
+      h: 15
+      height: 1
+      inclusion: 3dpr
+      pos: *id001
+      r: 10.0
+      shape: cylinder
+      type: positive
+      width: 1
+    - depth: 15
+      extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood
+      h: 15
+      height: 1
+      inclusion: 'true'
+      pos: *id001
+      r: 10.0
+      radius: 10.0
+      shape: cylinder
+      type: positive
+      width: 1
+  - - depth: 3
+      extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood
+      h: 3
+      height: 1
+      inclusion: laser
+      pos: &id002
+      - 0
+      - 0
+      - -3.0
+      r: 20.0
+      radius: 20.0
+      shape: cylinder
+      type: positive
+      width: 1
+    - depth: 3
+      extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood
+      h: 3
+      height: 1
+      inclusion: 3dpr
+      pos: *id002
+      r: 20.0
+      shape: cylinder
+      type: positive
+      width: 1
+    - depth: 3
+      extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood
+      h: 3
+      height: 1
+      inclusion: 'true'
+      pos: *id002
+      r: 20.0
+      radius: 20.0
+      shape: cylinder
+      type: positive
+      width: 1
+  - - objects:
+      - - depth: 15
+          extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood
+          h: 3.75
+          height: 1
+          inclusion: laser
+          m: '#'
+          pos:
+          - 0
+          - 0
+          - -3.75
+          r1: 2.25
+          r2: 4.875
+          shape: cylinder
+          type: positive
+          width: 1
+      - - depth: 15
+          extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood
+          h: 15
+          height: 1
+          inclusion: laser
+          m: '#'
+          pos: &id003
+          - 0
+          - 0
+          - -15.0
+          r: 2.25
+          radius: 2.25
+          shape: cylinder
+          type: positive
+          width: 1
+        - depth: 15
+          extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood
+          h: 15
+          height: 1
+          inclusion: 3dpr
+          m: '#'
+          pos: *id003
+          r: 2.25
+          shape: cylinder
+          type: positive
+          width: 1
+        - depth: 15
+          extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood
+          h: 15
+          height: 1
+          inclusion: 'true'
+          m: '#'
+          pos: *id003
+          r: 2.25
+          radius: 2.25
+          shape: cylinder
+          type: positive
+          width: 1
+      - - depth: 15
+          extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood
+          h: 4.2
+          height: 1
+          inclusion: 3dpr
+          m: '#'
+          pos:
+          - 0
+          - 0
+          - -4.2
+          r1: 2.75
+          r2: 5.5
+          shape: cylinder
+          type: positive
+          width: 1
+      - - depth: 15
+          extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood
+          h: 15
+          height: 1
+          inclusion: laser
+          m: '#'
+          pos: &id004
+          - 0
+          - 0
+          - -15.0
+          r: 2.75
+          radius: 2.75
+          shape: cylinder
+          type: positive
+          width: 1
+        - depth: 15
+          extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood
+          h: 15
+          height: 1
+          inclusion: 3dpr
+          m: '#'
+          pos: *id004
+          r: 2.75
+          shape: cylinder
+          type: positive
+          width: 1
+        - depth: 15
+          extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood
+          h: 15
+          height: 1
+          inclusion: 'true'
+          m: '#'
+          pos: *id004
+          r: 2.75
+          radius: 2.75
+          shape: cylinder
+          type: positive
+          width: 1
+      - - depth: 15
+          extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood
+          h: 3.75
+          height: 1
+          inclusion: 'true'
+          m: '#'
+          pos:
+          - 0
+          - 0
+          - -3.75
+          r1: 2.25
+          r2: 4.875
+          shape: cylinder
+          type: positive
+          width: 1
+      - - depth: 15
+          extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood
+          h: 15
+          height: 1
+          inclusion: laser
+          m: '#'
+          pos: &id005
+          - 0
+          - 0
+          - -15.0
+          r: 2.25
+          radius: 2.25
+          shape: cylinder
+          type: positive
+          width: 1
+        - depth: 15
+          extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood
+          h: 15
+          height: 1
+          inclusion: 3dpr
+          m: '#'
+          pos: *id005
+          r: 2.25
+          shape: cylinder
+          type: positive
+          width: 1
+        - depth: 15
+          extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood
+          h: 15
+          height: 1
+          inclusion: 'true'
+          m: '#'
+          pos: *id005
+          r: 2.25
+          radius: 2.25
+          shape: cylinder
+          type: positive
+          width: 1
+      pos:
+      - 0
+      - 0
+      - 0
+      rot:
+      - 0
+      - 0
+      - 0
+      type: rotation
+      typetype: n
+  components_objects:
+  - depth: 15
+    extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood
+    filter: ''
+    flange_depth: 3
+    flange_extra: 20
+    height: 1
+    modes:
+    - 3dpr
+    navigation: true
+    oomp_classification: project
+    oomp_color: oomlout_organizing_screw_pegs
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: true
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: false
+    pos:
+    - 0
+    - 0
+    - 0
+    radius: 10.0
+    save_type: all
+    screw_diameter: m5_screw_wood
+    shape: oobb_cylinder
+    thickness: 15
+    typ: all
+    type: p
+    width: 1
+    zz: top
+  - depth: 3
+    extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood
+    filter: ''
+    flange_depth: 3
+    flange_extra: 20
+    height: 1
+    modes:
+    - 3dpr
+    navigation: true
+    oomp_classification: project
+    oomp_color: oomlout_organizing_screw_pegs
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: true
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: false
+    pos:
+    - 0
+    - 0
+    - 0
+    radius: 20.0
+    save_type: all
+    screw_diameter: m5_screw_wood
+    shape: oobb_cylinder
+    thickness: 15
+    typ: all
+    type: p
+    width: 1
+    zz: top
+  - depth: 15
+    extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood
+    filter: ''
+    flange_depth: 3
+    flange_extra: 20
+    height: 1
+    m: '#'
+    modes:
+    - 3dpr
+    navigation: true
+    oomp_classification: project
+    oomp_color: oomlout_organizing_screw_pegs
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: true
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: false
+    pos:
+    - 0
+    - 0
+    - 0
+    radius_name: m5_screw_wood
+    save_type: all
+    screw_diameter: m5_screw_wood
+    shape: oobb_screw_countersunk
+    thickness: 15
+    typ: all
+    type: n
+    width: 1
+  components_string:
+  - oobb_cylinder_shape_p_type_15_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_15_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_10.0_radius_20_flange_extra_3_flange_depth_m5_screw_wood_screw_diameter_flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood_extra_top_zz
+  - oobb_cylinder_shape_p_type_3_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_15_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_20.0_radius_20_flange_extra_3_flange_depth_m5_screw_wood_screw_diameter_flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood_extra_top_zz
+  - oobb_screw_countersunk_shape_n_type_m5_screw_wood_radius_name_15_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_15_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_organizing_screw_pegs_oomp_color_20_flange_extra_3_flange_depth_m5_screw_wood_screw_diameter_flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood_extra
+  description: oomlout organizing screw pegs peg 1x1x15
+  description_extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood_extra
+  description_main: 1_width_1_height_15_mm_depth
+  extra: flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood
+  folder: C:\gh\oomlout_oobb_version_4_generated_parts\parts\oobb_part_oomlout_organizing_screw_pegs_peg_1_width_1_height_15_mm_depth_flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood_extra
+  height: 1
+  height_mm: 14
+  id: oobb_part_oomlout_organizing_screw_pegs_peg_1_width_1_height_15_mm_depth_flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood_extra
+  link_main: https://github.com/oomlout/oomlout_oobb_version_4_generated_parts/tree/main/navigation_oomp/oobb/part/oomlout_organizing_screw_pegs_peg/1_width_1_height_15_mm_depth/flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood_extra/part
+  link_redirect: https://github.com/oomlout/oomlout_oobb_version_4_generated_parts/tree/main/parts/oobb_oomlout_organizing_screw_pegs_peg_01_01_15_ex_flange_20_flange_extra_20_flange_depth_3_screw_dameter_m5_screw_wood
+  manufacturer: ''
+  name: Oobb Part Oomlout Organizing Screw Pegs Peg 1 Width 1 Height 15 mm Depth Flange
+    20 Flange Extra 20 Flange Depth 3 Screw Dameter M5 Screw Wood Extra
+  name_short: Oomlout Organizing Screw Pegs Peg
+  part_number: ''
+  short_name: ''
+  size: oomlout_organizing_screw_pegs_peg
+  thickness: 15
+  thickness_mm: 15
+  type: part
+  width: 1
+  width_mm: 14
+type: github
